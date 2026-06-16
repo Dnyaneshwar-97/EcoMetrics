@@ -1,10 +1,12 @@
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import { formatDate, formatCo2, formatCurrency, formatNumber } from './formatters';
-import { APP_NAME } from '../constants/ui';
+import { APP_NAME, APP_LOGO } from '../constants/ui';
+import { loadImageAsDataUrl } from './badgeExport';
 
 const PAGE_MARGIN = 20;
 const LINE_HEIGHT = 8;
+const LOGO_SIZE = 14;
 const CHART_CAPTURE_DELAY_MS = 400;
 const CHART_CAPTURE_SCALE = 2;
 
@@ -43,6 +45,59 @@ const addText = (doc, text, y, options = {}) => {
 const getContentWidth = (doc) => doc.internal.pageSize.getWidth() - PAGE_MARGIN * 2;
 
 const getPageHeight = (doc) => doc.internal.pageSize.getHeight();
+
+/**
+ * Rasterize logo (GIF/PNG) to PNG data URL for jsPDF embedding.
+ */
+const loadLogoForPdf = async () => {
+  try {
+    const dataUrl = await loadImageAsDataUrl(APP_LOGO);
+    const img = new Image();
+    img.decoding = 'async';
+    await new Promise((resolve, reject) => {
+      img.onload = () => resolve();
+      img.onerror = () => reject(new Error('Failed to decode logo for PDF export'));
+      img.src = dataUrl;
+    });
+
+    const canvas = document.createElement('canvas');
+    canvas.width = img.naturalWidth || img.width;
+    canvas.height = img.naturalHeight || img.height;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return null;
+
+    ctx.drawImage(img, 0, 0);
+    return canvas.toDataURL('image/png');
+  } catch {
+    return null;
+  }
+};
+
+const addPdfHeader = (doc, logoDataUrl) => {
+  let y = PAGE_MARGIN;
+  const titleX = logoDataUrl ? PAGE_MARGIN + LOGO_SIZE + 5 : PAGE_MARGIN;
+
+  if (logoDataUrl) {
+    doc.addImage(logoDataUrl, 'PNG', PAGE_MARGIN, y - 2, LOGO_SIZE, LOGO_SIZE);
+  }
+
+  doc.setFontSize(22);
+  doc.setFont('helvetica', 'bold');
+  doc.setTextColor(5, 150, 105);
+  doc.text(APP_NAME, titleX, y + 6);
+  y += 12;
+
+  doc.setFontSize(12);
+  doc.setFont('helvetica', 'normal');
+  doc.setTextColor(100, 116, 139);
+  doc.text('Carbon Footprint Report', titleX, y);
+  y += 10;
+
+  doc.setFontSize(9);
+  doc.text(`Generated: ${formatDate(new Date().toISOString())}`, titleX, y);
+
+  return y + 15;
+};
 
 const ensureSpace = (doc, y, requiredHeight) => {
   if (y + requiredHeight > getPageHeight(doc) - PAGE_MARGIN) {
@@ -124,23 +179,8 @@ export const generatePdfReport = async ({
   charts = [],
 }) => {
   const doc = new jsPDF();
-  let y = PAGE_MARGIN;
-
-  doc.setFontSize(22);
-  doc.setFont('helvetica', 'bold');
-  doc.setTextColor(5, 150, 105);
-  doc.text(APP_NAME, PAGE_MARGIN, y);
-  y += 12;
-
-  doc.setFontSize(12);
-  doc.setFont('helvetica', 'normal');
-  doc.setTextColor(100, 116, 139);
-  doc.text('Carbon Footprint Report', PAGE_MARGIN, y);
-  y += 10;
-
-  doc.setFontSize(9);
-  doc.text(`Generated: ${formatDate(new Date().toISOString())}`, PAGE_MARGIN, y);
-  y += 15;
+  const logoDataUrl = await loadLogoForPdf();
+  let y = addPdfHeader(doc, logoDataUrl);
 
   if (calculation) {
     y = addSectionTitle(doc, 'Carbon Footprint Summary', y);
