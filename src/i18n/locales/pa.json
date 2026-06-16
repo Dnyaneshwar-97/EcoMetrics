@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "EcoMetrics",
+    "tagline": "ਭਾਰਤ ਲਈ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਜਾਗਰੂਕਤਾ ਪਲੇਟਫਾਰਮ"
+  },
+  "nav": {
+    "home": "ਹੋਮ",
+    "calculator": "ਕੈਲਕੁਲੇਟਰ",
+    "tracker": "ਟ੍ਰੈਕਰ",
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "planner": "ਪਲੈਨਰ",
+    "openMenu": "ਮੀਨੂ ਖੋਲ੍ਹੋ",
+    "closeMenu": "ਮੀਨੂ ਬੰਦ ਕਰੋ",
+    "selectLanguage": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "badges": "ਬੈਜ"
+  },
+  "theme": {
+    "light": "ਲਾਈਟ ਮੋਡ ਵਿੱਚ ਬਦਲੋ",
+    "dark": "ਡਾਰਕ ਮੋਡ ਵਿੱਚ ਬਦਲੋ"
+  },
+  "hero": {
+    "badge": "ਭਾਰਤ ਲਈ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਜਾਗਰੂਕਤਾ",
+    "title": "ਆਪਣਾ ਸਮਝੋ",
+    "titleHighlight": "ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ",
+    "subtitle": "ਭਾਰਤ-ਵਿਸ਼ੇਸ਼ ਡੇਟਾ ਨਾਲ ਆਪਣੇ ਵਾਤਾਵਰਣੀ ਪ੍ਰਭਾਵ ਦੀ ਗਣਨਾ, ਟ੍ਰੈਕਿੰਗ ਅਤੇ ਕਮੀ ਕਰੋ। ਟਿਕਾਊ ਭਵਿੱਖ ਵੱਲ ਦੇ ਅੰਦੋਲਨ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।",
+    "ctaCalculate": "ਮੇਰਾ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਕਰੋ",
+    "ctaReduce": "ਅੱਜ ਹੀ ਕਮੀ ਸ਼ੁਰੂ ਕਰੋ",
+    "imageAlt": "ਜੰਗਲ ਦਾ ਹਵਾਈ ਦ੍ਰਿਸ਼ ਜਿਸ ਵਿੱਚ ਪੈਰਾਂ ਦੇ ਆਕਾਰ ਦੀ ਖਾਲੀ ਜਗ੍ਹਾ ਹੈ, ਕੁਦਰਤ ਉੱਤੇ ਮਨੁੱਖੀ ਪ੍ਰਭਾਵ ਦਾ ਪ੍ਰਤੀਕ"
+  },
+  "education": {
+    "title": "ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਕੀ ਹੈ?",
+    "description": "ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਸਾਡੀਆਂ ਕਾਰਵਾਈਆਂ ਤੋਂ ਪੈਦਾ ਹੋਣ ਵਾਲੀਆਂ ਗ੍ਰੀਨਹਾਊਸ ਗੈਸਾਂ (ਕਾਰਬਨ ਡਾਈਆਕਸਾਈਡ ਅਤੇ ਮੀਥੇਨ ਸਮੇਤ) ਦੀ ਕੁੱਲ ਮਾਤਰਾ ਹੈ। ਇਸਨੂੰ ਸਾਲਾਨਾ CO₂ ਬਰਾਬਰ ਟਨਾਂ ਵਿੱਚ ਮਾਪਿਆ ਜਾਂਦਾ ਹੈ।",
+    "whyItMatters": "ਭਾਰਤ ਵਿਸ਼ਵ ਵਿੱਚ ਤੀਜਾ ਸਭ ਤੋਂ ਵੱਡਾ ਉਤਸਰਜਕ ਹੈ। ਆਪਣੇ ਫੁੱਟਪ੍ਰਿੰਟ ਨੂੰ ਸਮਝਣਾ ਮੌਸਮੀ ਬਦਲਾਅ ਨਾਲ ਲੜਨ, ਜੈਵ ਵਿਵਿਧਤਾ ਦੀ ਰੱਖਿਆ ਕਰਨ ਅਤੇ ਆਉਣ ਵਾਲੀਆਂ ਪੀੜ੍ਹੀਆਂ ਲਈ ਟਿਕਾਊ ਭਵਿੱਖ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
+    "sourcesTitle": "ਉਤਸਰਜਨ ਦੇ ਸਰੋਤ"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "ਆਵਾਜਾਈ",
+      "description": "ਕਾਰਾਂ, ਬੱਸਾਂ, ਰੇਲਗੱਡੀਆਂ ਅਤੇ ਉਡਾਣਾਂ ਨਿੱਜੀ ਉਤਸਰਜਨ ਵਿੱਚ ਮਹੱਤਵਪੂਰਨ ਯੋਗਦਾਨ ਪਾਉਂਦੀਆਂ ਹਨ।"
+    },
+    "electricity": {
+      "title": "ਬਿਜਲੀ ਦੀ ਖਪਤ",
+      "description": "ਕੋਲੇ ਅਤੇ ਗੈਸ ਤੋਂ ਬਿਜਲੀ ਉਤਪਾਦਨ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ CO₂ ਛੱਡਦਾ ਹੈ।"
+    },
+    "food": {
+      "title": "ਭੋਜਨ ਉਤਪਾਦਨ",
+      "description": "ਖੇਤੀਬਾੜੀ, ਖਾਸ ਕਰਕੇ ਮਾਸ ਉਤਪਾਦਨ, ਭਾਰੀ ਗ੍ਰੀਨਹਾਊਸ ਗੈਸਾਂ ਪੈਦਾ ਕਰਦਾ ਹੈ।"
+    },
+    "waste": {
+      "title": "ਕੂੜਾ ਉਤਪਾਦਨ",
+      "description": "ਕੂੜਾਘਰ ਮੀਥੇਨ ਪੈਦਾ ਕਰਦੇ ਹਨ, ਜੋ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਗ੍ਰੀਨਹਾਊਸ ਗੈਸ ਹੈ।"
+    }
+  },
+  "impact": {
+    "title": "ਵਾਤਾਵਰਣੀ ਪ੍ਰਭਾਵ",
+    "subtitle": "ਕਾਰਬਨ ਉਤਸਰਜਨ ਸਾਡੇ ਗ੍ਰਹਿ ਨੂੰ ਕਈ ਤਰੀਕਿਆਂ ਨਾਲ ਪ੍ਰਭਾਵਿਤ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਪ੍ਰਭਾਵਾਂ ਨੂੰ ਸਮਝਣਾ ਬਦਲਾਅ ਲਈ ਪ੍ਰੇਰਣਾ ਦਿੰਦਾ ਹੈ।",
+    "calculatedTitle": "ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਦੀ ਗਣਨਾ ਕਿਵੇਂ ਹੁੰਦੀ ਹੈ",
+    "calculatedSubtitle": "ਅਸੀਂ ਤੁਹਾਡੇ ਨਿੱਜੀ ਉਤਸਰਜਨ ਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਲਈ ਪੰਜ ਮੁੱਖ ਜੀਵਨਸ਼ੈਲੀ ਸ਼੍ਰੇਣੀਆਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੇ ਹਾਂ।",
+    "tipsTitle": "ਕਮੀ ਦੇ ਸੁਝਾਅ",
+    "tipsSubtitle": "ਰੋਜ਼ਾਨਾ ਆਦਤਾਂ ਵਿੱਚ ਛੋਟੇ ਬਦਲਾਅ ਮਹੱਤਵਪੂਰਨ ਫਰਕ ਲਾ ਸਕਦੇ ਹਨ।"
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "ਗਲੋਬਲ ਵਾਰਮਿੰਗ",
+      "description": "ਤਾਪਮਾਨ ਵਧਣ ਨਾਲ ਵਿਸ਼ਵ ਭਰ ਵਿੱਚ ਪਾਰਿਸਥਿਤਿਕੀ ਤੰਤਰ ਅਤੇ ਮੌਸਮ ਦੇ ਪੈਟਰਨ ਪ੍ਰਭਾਵਿਤ ਹੁੰਦੇ ਹਨ।"
+    },
+    "climateChange": {
+      "title": "ਮੌਸਮੀ ਬਦਲਾਅ",
+      "description": "ਤਾਪਮਾਨ ਅਤੇ ਮੌਸਮ ਦੇ ਪੈਟਰਨ ਵਿੱਚ ਲੰਬੇ ਸਮੇਂ ਦੇ ਬਦਲਾਅ ਜੀਵਨ-ਯਾਪਨ ਨੂੰ ਖਤਰੇ ਵਿੱਚ ਪਾਉਂਦੇ ਹਨ।"
+    },
+    "deforestation": {
+      "title": "ਜੰਗਲ ਕਟਾਈ",
+      "description": "ਖੇਤੀਬਾੜੀ ਲਈ ਜੰਗਲ ਕੱਟੇ ਜਾਂਦੇ ਹਨ, CO₂ ਸੋਖਣ ਸਮਰੱਥਾ ਘਟਦੀ ਹੈ।"
+    },
+    "airPollution": {
+      "title": "ਹਵਾ ਪ੍ਰਦੂਸ਼ਣ",
+      "description": "ਜੀਵਾਸ਼ਮ ਇੰਧਨ ਸਾੜਨ ਨਾਲ ਸਿਹਤ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਨ ਵਾਲੇ ਹਾਨੀਕਾਰਕ ਪ੍ਰਦੂਸ਼ਕ ਛੱਡੇ ਜਾਂਦੇ ਹਨ।"
+    },
+    "biodiversity": {
+      "title": "ਜੈਵ ਵਿਵਿਧਤਾ ਨੁਕਸਾਨ",
+      "description": "ਮੌਸਮੀ ਬਦਲਾਅ ਨਾਲ ਰਹਿਣ ਸਥਾਨ ਨਸ਼ਟ ਹੋਣ ਨਾਲ ਪ੍ਰਜਾਤੀ ਵਿਲੁਪਤੀ ਤੇਜ਼ ਹੁੰਦੀ ਹੈ।"
+    },
+    "extremeWeather": {
+      "title": "ਅਤਿਅੰਤ ਮੌਸਮੀ ਘਟਨਾਵਾਂ",
+      "description": "ਵਧੇਰੇ ਬਾਰਿਸ਼, ਸੂਕੇ ਅਤੇ ਤੂਫਾਨ ਸਮੁਦਾਇਆਂ ਨੂੰ ਖਤਰੇ ਵਿੱਚ ਪਾਉਂਦੇ ਹਨ।"
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "ਘਰੇਲੂ ਬਿਜਲੀ",
+      "unit": "kWh/ਮਹੀਨਾ"
+    },
+    "transportation": {
+      "title": "ਆਵਾਜਾਈ",
+      "unit": "km/ਮਹੀਨਾ"
+    },
+    "flights": {
+      "title": "ਉਡਾਣਾਂ",
+      "unit": "ਉਡਾਣਾਂ/ਸਾਲ"
+    },
+    "food": {
+      "title": "ਭੋਜਨ ਆਦਤਾਂ",
+      "unit": "ਖੁਰਾਕ ਕਿਸਮ"
+    },
+    "waste": {
+      "title": "ਕੂੜਾ ਉਤਪਾਦਨ",
+      "unit": "kg/ਹਫ਼ਤਾ"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "ਜਨਤਕ ਆਵਾਜਾਈ ਵਰਤੋ",
+      "description": "ਰੋਜ਼ਾਨਾ ਆਵਾਜਾਈ ਲਈ ਬੱਸਾਂ ਜਾਂ ਮੈਟਰੋ ਵੱਲ ਬਦਲੋ ਅਤੇ ਉਤਸਰਜਨ ਨੂੰ ਕਾਫ਼ੀ ਘਟਾਓ।"
+    },
+    "ledLights": {
+      "title": "LED ਲਾਈਟਾਂ ਵੱਲ ਬਦਲੋ",
+      "description": "LED ਬਲਬ ਇਨਕੈਂਡੇਸੈਂਟ ਬਲਬਾਂ ਨਾਲੋਂ 75% ਤੱਕ ਘੱਟ ਊਰਜਾ ਵਰਤਦੇ ਹਨ।"
+    },
+    "solarPanels": {
+      "title": "ਸੋਲਰ ਪੈਨਲ ਲਗਾਓ",
+      "description": "ਸਾਫ਼ ਊਰਜਾ ਪੈਦਾ ਕਰੋ ਅਤੇ ਗ੍ਰਿਡ ਬਿਜਲੀ ਉੱਤੇ ਨਿਰਭਰਤਾ ਘਟਾਓ।"
+    },
+    "reduceFoodWaste": {
+      "title": "ਭੋਜਨ ਬਰਬਾਦੀ ਘਟਾਓ",
+      "description": "ਭੋਜਨ ਦੀ ਯੋਜਨਾ ਬਣਾਓ ਅਤੇ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਸਟੋਰ ਕਰੋ ਤਾਂ ਜੋ ਬਰਬਾਦੀ ਘੱਟ ਹੋਵੇ।"
+    },
+    "recycle": {
+      "title": "ਰੀਸਾਈਕਲ",
+      "description": "ਕਾਗਜ਼, ਪਲਾਸਟਿਕ ਅਤੇ ਧਾਤੂ ਕੂੜੇ ਨੂੰ ਵੱਖ ਕਰਕੇ ਰੀਸਾਈਕਲ ਕਰੋ।"
+    },
+    "plantTrees": {
+      "title": "ਰੁੱਖ ਲਗਾਓ",
+      "description": "ਰੁੱਖ CO₂ ਸੋਖਦੇ ਹਨ ਅਤੇ ਤੁਹਾਡੇ ਸਮੁਦਾਇ ਵਿੱਚ ਹਵਾ ਦੀ ਗੁਣਵੱਤਾ ਸੁਧਾਰਦੇ ਹਨ।"
+    }
+  },
+  "stats": {
+    "sectionTitle": "ਟਿਕਾਊਪਨ ਅੰਕੜੇ",
+    "sectionSubtitle": "ਭਾਰਤ ਅਤੇ ਵਿਸ਼ਵ ਵਿੱਚ ਕਾਰਬਨ ਉਤਸਰਜਨ ਬਾਰੇ ਮੁੱਖ ਤੱਥ।",
+    "indianAverage": {
+      "label": "ਔਸਤ ਭਾਰਤੀ ਸਾਲਾਨਾ ਫੁੱਟਪ੍ਰਿੰਟ",
+      "unit": "ਟਨ CO₂/ਸਾਲ"
+    },
+    "globalEmissions": {
+      "label": "ਵਿਸ਼ਵ ਸਾਲਾਨਾ ਉਤਸਰਜਨ",
+      "unit": "ਬਿਲੀਅਨ ਟਨ CO₂"
+    },
+    "treesRequired": {
+      "label": "1 ਟਨ CO₂ ਸੋਖਣ ਲਈ ਲੋੜੀਂਦੇ ਰੁੱਖ",
+      "unit": "ਰੁੱਖ/ਸਾਲ"
+    },
+    "topContributor": {
+      "label": "ਮੁੱਖ ਉਤਸਰਜਨ ਯੋਗਦਾਨਕਾਰ",
+      "unit": "ਉਤਸਰਜਨ ਦਾ 73%",
+      "value": "ਊਰਜਾ"
+    }
+  },
+  "tipsCarousel": {
+    "title": "ਤੇਜ਼ ਟਿਕਾਊਪਨ ਸੁਝਾਅ",
+    "previous": "ਪਿਛਲਾ ਸੁਝਾਅ",
+    "next": "ਅਗਲਾ ਸੁਝਾਅ",
+    "items": [
+      "ਵਰਤੋਂ ਨਾ ਕਰਨ ਵੇਲੇ ਉਪਕਰਣ ਬੰਦ ਕਰੋ।",
+      "ਛੋਟੀ ਦੂਰੀ ਲਈ ਗੱਡੀ ਚਲਾਉਣ ਦੀ ਬਜਾਏ ਪੈਦਲ ਚਲੋ।",
+      "ਖਰੀਦਦਾਰੀ ਵੇਲੇ ਦੁਬਾਰਾ ਵਰਤਣ ਯੋਗ ਥੈਲੇ ਵਰਤੋ।",
+      "ਭੋਜਨ ਦੀ ਯੋਜਨਾ ਬਣਾ ਕੇ ਭੋਜਨ ਬਰਬਾਦੀ ਘਟਾਓ।",
+      "ਊਰਜਾ ਬਚਾਉਣ ਲਈ LED ਬਲਬ ਵੱਲ ਬਦਲੋ।",
+      "ਜਦੋਂ ਵੀ ਸੰਭਵ ਹੋਵੇ ਜਨਤਕ ਆਵਾਜਾਈ ਵਰਤੋ।",
+      "ਵਰਤੋਂ ਨਾ ਕਰਨ ਵੇਲੇ ਚਾਰਜਰ ਅਨਪਲੱਗ ਕਰੋ।",
+      "ਸਥਾਨਕ ਅਤੇ ਮੌਸਮੀ ਉਤਪਾਦ ਖਰੀਦੋ।",
+      "ਪਾਣੀ ਅਤੇ ਊਰਜਾ ਬਚਾਉਣ ਲਈ ਲੀਕਾਂ ਠੀਕ ਕਰੋ।",
+      "ਘਰ ਵਿੱਚ ਜੈਵਿਕ ਕੂੜੇ ਨੂੰ ਕੰਪੋਸਟ ਕਰੋ।",
+      "ਦੁਬਾਰਾ ਭਰਨ ਯੋਗ ਪਾਣੀ ਦੀ ਬੋਤਲ ਵਰਤੋ।",
+      "ਡ੍ਰਾਇਰ ਦੀ ਬਜਾਏ ਕੱਪੜੇ ਹਵਾ ਵਿੱਚ ਸੁਕਾਓ।"
+    ]
+  },
+  "calculator": {
+    "title": "ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਕੈਲਕੁਲੇਟਰ",
+    "subtitle": "ਆਪਣਾ ਭਾਰਤ-ਵਿਸ਼ੇਸ਼ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਕਰਨ ਲਈ ਆਪਣੇ ਜੀਵਨਸ਼ੈਲੀ ਵੇਰਵੇ ਦਾਖਲ ਕਰੋ।",
+    "yourDetails": "ਤੁਹਾਡੇ ਵੇਰਵੇ",
+    "electricityLabel": "ਮਾਸਿਕ ਬਿਜਲੀ ਖਪਤ (kWh)",
+    "vehicleLabel": "ਵਾਹਨ ਕਿਸਮ",
+    "distanceLabel": "ਮਾਸਿਕ ਯਾਤਰਾ ਦੂਰੀ (km)",
+    "domesticFlights": "ਘਰੇਲੂ ਉਡਾਣਾਂ/ਸਾਲ",
+    "internationalFlights": "ਅੰਤਰਰਾਸ਼ਟਰੀ ਉਡਾਣਾਂ/ਸਾਲ",
+    "foodLabel": "ਭੋਜਨ ਆਦਤਾਂ",
+    "wasteLabel": "ਹਫ਼ਤੇਵਾਰ ਕੂੜਾ (kg)",
+    "householdLabel": "ਘਰੇਲੂ ਆਕਾਰ (ਮੈਂਬਰ)",
+    "yourFootprint": "ਤੁਹਾਡਾ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ",
+    "monthly": "ਮਾਸਿਕ",
+    "annual": "ਸਾਲਾਨਾ",
+    "save": "ਗਣਨਾ ਸੰਭਾਲੋ",
+    "saved": "ਸਫਲਤਾਪੂਰਵਕ ਸੰਭਾਲਿਆ!",
+    "environmentalImpact": "ਵਾਤਾਵਰਣੀ ਪ੍ਰਭਾਵ",
+    "treesOffset": "ਤੁਹਾਡੇ ਉਤਸਰਜਨ ਨੂੰ ਸੰਤੁਲਿਤ ਕਰਨ ਲਈ ਸਾਲਾਨਾ {{count}} ਰੁੱਖਾਂ ਦੀ ਲੋੜ ਹੈ।",
+    "recommendationsTitle": "ਸਮਾਰਟ ਸਿਫ਼ਾਰਸ਼ਾਂ",
+    "vehicles": {
+      "petrol_car": "ਪੈਟਰੋਲ ਕਾਰ",
+      "diesel_car": "ਡੀਜ਼ਲ ਕਾਰ",
+      "electric_vehicle": "ਇਲੈਕਟ੍ਰਿਕ ਵਾਹਨ",
+      "motorcycle": "ਮੋਟਰਸਾਈਕਲ",
+      "public_transport": "ਜਨਤਕ ਆਵਾਜਾਈ"
+    },
+    "foodTypes": {
+      "vegan": "ਵੀਗਨ",
+      "vegetarian": "ਸ਼ਾਕਾਹਾਰੀ",
+      "mixed": "ਮਿਸ਼ਰ ਖੁਰਾਕ",
+      "high_meat": "ਵੱਧ ਮਾਸ ਖਪਤ"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "ਲੋੜੀਂਦੇ ਰੁੱਖ",
+    "kmDriven": "ਚਲਾਏ ਗਏ km",
+    "coalBurned": "ਸੜਿਆ ਕੋਲਾ",
+    "phoneCharges": "ਫੋਨ ਚਾਰਜ",
+    "electricity": "ਬਿਜਲੀ",
+    "treesUnit": "ਰੁੱਖ/ਸਾਲ",
+    "kmUnit": "km ਬਰਾਬਰ",
+    "coalUnit": "kg ਕੋਲਾ",
+    "chargesUnit": "ਚਾਰਜ",
+    "kwhUnit": "kWh ਬਰਾਬਰ"
+  },
+  "tracker": {
+    "title": "ਕਾਰਬਨ ਟ੍ਰੈਕਰ",
+    "subtitle": "ਆਪਣੀਆਂ ਸੰਭਾਲੀਆਂ ਗਣਨਾਵਾਂ ਟ੍ਰੈਕ ਕਰੋ ਅਤੇ ਸਮੇਂ ਦੇ ਨਾਲ ਸੁਧਾਰ ਦੀ ਨਿਗਰਾਨੀ ਕਰੋ।",
+    "newCalculation": "ਨਵੀਂ ਗਣਨਾ",
+    "periods": {
+      "daily": "ਰੋਜ਼ਾਨਾ",
+      "weekly": "ਹਫ਼ਤਾਵਾਰ",
+      "monthly": "ਮਾਸਿਕ",
+      "yearly": "ਸਾਲਾਨਾ"
+    },
+    "footprint": "ਫੁੱਟਪ੍ਰਿੰਟ",
+    "recorded": "ਰਿਕਾਰਡ ਕੀਤਾ",
+    "emptyTitle": "ਅਜੇ ਕੋਈ ਗਣਨਾ ਨਹੀਂ",
+    "emptyPeriodTitle": "ਇਸ ਮਿਆਦ ਵਿੱਚ ਕੋਈ ਗਣਨਾ ਨਹੀਂ",
+    "emptyDesc": "ਆਪਣੀ ਤਰੱਕੀ ਟ੍ਰੈਕ ਕਰਨ ਲਈ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਕਰਕੇ ਸ਼ੁਰੂ ਕਰੋ।",
+    "emptyPeriodDesc": "ਚੁਣੀ ਗਈ {{period}} ਦ੍ਰਿਸ਼ ਨਾਲ ਕੋਈ ਸੰਭਾਲੀ ਗਣਨਾ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਹੋਰ ਮਿਆਦ ਅਜ਼ਮਾਓ ਜਾਂ ਨਵੀਂ ਗਣਨਾ ਸ਼ਾਮਲ ਕਰੋ।",
+    "calculateNow": "ਹੁਣੇ ਗਣਨਾ ਕਰੋ",
+    "delete": "ਗਣਨਾ ਮਿਟਾਓ"
+  },
+  "dashboard": {
+    "title": "ਵਿਸ਼ਲੇਸ਼ਣ ਡੈਸ਼ਬੋਰਡ",
+    "subtitle": "ਆਪਣੇ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਰੁਝਾਨਾਂ ਅਤੇ ਤਰੱਕੀ ਨੂੰ ਦ੍ਰਿਸ਼ਟੀਕਰਨ ਕਰੋ।",
+    "export": "PDF ਰਿਪੋਰਟ ਐਕਸਪੋਰਟ ਕਰੋ",
+    "exporting": "ਐਕਸਪੋਰਟ ਹੋ ਰਿਹਾ ਹੈ...",
+    "noDataTitle": "ਕੋਈ ਡੇਟਾ ਉਪਲਬਧ ਨਹੀਂ",
+    "noDataDesc": "ਆਪਣਾ ਵਿਸ਼ਲੇਸ਼ਣ ਡੈਸ਼ਬੋਰਡ ਦੇਖਣ ਲਈ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਪੂਰੀ ਕਰੋ।",
+    "goToCalculator": "ਕੈਲਕੁਲੇਟਰ ਤੇ ਜਾਓ",
+    "charts": {
+      "monthlyTrend": "ਮਾਸਿਕ ਫੁੱਟਪ੍ਰਿੰਟ ਰੁਝਾਨ",
+      "categoryPie": "ਸ਼੍ਰੇਣੀ ਯੋਗਦਾਨ",
+      "annualProgress": "ਸਾਲਾਨਾ ਤਰੱਕੀ (kg CO₂/ਸਾਲ)",
+      "reductionTrend": "ਕਮੀ ਰੁਝਾਨ (%)",
+      "scoreHistory": "ਕਾਰਬਨ ਸਕੋਰ ਇਤਿਹਾਸ"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "ਕਾਰਬਨ ਕਮੀ ਪਲੈਨਰ",
+    "subtitle": "ਟੀਚਾ ਨਿਰਧਾਰਤ ਕਰੋ ਅਤੇ ਆਪਣੇ ਫੁੱਟਪ੍ਰਿੰਟ ਨੂੰ ਘਟਾਉਣ ਲਈ ਵਿਅਕਤੀਗਤ ਹਫ਼ਤਾਵਾਰ ਯੋਜਨਾ ਪ੍ਰਾਪਤ ਕਰੋ।",
+    "selectTarget": "ਆਪਣਾ ਟੀਚਾ ਕਮੀ ਚੁਣੋ",
+    "basedOn": "ਤੁਹਾਡੇ {{footprint}} ਸਾਲਾਨਾ ਫੁੱਟਪ੍ਰਿੰਟ ਦੇ ਆਧਾਰ ਤੇ",
+    "targetReduction": "ਟੀਚਾ ਕਮੀ",
+    "expectedReduction": "ਅਪੇਖਿਤ ਕਮੀ",
+    "treesSaved": "ਬਚਾਏ ਗਏ ਰੁੱਖ",
+    "progress": "ਤਰੱਕੀ",
+    "tasks": "ਕਾਰਜ",
+    "achievedReduction": "ਹਾਸਲ ਕੀਤੀ ਕਮੀ: {{amount}} ({{percent}}%)",
+    "week": "ਹਫ਼ਤਾ {{n}}",
+    "createNew": "ਨਵੀਂ ਯੋਜਨਾ ਬਣਾਓ",
+    "calculateFirstTitle": "ਪਹਿਲਾਂ ਗਣਨਾ ਕਰੋ",
+    "calculateFirstDesc": "ਕਮੀ ਯੋਜਨਾ ਬਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਪੂਰੀ ਕਰੋ।",
+    "customTarget": "ਕਸਟਮ ਟੀਚਾ",
+    "customTargetLabel": "ਟੀਚਾ ਕਮੀ (%)",
+    "customPlaceholder": "ਉਦਾ., 25",
+    "generatePlan": "ਯੋਜਨਾ ਬਣਾਓ",
+    "custom": "ਕਸਟਮ"
+  },
+  "categories": {
+    "electricity": "ਬਿਜਲੀ",
+    "transportation": "ਆਵਾਜਾਈ",
+    "flights": "ਉਡਾਣਾਂ",
+    "food": "ਭੋਜਨ",
+    "waste": "ਕੂੜਾ"
+  },
+  "scores": {
+    "Excellent": "ਸ਼ਾਨਦਾਰ",
+    "Good": "ਚੰਗਾ",
+    "Moderate": "ਮੱਧਮ",
+    "High": "ਉੱਚ",
+    "Critical": "ਗੰਭੀਰ"
+  },
+  "badges": {
+    "earned": "ਹਾਸਲ ਕੀਤਾ",
+    "locked": "ਲਾਕ ਕੀਤਾ",
+    "greenStarter": {
+      "name": "ਹਰਾ ਸ਼ੁਰੂਆਤੀ",
+      "description": "ਆਪਣੀ ਪਹਿਲੀ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਗਣਨਾ ਪੂਰੀ ਕਰੋ।"
+    },
+    "ecoLearner": {
+      "name": "ਈਕੋ ਸਿੱਖਣਹਾਰ",
+      "description": "60 ਜਾਂ ਉਸ ਤੋਂ ਵੱਧ ਕਾਰਬਨ ਸਕੋਰ ਹਾਸਲ ਕਰੋ।"
+    },
+    "ecoWarrior": {
+      "name": "ਈਕੋ ਯੋਧਾ",
+      "description": "ਆਪਣੇ ਘਟਾਅ ਪਲੈਨਰ ਦੇ 50% ਕਾਰਜ ਪੂਰੇ ਕਰੋ।"
+    },
+    "climateChampion": {
+      "name": "ਜਲਵਾਯੂ ਚੈਂਪੀਅਨ",
+      "description": "ਪਹਿਲੀ ਗਣਨਾ ਨਾਲੋਂ ਆਪਣਾ ਫੁੱਟਪ੍ਰਿੰਟ 10% ਘਟਾਓ।"
+    },
+    "earthGuardian": {
+      "name": "ਧਰਤੀ ਰੱਖਿਅਕ",
+      "description": "ਸ਼ਾਨਦਾਰ ਸਕੋਰ ਹਾਸਲ ਕਰੋ ਅਤੇ ਸਾਰੇ ਪਲੈਨਰ ਕਾਰਜ ਪੂਰੇ ਕਰੋ।"
+    }
+  },
+  "footer": {
+    "quickLinks": "ਤੇਜ਼ ਲਿੰਕ",
+    "missionTitle": "ਸਾਡਾ ਮਿਸ਼ਨ",
+    "mission": "ਟਿਕਾਊ ਭਵਿੱਖ ਲਈ ਭਾਰਤੀਆਂ ਨੂੰ ਆਪਣੇ ਕਾਰਬਨ ਫੁੱਟਪ੍ਰਿੰਟ ਨੂੰ ਸਮਝਣ, ਟ੍ਰੈਕ ਕਰਨ ਅਤੇ ਘਟਾਉਣ ਲਈ ਸਸ਼ਕਤ ਬਣਾਉਣਾ।",
+    "copyright": "ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।",
+    "madeWith": "ਧਰਤੀ ਲਈ ਪਿਆਰ ਨਾਲ ਬਣਾਇਆ ਗਿਆ"
+  },
+  "common": {
+    "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
+    "save": "ਸੰਭਾਲੋ",
+    "close": "ਮੋਡਲ ਬੰਦ ਕਰੋ",
+    "co2": "kg CO₂",
+    "co2Tonnes": "ਟਨ CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

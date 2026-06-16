@@ -10,10 +10,15 @@ A production-quality, fully client-side carbon footprint awareness platform buil
 - **Carbon Tracker** - Save and track calculations over time
 - **Analytics Dashboard** - Charts for trends, categories, and progress
 - **Reduction Planner** - Weekly personalized action plans
-- **Badge System** - Gamified sustainability achievements
+- **Badge System** - Gamified sustainability journey with animated milestone roadmap
 - **PDF Export** - Download comprehensive reports
 - **Dark Mode** - Full theme support
 - **Responsive Design** - Mobile-first layout
+- **Multi-language** - 13 Indian languages (English, Hindi, Marathi, Gujarati, Bengali, Tamil, Telugu, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu)
+
+## Languages
+
+Use the language selector in the navbar to switch UI text. Preference is saved in `localStorage` (`ecometrics_language`). Locale files live in `src/i18n/locales/`. Script-specific fonts (Noto family) load from Google Fonts for proper rendering of Devanagari, Gujarati, Bengali, Tamil, and other scripts.
 
 ## Tech Stack
 

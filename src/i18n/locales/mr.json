@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "EcoMetrics",
+    "tagline": "भारतासाठी कार्बन फुटप्रिंट जागरूकता व्यासपीठ"
+  },
+  "nav": {
+    "home": "मुख्यपृष्ठ",
+    "calculator": "कॅल्क्युलेटर",
+    "tracker": "ट्रॅकर",
+    "dashboard": "डॅशबोर्ड",
+    "planner": "नियोजक",
+    "openMenu": "मेनू उघडा",
+    "closeMenu": "मेनू बंद करा",
+    "selectLanguage": "भाषा निवडा",
+    "badges": "बॅज"
+  },
+  "theme": {
+    "light": "लाइट मोडवर स्विच करा",
+    "dark": "डार्क मोडवर स्विच करा"
+  },
+  "hero": {
+    "badge": "भारतासाठी कार्बन फुटप्रिंट जागरूकता",
+    "title": "तुमचा समजून घ्या",
+    "titleHighlight": "कार्बन फुटप्रिंट",
+    "subtitle": "भारत-विशिष्ट डेटासह तुमच्या पर्यावरणीय प्रभावाची गणना, ट्रॅकिंग आणि कमी करा. शाश्वत भविष्याकडे वाटचाल करण्याच्या चळवळीत सामील व्हा.",
+    "ctaCalculate": "माझा कार्बन फुटप्रिंट मोजा",
+    "ctaReduce": "आजच कमी करणे सुरू करा",
+    "imageAlt": "जंगलाचे हवाई दृश्य ज्यात पायांच्या आकाराची रिकामी जागा आहे, निसर्गावरील मानवी प्रभावाचे प्रतीक"
+  },
+  "education": {
+    "title": "कार्बन फुटप्रिंट म्हणजे काय?",
+    "description": "कार्बन फुटप्रिंट म्हणजे आपल्या कृतींमुळे निर्माण होणाऱ्या ग्रीनहाऊस वायूंची (कार्बन डायऑक्साइड आणि मिथेनसह) एकूण मात्रा. हे दरवर्षी CO₂ समतुल्य टनमध्ये मोजले जाते.",
+    "whyItMatters": "भारत जगातील तिसऱ्या क्रमांकाचा सर्वात मोठा उत्सर्जक आहे. तुमचा फुटप्रिंट समजून घेणे हवामान बदलाशी लढणे, जैवविविधतेचे संरक्षण आणि पुढील पिढ्यांसाठी शाश्वत भविष्य घडवण्यास मदत करते.",
+    "sourcesTitle": "उत्सर्जनाचे स्रोत"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "वाहतूक",
+      "description": "कार, बस, ट्रेन आणि विमान प्रवास वैयक्तिक उत्सर्जनात महत्त्वपूर्ण योगदान देतात."
+    },
+    "electricity": {
+      "title": "वीज वापर",
+      "description": "कोळसा आणि गॅसवरून वीज निर्मितीमुळे मोठ्या प्रमाणात CO₂ निर्माण होते."
+    },
+    "food": {
+      "title": "अन्न उत्पादन",
+      "description": "शेती, विशेषतः मांस उत्पादन, मोठ्या प्रमाणात ग्रीनहाऊस वायू निर्माण करते."
+    },
+    "waste": {
+      "title": "कचरा निर्मिती",
+      "description": "कचरा डांबऱ्यांमधून मिथेन निर्माण होते, जी एक शक्तिशाली ग्रीनहाऊस वायू आहे."
+    }
+  },
+  "impact": {
+    "title": "पर्यावरणीय प्रभाव",
+    "subtitle": "कार्बन उत्सर्जन आपल्या ग्रहावर अनेक प्रकारे परिणाम करते. या प्रभावांची समज परिवर्तनासाठी प्रेरणा देते.",
+    "calculatedTitle": "कार्बन फुटप्रिंटची गणना कशी होते",
+    "calculatedSubtitle": "तुमच्या वैयक्तिक उत्सर्जनाचा अंदाज लावण्यासाठी आम्ही पाच प्रमुख जीवनशैली श्रेणींचे विश्लेषण करतो.",
+    "tipsTitle": "कमी करण्याचे सुझाव",
+    "tipsSubtitle": "दैनंदिन सवयींमध्ये छोटे बदल मोठा फरक करू शकतात."
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "जागतिक उष्णता",
+      "description": "वाढत्या तापमानामुळे जगभरातील परिसंस्था आणि हवामानाचे नमुने प्रभावित होतात."
+    },
+    "climateChange": {
+      "title": "हवामान बदल",
+      "description": "तापमान आणि हवामानाचे दीर्घकालीन बदल उपजीविकेला अडथळा आणतात."
+    },
+    "deforestation": {
+      "title": "वनतोड",
+      "description": "शेतीसाठी जंगले साफ केली जातात, ज्यामुळे CO₂ शोषण क्षमता कमी होते."
+    },
+    "airPollution": {
+      "title": "वायू प्रदूषण",
+      "description": "जीवाश्म इंधन जाळल्याने आरोग्यावर परिणाम करणारे हानिकारक प्रदूषक निर्माण होतात."
+    },
+    "biodiversity": {
+      "title": "जैवविविधता हानी",
+      "description": "हवामान बदलामुळे अधिवास नष्ट होत असताना प्रजातींचा नाश वेगाने होतो."
+    },
+    "extremeWeather": {
+      "title": "अत्यंत हवामान घटना",
+      "description": "वारंवार येणाऱ्या पूर, दुष्काळ आणि चक्रीवादळे समुदायांना धोक्यात टाकतात."
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "घरगुती वीज",
+      "unit": "kWh/महिना"
+    },
+    "transportation": {
+      "title": "वाहतूक",
+      "unit": "km/महिना"
+    },
+    "flights": {
+      "title": "विमान प्रवास",
+      "unit": "विमान/वर्ष"
+    },
+    "food": {
+      "title": "अन्न सवयी",
+      "unit": "आहार प्रकार"
+    },
+    "waste": {
+      "title": "कचरा निर्मिती",
+      "unit": "kg/आठवडा"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "सार्वजनिक वाहतूक वापरा",
+      "description": "दैनंदिन प्रवासासाठी बस किंवा मेट्रो वापरून उत्सर्जन लक्षणीयरीत्या कमी करा."
+    },
+    "ledLights": {
+      "title": "LED दिवे वापरा",
+      "description": "LED बल्ब इनकॅन्डेसंट बल्बपेक्षा 75% पर्यंत कमी ऊर्जा वापरतात."
+    },
+    "solarPanels": {
+      "title": "सौर पॅनेल बसवा",
+      "description": "स्वच्छ ऊर्जा निर्माण करा आणि ग्रिड वीजवर अवलंबित्व कमी करा."
+    },
+    "reduceFoodWaste": {
+      "title": "अन्न अपशिष्ट कमी करा",
+      "description": "अपशिष्ट कमी करण्यासाठी जेवणाची योजना करा आणि योग्य प्रकारे साठवा."
+    },
+    "recycle": {
+      "title": "पुनर्चक्रण करा",
+      "description": "कागद, प्लास्टिक आणि धातूचा कचरा वेगळा करून पुनर्चक्रण करा."
+    },
+    "plantTrees": {
+      "title": "झाडे लावा",
+      "description": "झाडे CO₂ शोषतात आणि तुमच्या समुदायातील हवेची गुणवत्ता सुधारतात."
+    }
+  },
+  "stats": {
+    "sectionTitle": "शाश्वतता आकडेवारी",
+    "sectionSubtitle": "भारत आणि जगातील कार्बन उत्सर्जनाबद्दलचे महत्त्वाचे तथ्य.",
+    "indianAverage": {
+      "label": "सरासरी भारतीय वार्षिक फुटप्रिंट",
+      "unit": "टन CO₂/वर्ष"
+    },
+    "globalEmissions": {
+      "label": "जागतिक वार्षिक उत्सर्जन",
+      "unit": "अब्ज टन CO₂"
+    },
+    "treesRequired": {
+      "label": "1 टन CO₂ शोषण्यासाठी झाडे",
+      "unit": "झाडे/वर्ष"
+    },
+    "topContributor": {
+      "label": "प्रमुख उत्सर्जन योगदान",
+      "unit": "73% उत्सर्जन",
+      "value": "ऊर्जा"
+    }
+  },
+  "tipsCarousel": {
+    "title": "त्वरित शाश्वतता सुझाव",
+    "previous": "मागील सुझाव",
+    "next": "पुढील सुझाव",
+    "items": [
+      "वापरात नसताना उपकरणे बंद करा.",
+      "लहान अंतरासाठी गाडीऐवजी चाला.",
+      "खरेदी करताना पुन्हा वापरण्यायोग्य पिशे वापरा.",
+      "आधीच जेवणाची योजना करून अन्न अपशिष्ट कमी करा.",
+      "ऊर्जा वाचवण्यासाठी LED बल्ब वापरा.",
+      "शक्य तेव्हा सार्वजनिक वाहतूक वापरा.",
+      "वापरात नसताना चार्जर अनप्लग करा.",
+      "स्थानिक आणि हंगामी उत्पादने खरेदी करा.",
+      "पाणी आणि ऊर्जा वाचवण्यासाठी गळती दुरुस्त करा.",
+      "घरी सेंद्रिय कचऱ्याची खत तयार करा.",
+      "पुन्हा भरण्यायोग्य पाण्याची बाटली वापरा.",
+      "ड्रायरऐवजी कपडे हवेत वाळवा."
+    ]
+  },
+  "calculator": {
+    "title": "कार्बन फुटप्रिंट कॅल्क्युलेटर",
+    "subtitle": "तुमचा भारत-विशिष्ट कार्बन फुटप्रिंट मोजण्यासाठी तुमच्या जीवनशैलीचे तपशील प्रविष्ट करा.",
+    "yourDetails": "तुमचे तपशील",
+    "electricityLabel": "मासिक वीज वापर (kWh)",
+    "vehicleLabel": "वाहन प्रकार",
+    "distanceLabel": "मासिक प्रवास अंतर (km)",
+    "domesticFlights": "देशांतर्गत विमान/वर्ष",
+    "internationalFlights": "आंतरराष्ट्रीय विमान/वर्ष",
+    "foodLabel": "अन्न सवयी",
+    "wasteLabel": "साप्ताहिक कचरा (kg)",
+    "householdLabel": "कुटुंबाचा आकार (सदस्य)",
+    "yourFootprint": "तुमचा कार्बन फुटप्रिंट",
+    "monthly": "मासिक",
+    "annual": "वार्षिक",
+    "save": "गणना जतन करा",
+    "saved": "यशस्वीरित्या जतन केले!",
+    "environmentalImpact": "पर्यावरणीय प्रभाव",
+    "treesOffset": "तुमच्या उत्सर्जनाचे भरणे करण्यासाठी दरवर्षी {{count}} झाडांची गरज आहे.",
+    "recommendationsTitle": "स्मार्ट शिफारसी",
+    "vehicles": {
+      "petrol_car": "पेट्रोल कार",
+      "diesel_car": "डिझेल कार",
+      "electric_vehicle": "इलेक्ट्रिक वाहन",
+      "motorcycle": "मोटारसायकल",
+      "public_transport": "सार्वजनिक वाहतूक"
+    },
+    "foodTypes": {
+      "vegan": "व्हेगन",
+      "vegetarian": "शाकाहारी",
+      "mixed": "मिश्र आहार",
+      "high_meat": "जास्त मांस सेवन"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "आवश्यक झाडे",
+    "kmDriven": "चाललेले km",
+    "coalBurned": "जळलेला कोळसा",
+    "phoneCharges": "फोन चार्ज",
+    "electricity": "वीज",
+    "treesUnit": "झाडे/वर्ष",
+    "kmUnit": "km समतुल्य",
+    "coalUnit": "kg कोळसा",
+    "chargesUnit": "चार्ज",
+    "kwhUnit": "kWh समतुल्य"
+  },
+  "tracker": {
+    "title": "कार्बन ट्रॅकर",
+    "subtitle": "तुमच्या जतन केलेल्या गणनांचे ट्रॅकिंग करा आणि कालांतराने सुधारणा पाहा.",
+    "newCalculation": "नवीन गणना",
+    "periods": {
+      "daily": "दैनिक",
+      "weekly": "साप्ताहिक",
+      "monthly": "मासिक",
+      "yearly": "वार्षिक"
+    },
+    "footprint": "फुटप्रिंट",
+    "recorded": "नोंदवले",
+    "emptyTitle": "अद्याप कोणतीही गणना नाही",
+    "emptyPeriodTitle": "या कालावधीत कोणतीही गणना नाही",
+    "emptyDesc": "तुमची प्रगती ट्रॅक करण्यासाठी प्रथम तुमचा कार्बन फुटप्रिंट मोजा.",
+    "emptyPeriodDesc": "निवडलेल्या {{period}} दृश्याशी कोणतीही जतन केलेली गणना जुळत नाही. दुसरा कालावधी वापरा किंवा नवीन गणना जोडा.",
+    "calculateNow": "आता मोजा",
+    "delete": "गणना हटवा"
+  },
+  "dashboard": {
+    "title": "विश्लेषण डॅशबोर्ड",
+    "subtitle": "तुमच्या कार्बन फुटप्रिंटचे रुझान आणि प्रगती पाहा.",
+    "export": "PDF अहवाल निर्यात करा",
+    "exporting": "निर्यात होत आहे...",
+    "noDataTitle": "डेटा उपलब्ध नाही",
+    "noDataDesc": "तुमचा विश्लेषण डॅशबोर्ड पाहण्यासाठी कार्बन फुटप्रिंट गणना पूर्ण करा.",
+    "goToCalculator": "कॅल्क्युलेटरकडे जा",
+    "charts": {
+      "monthlyTrend": "मासिक फुटप्रिंट रुझान",
+      "categoryPie": "श्रेणी योगदान",
+      "annualProgress": "वार्षिक प्रगती (kg CO₂/वर्ष)",
+      "reductionTrend": "कमी करण्याचे रुझान (%)",
+      "scoreHistory": "कार्बन स्कोअर इतिहास"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "कार्बन कमी करण्याचा नियोजक",
+    "subtitle": "लक्ष्य ठरवा आणि तुमचा फुटप्रिंट कमी करण्यासाठी वैयक्तिकृत साप्ताहिक योजना मिळवा.",
+    "selectTarget": "तुमचे लक्ष्य निवडा",
+    "basedOn": "तुमच्या {{footprint}} वार्षिक फुटप्रिंटवर आधारित",
+    "targetReduction": "लक्ष्य कमी",
+    "expectedReduction": "अपेक्षित कमी",
+    "treesSaved": "वाचलेली झाडे",
+    "progress": "प्रगती",
+    "tasks": "कार्ये",
+    "achievedReduction": "साध्य केलेली कमी: {{amount}} ({{percent}}%)",
+    "week": "आठवडा {{n}}",
+    "createNew": "नवीन योजना तयार करा",
+    "calculateFirstTitle": "प्रथम गणना करा",
+    "calculateFirstDesc": "कमी करण्याची योजना तयार करण्यापूर्वी कार्बन फुटप्रिंट गणना पूर्ण करा.",
+    "customTarget": "सानुकूल लक्ष्य",
+    "customTargetLabel": "लक्ष्य कमी (%)",
+    "customPlaceholder": "उदा., 25",
+    "generatePlan": "योजना तयार करा",
+    "custom": "सानुकूल"
+  },
+  "categories": {
+    "electricity": "वीज",
+    "transportation": "वाहतूक",
+    "flights": "विमान प्रवास",
+    "food": "अन्न",
+    "waste": "कचरा"
+  },
+  "scores": {
+    "Excellent": "उत्कृष्ट",
+    "Good": "चांगले",
+    "Moderate": "मध्यम",
+    "High": "उच्च",
+    "Critical": "गंभीर"
+  },
+  "badges": {
+    "earned": "मिळवले",
+    "locked": "लॉक",
+    "greenStarter": {
+      "name": "ग्रीन स्टार्टर",
+      "description": "तुमची पहिली कार्बन फुटप्रिंट गणना पूर्ण करा."
+    },
+    "ecoLearner": {
+      "name": "इको लर्नर",
+      "description": "60 किंवा त्यापेक्षा जास्त कार्बन स्कोअर मिळवा."
+    },
+    "ecoWarrior": {
+      "name": "इको वॉरियर",
+      "description": "तुमच्या कमी करण्याच्या नियोजकाची 50% कार्ये पूर्ण करा."
+    },
+    "climateChampion": {
+      "name": "हवामान चॅम्पियन",
+      "description": "तुमच्या पहिल्या गणनेपेक्षा तुमचा फुटप्रिंट 10% कमी करा."
+    },
+    "earthGuardian": {
+      "name": "पृथ्वी रक्षक",
+      "description": "उत्कृष्ट स्कोअर मिळवा आणि सर्व नियोजक कार्ये पूर्ण करा."
+    }
+  },
+  "footer": {
+    "quickLinks": "द्रुत दुवे",
+    "missionTitle": "आमचे ध्येय",
+    "mission": "भारतीयांना त्यांचा कार्बन फुटप्रिंट समजून घेणे, ट्रॅक करणे आणि कमी करणे यासाठी सक्षम करणे, शाश्वत भविष्यासाठी.",
+    "copyright": "सर्व हक्क राखीव.",
+    "madeWith": "पृथ्वीसाठी प्रेमाने बनवले"
+  },
+  "common": {
+    "loading": "लोड होत आहे...",
+    "save": "जतन करा",
+    "close": "मोडल बंद करा",
+    "co2": "kg CO₂",
+    "co2Tonnes": "टन CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

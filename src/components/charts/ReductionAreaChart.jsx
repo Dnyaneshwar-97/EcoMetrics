@@ -15,7 +15,7 @@ const ReductionAreaChart = ({ data, dataKey = 'reduction', color = '#059669', ti
   const textColor = isDark ? '#94a3b8' : '#64748b';
 
   return (
-    <div id={exportId} className="glass-card p-6 bg-white dark:bg-slate-800">
+    <div id={exportId} className="glass-card p-6">
       {title && <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">{title}</h3>}
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart data={data} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>

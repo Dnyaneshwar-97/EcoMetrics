@@ -8,15 +8,31 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100;
+    @apply bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
     @apply font-sans antialiased;
   }
 }
 
 @layer components {
+  .page-bg {
+    @apply bg-slate-100 dark:bg-slate-950;
+  }
+
+  .page-section {
+    @apply bg-slate-100 dark:bg-slate-950;
+  }
+
+  .page-section-muted {
+    @apply bg-slate-200/70 dark:bg-slate-900/85;
+  }
+
+  .page-section-elevated {
+    @apply bg-slate-50 dark:bg-slate-900;
+  }
+
   .glass-card {
-    @apply bg-white/70 dark:bg-slate-800/70 backdrop-blur-md;
-    @apply border border-white/20 dark:border-slate-700/50;
+    @apply bg-slate-100/90 dark:bg-slate-800/90 backdrop-blur-md;
+    @apply border border-slate-200/60 dark:border-slate-700/60;
     @apply rounded-2xl shadow-lg;
   }
 
@@ -30,7 +46,7 @@
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3;
-    @apply bg-white dark:bg-slate-800 text-emerald-700 dark:text-emerald-400;
+    @apply bg-slate-100 dark:bg-slate-800 text-emerald-700 dark:text-emerald-400;
     @apply border-2 border-emerald-600 dark:border-emerald-500 font-semibold;
     @apply rounded-xl transition-all duration-200;
     @apply hover:bg-emerald-50 dark:hover:bg-slate-700;
@@ -39,7 +55,7 @@
 
   .input-field {
     @apply w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600;
-    @apply bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100;
+    @apply bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100;
     @apply focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent;
     @apply transition-all duration-200;
   }

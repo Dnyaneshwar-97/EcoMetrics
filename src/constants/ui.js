@@ -12,14 +12,16 @@ export const ROUTES = {
   TRACKER: '/tracker',
   DASHBOARD: '/dashboard',
   PLANNER: '/planner',
+  BADGES: '/badges',
 };
 
 export const NAV_ITEMS = [
-  { path: ROUTES.HOME, label: 'Home' },
-  { path: ROUTES.CALCULATOR, label: 'Calculator' },
-  { path: ROUTES.TRACKER, label: 'Tracker' },
-  { path: ROUTES.DASHBOARD, label: 'Dashboard' },
-  { path: ROUTES.PLANNER, label: 'Planner' },
+  { path: ROUTES.HOME, key: 'home' },
+  { path: ROUTES.CALCULATOR, key: 'calculator' },
+  { path: ROUTES.TRACKER, key: 'tracker' },
+  { path: ROUTES.DASHBOARD, key: 'dashboard' },
+  { path: ROUTES.PLANNER, key: 'planner' },
+  { path: ROUTES.BADGES, key: 'badges' },
 ];
 
 export const CHART_COLORS = {
@@ -63,3 +65,10 @@ export const TIME_PERIODS = {
 
 export const APP_NAME = 'EcoMetrics';
 export const APP_TAGLINE = 'Carbon Footprint Awareness Platform for India';
+
+/** App logo in public/ — bump APP_LOGO_VERSION after replacing the file to bust caches */
+export const APP_LOGO_VERSION = '2';
+export const APP_LOGO = `/leaf.gif?v=${APP_LOGO_VERSION}`;
+
+/** Home hero background — replace file in public/images/ to customize */
+export const HERO_BACKGROUND_IMAGE = '/images/hero-background.jpg';

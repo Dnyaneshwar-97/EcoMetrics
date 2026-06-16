@@ -14,7 +14,6 @@ export const CHART_EXPORT_IDS = {
   ANNUAL_PROGRESS: 'export-chart-annual-progress',
   REDUCTION_TREND: 'export-chart-reduction-trend',
   SCORE_HISTORY: 'export-chart-score-history',
-  BADGES: 'export-chart-badges',
 };
 
 export const DASHBOARD_CHART_EXPORTS = [
@@ -23,7 +22,6 @@ export const DASHBOARD_CHART_EXPORTS = [
   { id: CHART_EXPORT_IDS.ANNUAL_PROGRESS, title: 'Annual Progress (kg CO₂/year)' },
   { id: CHART_EXPORT_IDS.REDUCTION_TREND, title: 'Reduction Trend (%)' },
   { id: CHART_EXPORT_IDS.SCORE_HISTORY, title: 'Carbon Score History' },
-  { id: CHART_EXPORT_IDS.BADGES, title: 'Sustainability Badges' },
 ];
 
 const addSectionTitle = (doc, title, y) => {

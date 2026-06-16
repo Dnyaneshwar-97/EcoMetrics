@@ -6,7 +6,7 @@ const PageWrapper = ({ children, className = '' }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -10 }}
     transition={{ duration: 0.3 }}
-    className={`flex-1 ${className}`}
+    className={`flex-1 page-bg ${className}`}
   >
     {children}
   </motion.main>

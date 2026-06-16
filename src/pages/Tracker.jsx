@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ClipboardList, Plus } from 'lucide-react';
 import PageWrapper from '../components/layout/PageWrapper';
 import TrackerCard from '../components/cards/TrackerCard';
@@ -9,14 +10,15 @@ import { filterByPeriod } from '../utils/formatters';
 import { calculateImprovement, getFootprintForPeriod } from '../utils/calculations';
 import { TIME_PERIODS, ROUTES } from '../constants/ui';
 
-const PERIOD_OPTIONS = [
-  { value: TIME_PERIODS.DAILY, label: 'Daily' },
-  { value: TIME_PERIODS.WEEKLY, label: 'Weekly' },
-  { value: TIME_PERIODS.MONTHLY, label: 'Monthly' },
-  { value: TIME_PERIODS.YEARLY, label: 'Yearly' },
+const PERIOD_VALUES = [
+  TIME_PERIODS.DAILY,
+  TIME_PERIODS.WEEKLY,
+  TIME_PERIODS.MONTHLY,
+  TIME_PERIODS.YEARLY,
 ];
 
 const Tracker = () => {
+  const { t } = useTranslation();
   const { calculations, deleteCalculation, loading } = useCarbonData();
   const [period, setPeriod] = useState(TIME_PERIODS.YEARLY);
 
@@ -38,7 +40,7 @@ const Tracker = () => {
   if (loading) {
     return (
       <PageWrapper className="py-12">
-        <div className="max-w-4xl mx-auto px-4 text-center text-slate-500">Loading...</div>
+        <div className="max-w-4xl mx-auto px-4 text-center text-slate-500">{t('common.loading')}</div>
       </PageWrapper>
     );
   }
@@ -50,32 +52,30 @@ const Tracker = () => {
           <div>
             <h1 className="section-title mb-2 flex items-center gap-3">
               <ClipboardList className="w-8 h-8 text-emerald-600" aria-hidden="true" />
-              Carbon Tracker
+              {t('tracker.title')}
             </h1>
-            <p className="text-slate-600 dark:text-slate-400">
-              Track your saved calculations and monitor improvement over time.
-            </p>
+            <p className="text-slate-600 dark:text-slate-400">{t('tracker.subtitle')}</p>
           </div>
           <Link to={ROUTES.CALCULATOR}>
             <Button>
               <Plus className="w-5 h-5" aria-hidden="true" />
-              New Calculation
+              {t('tracker.newCalculation')}
             </Button>
           </Link>
         </div>
 
         <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-          {PERIOD_OPTIONS.map((opt) => (
+          {PERIOD_VALUES.map((value) => (
             <button
-              key={opt.value}
-              onClick={() => setPeriod(opt.value)}
+              key={value}
+              onClick={() => setPeriod(value)}
               className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
-                period === opt.value
+                period === value
                   ? 'bg-emerald-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
               }`}
             >
-              {opt.label}
+              {t(`tracker.periods.${value}`)}
             </button>
           ))}
         </div>
@@ -84,15 +84,17 @@ const Tracker = () => {
           <div className="glass-card p-12 text-center">
             <ClipboardList className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" aria-hidden="true" />
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
-              {calculations.length === 0 ? 'No Calculations Yet' : 'No Calculations in This Period'}
+              {calculations.length === 0 ? t('tracker.emptyTitle') : t('tracker.emptyPeriodTitle')}
             </h3>
             <p className="text-slate-500 dark:text-slate-400 mb-6">
               {calculations.length === 0
-                ? 'Start by calculating your carbon footprint to track your progress.'
-                : `No saved calculations match the selected ${period} view. Try another period or add a new calculation.`}
+                ? t('tracker.emptyDesc')
+                : t('tracker.emptyPeriodDesc', { period: t(`tracker.periods.${period}`) })}
             </p>
             <Link to={ROUTES.CALCULATOR}>
-              <Button>{calculations.length === 0 ? 'Calculate Now' : 'New Calculation'}</Button>
+              <Button>
+                {calculations.length === 0 ? t('tracker.calculateNow') : t('tracker.newCalculation')}
+              </Button>
             </Link>
           </div>
         ) : (

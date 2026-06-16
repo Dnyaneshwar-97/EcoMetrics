@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "ایکو میٹرکس",
+    "tagline": "بھارت کے لیے کاربن فُٹ پرِنٹ آگاہی کا پلیٹ فارم"
+  },
+  "nav": {
+    "home": "ہوم",
+    "calculator": "کیلکولیٹر",
+    "tracker": "ٹریکر",
+    "dashboard": "ڈیش بورڈ",
+    "planner": "پلانر",
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
+    "selectLanguage": "زبان منتخب کریں",
+    "badges": "بیجز"
+  },
+  "theme": {
+    "light": "لائٹ موڈ میں تبدیل کریں",
+    "dark": "ڈارک موڈ میں تبدیل کریں"
+  },
+  "hero": {
+    "badge": "بھارت کے لیے کاربن فُٹ پرِنٹ آگاہی",
+    "title": "اپنا",
+    "titleHighlight": "کاربن فُٹ پرِنٹ",
+    "subtitle": "بھارت کے مخصوص ڈیٹا کے ساتھ اپنے ماحیاتی اثر کا حساب لگائیں، نگرانی کریں اور کم کریں۔ پائیدار مستقبل کی طرف بڑھنے والے تحریک میں شامل ہوں۔",
+    "ctaCalculate": "میرا کاربن فُٹ پرِنٹ حساب لگائیں",
+    "ctaReduce": "آج سے کمی شروع کریں",
+    "imageAlt": "جنگل کا ہوائی منظر جس میں قدموں کی شکل کی خالی جگہ ہے، فطرت پر انسانی اثر کی علامت"
+  },
+  "education": {
+    "title": "کاربن فُٹ پرِنٹ کیا ہے؟",
+    "description": "کاربن فُٹ پرِنٹ ہمارے اعمال سے پیدا ہونے والی گرین ہاؤس گیسوں (کاربن ڈائی آکسائیڈ اور میتھین سمیت) کی کل مقدار ہے۔ اسے سالانہ CO₂ مساوی ٹن میں ماپا جاتا ہے۔",
+    "whyItMatters": "بھارت دنیا میں تیسرا سب سے بڑا اخراج کار ہے۔ اپنے فُٹ پرِنٹ کو سمجھنا موسمیاتی تبدیلی سے مقابلہ، حیاتیاتی تنوع کی حفاظت اور آنے والی نسلوں کے لیے پائیدار مستقبل بنانے میں مدد دیتا ہے۔",
+    "sourcesTitle": "اخراج کے ذرائع"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "نقل و حمل",
+      "description": "گاڑیاں، بسیں، ٹرینیں اور پروازیں ذاتی اخراج میں نمایاں حصہ ڈالتی ہیں۔"
+    },
+    "electricity": {
+      "title": "بجلی کی کھپت",
+      "description": "کوئلے اور گیس سے بجلی کی پیداوار بڑی مقدار میں CO₂ خارج کرتی ہے۔"
+    },
+    "food": {
+      "title": "خوراک کی پیداوار",
+      "description": "زراعت، خاص طور پر گوشت کی پیداوار، کافی گرین ہاؤس گیسیں پیدا کرتی ہے۔"
+    },
+    "waste": {
+      "title": "فضلہ کی پیداوار",
+      "description": "لینڈ فل میتھین پیدا کرتے ہیں، جو ایک طاقتور گرین ہاؤس گیس ہے۔"
+    }
+  },
+  "impact": {
+    "title": "ماحیاتی اثر",
+    "subtitle": "کاربن اخراج ہمارے سیارے کو کئی طریقوں سے متاثر کرتا ہے۔ ان اثرات کو سمجھنا تبدیلی کی تحریک دیتا ہے۔",
+    "calculatedTitle": "کاربن فُٹ پرِنٹ کا حساب کیسے لگایا جاتا ہے",
+    "calculatedSubtitle": "ہم آپ کے ذاتی اخراج کا تخمینہ لگانے کے لیے پانچ اہم طرزِ زندگی کے شعبوں کا تجزیہ کرتے ہیں۔",
+    "tipsTitle": "کمی کے مشورے",
+    "tipsSubtitle": "روزمرہ عادات میں چھوٹی تبدیلیاں بڑا فرق لا سکتی ہیں۔"
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "عالمی گرمی",
+      "description": "بڑھتے درجہ حرارت سے پوری دنیا میں ماحولیاتی نظام اور موسم کے نمونے متاثر ہوتے ہیں۔"
+    },
+    "climateChange": {
+      "title": "موسمیاتی تبدیلی",
+      "description": "درجہ حرارت اور موسم کے طویل مدتی تبدیلیاں روزی روٹی کو متاثر کرتی ہیں۔"
+    },
+    "deforestation": {
+      "title": "جنگلات کی کٹائی",
+      "description": "زراعت کے لیے جنگلات صاف کی جاتی ہیں، CO₂ جذب کرنے کی صلاحیت کم ہو جاتی ہے۔"
+    },
+    "airPollution": {
+      "title": "فضائی آلودگی",
+      "description": "فوسل ایندھن جلانے سے صحت کو نقصان پہنچانے والے آلودگی خارج ہوتی ہے۔"
+    },
+    "biodiversity": {
+      "title": "حیاتیاتی تنوع کا نقصان",
+      "description": "موسمیاتی تبدیلی سے رہائش گاہیں تباہ ہونے پر نسلوں کا خاتمہ تیز ہوتا ہے۔"
+    },
+    "extremeWeather": {
+      "title": "شدید موسمی واقعات",
+      "description": "زیادہ بار بار سیلاب، خشک سالی اور طوفان کمیونٹیز کو خطرے میں ڈالتے ہیں۔"
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "گھریلو بجلی",
+      "unit": "kWh/مہینہ"
+    },
+    "transportation": {
+      "title": "نقل و حمل",
+      "unit": "km/مہینہ"
+    },
+    "flights": {
+      "title": "پروازیں",
+      "unit": "پرواز/سال"
+    },
+    "food": {
+      "title": "خوراک کی عادات",
+      "unit": "خوراک کی قسم"
+    },
+    "waste": {
+      "title": "فضلہ کی پیداوار",
+      "unit": "kg/ہفتہ"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "عوامی نقل و حمل استعمال کریں",
+      "description": "روزانہ سفر کے لیے بس یا میٹرو پر جائیں، اخراج نمایاں طور پر کم ہوگا۔"
+    },
+    "ledLights": {
+      "title": "LED بلب استعمال کریں",
+      "description": "LED بلب عام بلب کے مقابلے میں 75% تک کم توانائی استعمال کرتے ہیں۔"
+    },
+    "solarPanels": {
+      "title": "سولر پینل لگائیں",
+      "description": "صاف توانائی پیدا کریں اور گرڈ بجلی پر انحصار کم کریں۔"
+    },
+    "reduceFoodWaste": {
+      "title": "خوراک کا ضیاع کم کریں",
+      "description": "خوراک کا ضیاع کم کرنے کے لیے کھانے کی منصوبہ بندی کریں اور صحیح طریقے سے محفوظ کریں۔"
+    },
+    "recycle": {
+      "title": "ری سائیکل کریں",
+      "description": "کاغذ، پلاسٹک اور دھات کا فضلہ الگ کر کے ری سائیکل کریں۔"
+    },
+    "plantTrees": {
+      "title": "درخت لگائیں",
+      "description": "درخت CO₂ جذب کرتے ہیں اور آپ کی کمیونٹی میں ہوا کی کوالٹی بہتر بناتے ہیں۔"
+    }
+  },
+  "stats": {
+    "sectionTitle": "پائیداری کے اعداد و شمار",
+    "sectionSubtitle": "بھارت اور دنیا میں کاربن اخراج کے اہم حقائق۔",
+    "indianAverage": {
+      "label": "بھارتی اوسط سالانہ فُٹ پرِنٹ",
+      "unit": "ٹن CO₂/سال"
+    },
+    "globalEmissions": {
+      "label": "عالمی سالانہ اخراج",
+      "unit": "ارب ٹن CO₂"
+    },
+    "treesRequired": {
+      "label": "1 ٹن CO₂ جذب کرنے کے لیے درخت",
+      "unit": "درخت/سال"
+    },
+    "topContributor": {
+      "label": "اہم اخراج کا ذریعہ",
+      "unit": "73% اخراج",
+      "value": "توانائی"
+    }
+  },
+  "tipsCarousel": {
+    "title": "فوری پائیداری کا مشورہ",
+    "previous": "پچھلا مشورہ",
+    "next": "اگلا مشورہ",
+    "items": [
+      "استعمال نہ ہونے پر آلات بند کر دیں۔",
+      "مختصر فاصلے کے لیے گاڑی کے بجائے پیدل چلیں۔",
+      "خریداری کے وقت دوبارہ استعمال کے قابل بیگ استعمال کریں۔",
+      "پہلے سے کھانے کی منصوبہ بندی کر کے خوراک کا ضیاع کم کریں۔",
+      "توانائی بچانے کے لیے LED بلب استعمال کریں۔",
+      "جہاں ممکن ہو عوامی نقل و حمل استعمال کریں۔",
+      "استعمال نہ ہونے پر چارجر ان پلگ کر دیں۔",
+      "مقامی اور موسمی پیداوار خریدیں۔",
+      "پانی اور توانائی بچانے کے لیے رساو ٹھیک کرائیں۔",
+      "گھر پر نامیاتی فضلہ کمپوسٹ کریں۔",
+      "دوبارہ بھرنے والی پانی کی بوتل استعمال کریں۔",
+      "ڈرائر کے بجائے ہوا میں کپڑے خشک کریں۔"
+    ]
+  },
+  "calculator": {
+    "title": "کاربن فُٹ پرِنٹ کیلکولیٹر",
+    "subtitle": "بھارت کے مخصوص کاربن فُٹ پرِنٹ کا حساب لگانے کے لیے اپنی طرزِ زندگی کی تفصیلات درج کریں۔",
+    "yourDetails": "آپ کی تفصیلات",
+    "electricityLabel": "ماہانہ بجلی کی کھپت (kWh)",
+    "vehicleLabel": "گاڑی کی قسم",
+    "distanceLabel": "ماہانہ سفر کی دوری (km)",
+    "domesticFlights": "ملکی پروازیں/سال",
+    "internationalFlights": "بین الاقوامی پروازیں/سال",
+    "foodLabel": "خوراک کی عادات",
+    "wasteLabel": "ہفتہ وار فضلہ (kg)",
+    "householdLabel": "گھر کے افراد (رکن)",
+    "yourFootprint": "آپ کا کاربن فُٹ پرِنٹ",
+    "monthly": "ماہانہ",
+    "annual": "سالانہ",
+    "save": "حساب محفوظ کریں",
+    "saved": "کامیابی سے محفوظ ہو گیا!",
+    "environmentalImpact": "ماحیاتی اثر",
+    "treesOffset": "آپ کے اخراج کو متوازن کرنے کے لیے سالانہ {{count}} درخت درکار ہیں۔",
+    "recommendationsTitle": "سمارٹ سفارشات",
+    "vehicles": {
+      "petrol_car": "پٹرول کار",
+      "diesel_car": "ڈیزل کار",
+      "electric_vehicle": "الیکٹرک گاڑی",
+      "motorcycle": "موٹر سائیکل",
+      "public_transport": "عوامی نقل و حمل"
+    },
+    "foodTypes": {
+      "vegan": "ویگن",
+      "vegetarian": "سبزی خور",
+      "mixed": "مخلوط غذا",
+      "high_meat": "زیادہ گوشت کا استعمال"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "درخت درکار",
+    "kmDriven": "چلائی گئی km",
+    "coalBurned": "جلایا گیا کوئلہ",
+    "phoneCharges": "فون چارج",
+    "electricity": "بجلی",
+    "treesUnit": "درخت/سال",
+    "kmUnit": "km مساوی",
+    "coalUnit": "kg کوئلہ",
+    "chargesUnit": "چارج",
+    "kwhUnit": "kWh مساوی"
+  },
+  "tracker": {
+    "title": "کاربن ٹریکر",
+    "subtitle": "اپنے محفوظ شدہ حسابات کی نگرانی کریں اور وقت کے ساتھ بہتری دیکھیں۔",
+    "newCalculation": "نیا حساب",
+    "periods": {
+      "daily": "روزانہ",
+      "weekly": "ہفتہ وار",
+      "monthly": "ماہانہ",
+      "yearly": "سالانہ"
+    },
+    "footprint": "فُٹ پرِنٹ",
+    "recorded": "محفوظ شدہ",
+    "emptyTitle": "ابھی تک کوئی حساب نہیں",
+    "emptyPeriodTitle": "اس مدت میں کوئی حساب نہیں",
+    "emptyDesc": "اپنی پیش رفت کی نگرانی کے لیے پہلے کاربن فُٹ پرِنٹ کا حساب لگائیں۔",
+    "emptyPeriodDesc": "منتخب {{period}} منظر میں کوئی محفوظ شدہ حساب نہیں ملا۔ دوسری مدت آزمائیں یا نیا حساب شامل کریں۔",
+    "calculateNow": "ابھی حساب لگائیں",
+    "delete": "حساب حذف کریں"
+  },
+  "dashboard": {
+    "title": "تجزیاتی ڈیش بورڈ",
+    "subtitle": "اپنے کاربن فُٹ پرِنٹ کے رجحانات اور پیش رفت دیکھیں۔",
+    "export": "PDF رپورٹ برآمد کریں",
+    "exporting": "برآمد ہو رہی ہے...",
+    "noDataTitle": "کوئی ڈیٹا دستیاب نہیں",
+    "noDataDesc": "اپنا تجزیاتی ڈیش بورڈ دیکھنے کے لیے کاربن فُٹ پرِنٹ کا حساب مکمل کریں۔",
+    "goToCalculator": "کیلکولیٹر پر جائیں",
+    "charts": {
+      "monthlyTrend": "ماہانہ فُٹ پرِنٹ کا رجحان",
+      "categoryPie": "شعبے کا حصہ",
+      "annualProgress": "سالانہ پیش رفت (kg CO₂/سال)",
+      "reductionTrend": "کمی کا رجحان (%)",
+      "scoreHistory": "کاربن اسکور کی تاریخ"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "کاربن کمی پلانر",
+    "subtitle": "ہدف مقرر کریں اور اپنے فُٹ پرِنٹ کو کم کرنے کے لیے ذاتی ہفتہ وار منصوبہ حاصل کریں۔",
+    "selectTarget": "اپنا ہدفِ کمی منتخب کریں",
+    "basedOn": "آپ کے {{footprint}} سالانہ فُٹ پرِنٹ کی بنیاد پر",
+    "targetReduction": "ہدفِ کمی",
+    "expectedReduction": "متوقع کمی",
+    "treesSaved": "بچے ہوئے درخت",
+    "progress": "پیش رفت",
+    "tasks": "کام",
+    "achievedReduction": "حاصل شدہ کمی: {{amount}} ({{percent}}%)",
+    "week": "ہفتہ {{n}}",
+    "createNew": "نیا منصوبہ بنائیں",
+    "calculateFirstTitle": "پہلے حساب لگائیں",
+    "calculateFirstDesc": "کمی کا منصوبہ بنانے سے پہلے کاربن فُٹ پرِنٹ کا حساب مکمل کریں۔",
+    "customTarget": "اپنی مرضی کا ہدف",
+    "customTargetLabel": "ہدفِ کمی (%)",
+    "customPlaceholder": "مثلاً، 25",
+    "generatePlan": "منصوبہ بنائیں",
+    "custom": "اپنی مرضی"
+  },
+  "categories": {
+    "electricity": "بجلی",
+    "transportation": "نقل و حمل",
+    "flights": "پروازیں",
+    "food": "خوراک",
+    "waste": "فضلہ"
+  },
+  "scores": {
+    "Excellent": "بہترین",
+    "Good": "اچھا",
+    "Moderate": "درمیانہ",
+    "High": "زیادہ",
+    "Critical": "انتہائی سنگین"
+  },
+  "badges": {
+    "earned": "حاصل شدہ",
+    "locked": "مقفل",
+    "greenStarter": {
+      "name": "سبز آغاز",
+      "description": "اپنا پہلا کاربن فُٹ پرِنٹ حساب مکمل کریں۔"
+    },
+    "ecoLearner": {
+      "name": "ماحیاتی سیکھنے والا",
+      "description": "60 یا اس سے زیادہ کاربن اسکور حاصل کریں۔"
+    },
+    "ecoWarrior": {
+      "name": "ماحیاتی جنگجو",
+      "description": "اپنے کمی پلانر کے 50% کام مکمل کریں۔"
+    },
+    "climateChampion": {
+      "name": "موسم کا چیمپئن",
+      "description": "اپنے پہلے حساب کے مقابلے میں فُٹ پرِنٹ 10% کم کریں۔"
+    },
+    "earthGuardian": {
+      "name": "زمین کا محافظ",
+      "description": "بہترین اسکور حاصل کریں اور تمام پلانر کے کام مکمل کریں۔"
+    }
+  },
+  "footer": {
+    "quickLinks": "فوری روابط",
+    "missionTitle": "ہمارا مشن",
+    "mission": "پائیدار مستقبل کے لیے بھارتیوں کو اپنے کاربن فُٹ پرِنٹ کو سمجھنے، نگرانی کرنے اور کم کرنے میں بااختیار بنانا۔",
+    "copyright": "جملہ حقوق محفوظ ہیں۔",
+    "madeWith": "زمین کے لیے محبت سے بنایا گیا"
+  },
+  "common": {
+    "loading": "لوڈ ہو رہا ہے...",
+    "save": "محفوظ کریں",
+    "close": "موڈل بند کریں",
+    "co2": "kg CO₂",
+    "co2Tonnes": "ٹن CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

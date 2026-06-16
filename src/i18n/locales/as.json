@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "EcoMetrics",
+    "tagline": "ভাৰতৰ বাবে কাৰ্বন ফুটপ্ৰিণ্ট সচেতনতা প্লেটফৰ্ম"
+  },
+  "nav": {
+    "home": "মূলপৃষ্ঠা",
+    "calculator": "কেলকুলেটৰ",
+    "tracker": "ট্ৰেকাৰ",
+    "dashboard": "ড্যাশব'ৰ্ড",
+    "planner": "প্লেনাৰ",
+    "openMenu": "মেনু খোলক",
+    "closeMenu": "মেনু বন্ধ কৰক",
+    "selectLanguage": "ভাষা বাছক",
+    "badges": "বেজ"
+  },
+  "theme": {
+    "light": "লাইট ম'ডলৈ সলনি কৰক",
+    "dark": "ডাৰ্ক ম'ডলৈ সলনি কৰক"
+  },
+  "hero": {
+    "badge": "ভাৰতৰ বাবে কাৰ্বন ফুটপ্ৰিণ্ট সচেতনতা",
+    "title": "আপোনাৰ",
+    "titleHighlight": "কাৰ্বন ফুটপ্ৰিণ্ট",
+    "subtitle": "ভাৰত-নিৰ্দিষ্ট তথ্যৰ সৈতে আপোনাৰ পৰিৱেশগত প্ৰভাৱ গণনা, ট্ৰেক আৰু হ্ৰাস কৰক। স্থায়ী ভৱিষ্যতৰ দিশত আন্দোলনত যোগ দিয়ক।",
+    "ctaCalculate": "মোৰ কাৰ্বন ফুটপ্ৰিণ্ট গণনা কৰক",
+    "ctaReduce": "আজিৰ পৰা হ্ৰাস আৰম্ভ কৰক",
+    "imageAlt": "জঙ্গলৰ ওপৰৰ দৃশ্য, য'ত পদচিহ্নৰ আকৃতিৰ খালী স্থান আছে, প্ৰকৃতিৰ ওপৰত মানৱ প্ৰভাৱৰ প্ৰতীক"
+  },
+  "education": {
+    "title": "কাৰ্বন ফুটপ্ৰিণ্ট কি?",
+    "description": "কাৰ্বন ফুটপ্ৰিণ্ট হ'ল আমাৰ কাৰ্য্যকলাপৰ পৰা উৎপন্ন গ্ৰীনহাউছ গেছৰ (কাৰ্বন ডাইঅক্সাইড আৰু মিথেন সহ) মুঠ পৰিমাণ। ইয়াক প্ৰতি বছৰ CO₂ সমতুল্য টনত মাপা হয়।",
+    "whyItMatters": "ভাৰত বিশ্বৰ তৃতীয় বৃহত্তম উৎসৰ্জনকাৰী। আপোনাৰ ফুটপ্ৰিণ্ট বুজি পোৱাটোৱে জলবায়ু পৰিৱৰ্তন প্ৰতিৰোধ, জৈৱ বৈচিত্ৰ্য ৰক্ষা আৰু আগামী প্ৰজন্মৰ বাবে স্থায়ী ভৱিষ্যত গঢ়াত সহায় কৰে।",
+    "sourcesTitle": "উৎসৰ্জনৰ উৎস"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "পৰিবহন",
+      "description": "গাড়ী, বাছ, ৰেল আৰু বিমানে ব্যক্তিগত উৎসৰ্জনত গুৰুত্বপূৰ্ণ অৱদান জনায়।"
+    },
+    "electricity": {
+      "title": "বিদ্যুৎ ব্যৱহাৰ",
+      "description": "কয়লা আৰু গেছৰ পৰা বিদ্যুৎ উৎপাদনে বহুত CO₂ উৎসৰ্জন কৰে।"
+    },
+    "food": {
+      "title": "খাদ্য উৎপাদন",
+      "description": "কৃষি, বিশেষকৈ মাংস উৎপাদনে প্ৰচুৰ গ্ৰীনহাউছ গেছ উৎপন্ন কৰে।"
+    },
+    "waste": {
+      "title": "আৱৰ্জনা উৎপাদন",
+      "description": "লেণ্ডফিলে মিথেন উৎপন্ন কৰে, যি এটা শক্তিশালী গ্ৰীনহাউছ গেছ।"
+    }
+  },
+  "impact": {
+    "title": "পৰিৱেশগত প্ৰভাৱ",
+    "subtitle": "কাৰ্বন উৎসৰ্জনে আমাৰ গ্ৰহক বহু উপায়েৰে প্ৰভাৱিত কৰে। এই প্ৰভাৱবোৰ বুজি পোৱাটোৱে পৰিৱৰ্তনৰ বাবে অনুপ্ৰেৰণা দিয়ে।",
+    "calculatedTitle": "কাৰ্বন ফুটপ্ৰিণ্ট কেনেকৈ গণনা কৰা হয়",
+    "calculatedSubtitle": "আমি আপোনাৰ ব্যক্তিগত উৎসৰ্জন অনুমান কৰিবলৈ পাঁচটা মুখ্য জীৱনশৈলীৰ শ্ৰেণী বিশ্লেষণ কৰোঁ।",
+    "tipsTitle": "হ্ৰাসৰ পৰামৰ্শ",
+    "tipsSubtitle": "দৈনন্দিন অভ্যাসত সৰু সলনি বহু প্ৰভাৱ পেলাব পাৰে।"
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "বিশ্ব উষ্ণতা বৃদ্ধি",
+      "description": "বৃদ্ধি পোৱা তাপমাত্ৰাই বিশ্বজুৰি পাৰিস্থিতিক তন্ত্ৰ আৰু বতৰৰ ধৰণ প্ৰভাৱিত কৰে।"
+    },
+    "climateChange": {
+      "title": "জলবায়ু পৰিৱৰ্তন",
+      "description": "তাপমাত্ৰা আৰু বতৰৰ ধৰণৰ দীৰ্ঘম্যাদী সলনিয়ে জীৱিকাক ব্যাঘাত কৰে।"
+    },
+    "deforestation": {
+      "title": "বন নষ্ট",
+      "description": "কৃষিৰ বাবে বন পৰিষ্কাৰ কৰা হয়, CO₂ শোষণ ক্ষমতা হ্ৰাস পায়।"
+    },
+    "airPollution": {
+      "title": "বায়ু প্ৰদূষণ",
+      "description": "জীৱাশ্ম ইন্ধন জ্বলোৱাত স্বাস্থ্যক প্ৰভাৱিত কৰা ক্ষতিকৰ প্ৰদূষক উৎসৰ্জন হয়।"
+    },
+    "biodiversity": {
+      "title": "জৈৱ বৈচিত্ৰ্য হ্ৰাস",
+      "description": "জলবায়ু পৰিৱৰ্তনত বাসস্থান নষ্ট হ'লে প্ৰজাতি বিলুপ্তি ত্বৰান্বিত হয়।"
+    },
+    "extremeWeather": {
+      "title": "চৰম বতৰ",
+      "description": "অধিক বাৰ বান, খৰাং আৰু ঘূৰ্ণিঝৰে সমাজক বিপদত পেলায়।"
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "গৃহস্থ বিদ্যুৎ",
+      "unit": "kWh/মাহ"
+    },
+    "transportation": {
+      "title": "পৰিবহন",
+      "unit": "km/মাহ"
+    },
+    "flights": {
+      "title": "বিমান যাত্ৰা",
+      "unit": "বিমান/বছৰ"
+    },
+    "food": {
+      "title": "খাদ্য অভ্যাস",
+      "unit": "খাদ্যৰ ধৰণ"
+    },
+    "waste": {
+      "title": "আৱৰ্জনা উৎপাদন",
+      "unit": "kg/সপ্তাহ"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "জনসাধাৰণৰ পৰিবহন ব্যৱহাৰ কৰক",
+      "description": "দৈনন্দিন যাতায়াতৰ বাবে বাছ বা মেট্ৰ'লৈ সলনি কৰক, উৎসৰ্জন বহুত হ্ৰাস হ'ব।"
+    },
+    "ledLights": {
+      "title": "LED বাল্বলৈ সলনি কৰক",
+      "description": "LED বাল্বে ইনকান্ডেছেণ্ট বাল্বৰ তুলনাত ৭৫% পৰ্যন্ত কম শক্তি ব্যৱহাৰ কৰে।"
+    },
+    "solarPanels": {
+      "title": "সৌৰ পেনেল সংস্থাপন কৰক",
+      "description": "পৰিষ্কাৰ শক্তি উৎপাদন কৰক আৰু গ্ৰিড বিদ্যুতৰ ওপৰত নিৰ্ভৰতা হ্ৰাস কৰক।"
+    },
+    "reduceFoodWaste": {
+      "title": "খাদ্য অপচয় হ্ৰাস কৰক",
+      "description": "খাদ্য অপচয় কমাবলৈ খাদ্য পৰিকল্পনা কৰক আৰু সঠিকভাৱে সংৰক্ষণ কৰক।"
+    },
+    "recycle": {
+      "title": "ৰিচাইকল কৰক",
+      "description": "কাগজ, প্লাষ্টিক আৰু ধাতুৰ আৱৰ্জনা পৃথক কৰি ৰিচাইকল কৰক।"
+    },
+    "plantTrees": {
+      "title": "গছ ৰোপণ কৰক",
+      "description": "গছে CO₂ শোষণ কৰে আৰু আপোনাৰ সমাজত বায়ুৰ গুণমান উন্নত কৰে।"
+    }
+  },
+  "stats": {
+    "sectionTitle": "স্থায়িত্বৰ পৰিসংখ্যা",
+    "sectionSubtitle": "ভাৰত আৰু বিশ্বত কাৰ্বন উৎসৰ্জন সম্পৰ্কীয় মুখ্য তথ্য।",
+    "indianAverage": {
+      "label": "ভাৰতীয় গড় বাৰ্ষিক ফুটপ্ৰিণ্ট",
+      "unit": "টন CO₂/বছৰ"
+    },
+    "globalEmissions": {
+      "label": "বিশ্ব বাৰ্ষিক উৎসৰ্জন",
+      "unit": "বিলিয়ন টন CO₂"
+    },
+    "treesRequired": {
+      "label": "১ টন CO₂ শোষণৰ বাবে গছ",
+      "unit": "গছ/বছৰ"
+    },
+    "topContributor": {
+      "label": "মুখ্য উৎসৰ্জন অৱদানকাৰী",
+      "unit": "৭৩% উৎসৰ্জন",
+      "value": "শক্তি"
+    }
+  },
+  "tipsCarousel": {
+    "title": "দ্ৰুত স্থায়িত্বৰ পৰামৰ্শ",
+    "previous": "পূৰ্বৱৰ্তী পৰামৰ্শ",
+    "next": "পৰৱৰ্তী পৰামৰ্শ",
+    "items": [
+      "ব্যৱহাৰ নকৰিলে যন্ত্ৰপাতি বন্ধ কৰক।",
+      "চুটি দূৰত্বৰ বাবে গাড়ীৰ সলনি খোজ কাঢ়ক।",
+      "কিনাৰ সময়ত পুনঃব্যৱহাৰযোগ্য ব্যাগ ব্যৱহাৰ কৰক।",
+      "আগধাৰী খাদ্য পৰিকল্পনা কৰি খাদ্য অপচয় হ্ৰাস কৰক।",
+      "শক্তি ৰাখিবলৈ LED বাল্বলৈ সলনি কৰক।",
+      "যিমান পৰা সম্ভৱ জনসাধাৰণৰ পৰিবহন লওক।",
+      "ব্যৱহাৰ নকৰিলে চাৰ্জাৰ আনপ্লাগ কৰক।",
+      "স্থানীয় আৰু ঋতুৰ উৎপাদন কিনক।",
+      "পানী আৰু শক্তি ৰাখিবলৈ ফুটো মেৰামতি কৰক।",
+      "ঘৰত জৈৱ আৱৰ্জনা কম্পোষ্ট কৰক।",
+      "ৰিফিলযোগ্য পানীৰ বটল ব্যৱহাৰ কৰক।",
+      "ড্ৰায়াৰৰ সলনি বায়ুত কাপোৰ শুকুৱাওক।"
+    ]
+  },
+  "calculator": {
+    "title": "কাৰ্বন ফুটপ্ৰিণ্ট কেলকুলেটৰ",
+    "subtitle": "ভাৰত-নিৰ্দিষ্ট কাৰ্বন ফুটপ্ৰিণ্ট গণনা কৰিবলৈ আপোনাৰ জীৱনশৈলীৰ বিৱৰণ দিয়ক।",
+    "yourDetails": "আপোনাৰ বিৱৰণ",
+    "electricityLabel": "মাহেকীয় বিদ্যুৎ ব্যৱহাৰ (kWh)",
+    "vehicleLabel": "যানৰ ধৰণ",
+    "distanceLabel": "মাহেকীয় যাত্ৰাৰ দূৰত্ব (km)",
+    "domesticFlights": "ঘৰুৱা বিমান/বছৰ",
+    "internationalFlights": "আন্তঃৰাষ্ট্ৰীয় বিমান/বছৰ",
+    "foodLabel": "খাদ্য অভ্যাস",
+    "wasteLabel": "সাপ্তাহিক আৱৰ্জনা (kg)",
+    "householdLabel": "পৰিয়ালৰ আকাৰ (সদস্য)",
+    "yourFootprint": "আপোনাৰ কাৰ্বন ফুটপ্ৰিণ্ট",
+    "monthly": "মাহেকীয়",
+    "annual": "বাৰ্ষিক",
+    "save": "গণনা সংৰক্ষণ কৰক",
+    "saved": "সফলতাৰে সংৰক্ষণ হ'ল!",
+    "environmentalImpact": "পৰিৱেশগত প্ৰভাৱ",
+    "treesOffset": "আপোনাৰ উৎসৰ্জন অফছেট কৰিবলৈ বছৰে {{count}} গছৰ প্ৰয়োজন।",
+    "recommendationsTitle": "স্মাৰ্ট পৰামৰ্শ",
+    "vehicles": {
+      "petrol_car": "পেট্ৰ'ল গাড়ী",
+      "diesel_car": "ডিজেল গাড়ী",
+      "electric_vehicle": "বৈদ্যুতিক যান",
+      "motorcycle": "মটৰচাইকেল",
+      "public_transport": "জনসাধাৰণৰ পৰিবহন"
+    },
+    "foodTypes": {
+      "vegan": "ভেগান",
+      "vegetarian": "নিৰামিষ",
+      "mixed": "মিশ্ৰ খাদ্য",
+      "high_meat": "অধিক মাংস সেৱন"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "প্ৰয়োজনীয় গছ",
+    "kmDriven": "চলোৱা km",
+    "coalBurned": "জ্বলা কয়লা",
+    "phoneCharges": "ফোন চাৰ্জ",
+    "electricity": "বিদ্যুৎ",
+    "treesUnit": "গছ/বছৰ",
+    "kmUnit": "km সমতুল্য",
+    "coalUnit": "kg কয়লা",
+    "chargesUnit": "চাৰ্জ",
+    "kwhUnit": "kWh সমতুল্য"
+  },
+  "tracker": {
+    "title": "কাৰ্বন ট্ৰেকাৰ",
+    "subtitle": "আপোনাৰ সংৰক্ষিত গণনা ট্ৰেক কৰক আৰু সময়ৰ সৈতে উন্নতি পৰ্যবেক্ষণ কৰক।",
+    "newCalculation": "নতুন গণনা",
+    "periods": {
+      "daily": "দৈনিক",
+      "weekly": "সাপ্তাহিক",
+      "monthly": "মাহেকীয়",
+      "yearly": "বাৰ্ষিক"
+    },
+    "footprint": "ফুটপ্ৰিণ্ট",
+    "recorded": "ৰেকৰ্ড হ'ল",
+    "emptyTitle": "এতিয়ালৈকে কোনো গণনা নাই",
+    "emptyPeriodTitle": "এই সময়ছোৱাত কোনো গণনা নাই",
+    "emptyDesc": "আপোনাৰ অগ্ৰগতি ট্ৰেক কৰিবলৈ প্ৰথমে কাৰ্বন ফুটপ্ৰিণ্ট গণনা কৰক।",
+    "emptyPeriodDesc": "নিৰ্বাচিত {{period}} দৃশ্যত কোনো সংৰক্ষিত গণনা মিলা নাই। অন্য সময়ছোৱা চেষ্টা কৰক বা নতুন গণনা যোগ কৰক।",
+    "calculateNow": "এতিয়া গণনা কৰক",
+    "delete": "গণনা মচক"
+  },
+  "dashboard": {
+    "title": "বিশ্লেষণ ড্যাশব'ৰ্ড",
+    "subtitle": "আপোনাৰ কাৰ্বন ফুটপ্ৰিণ্টৰ প্ৰবণতা আৰু অগ্ৰগতি দেখুৱাওক।",
+    "export": "PDF ৰিপ'ৰ্ট ৰপ্তানি কৰক",
+    "exporting": "ৰপ্তানি হৈ আছে...",
+    "noDataTitle": "কোনো তথ্য উপলব্ধ নাই",
+    "noDataDesc": "আপোনাৰ বিশ্লেষণ ড্যাশব'ৰ্ড চাবলৈ কাৰ্বন ফুটপ্ৰিণ্ট গণনা সম্পূৰ্ণ কৰক।",
+    "goToCalculator": "কেলকুলেটৰলৈ যাওক",
+    "charts": {
+      "monthlyTrend": "মাহেকীয় ফুটপ্ৰিণ্ট প্ৰবণতা",
+      "categoryPie": "শ্ৰেণীৰ অৱদান",
+      "annualProgress": "বাৰ্ষিক অগ্ৰগতি (kg CO₂/বছৰ)",
+      "reductionTrend": "হ্ৰাস প্ৰবণতা (%)",
+      "scoreHistory": "কাৰ্বন স্ক'ৰৰ ইতিহাস"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "কাৰ্বন হ্ৰাস প্লেনাৰ",
+    "subtitle": "লক্ষ্য নিৰ্ধাৰণ কৰক আৰু আপোনাৰ ফুটপ্ৰিণ্ট হ্ৰাস কৰিবলৈ ব্যক্তিগত সাপ্তাহিক পৰিকল্পনা পাওক।",
+    "selectTarget": "আপোনাৰ লক্ষ্য হ্ৰাস বাছক",
+    "basedOn": "আপোনাৰ {{footprint}} বাৰ্ষিক ফুটপ্ৰিণ্টৰ ওপৰত আধাৰিত",
+    "targetReduction": "লক্ষ্য হ্ৰাস",
+    "expectedReduction": "আশা কৰা হ্ৰাস",
+    "treesSaved": "ৰক্ষা পোৱা গছ",
+    "progress": "অগ্ৰগতি",
+    "tasks": "কাৰ্য্য",
+    "achievedReduction": "অৰ্জিত হ্ৰাস: {{amount}} ({{percent}}%)",
+    "week": "সপ্তাহ {{n}}",
+    "createNew": "নতুন পৰিকল্পনা সৃষ্টি কৰক",
+    "calculateFirstTitle": "প্ৰথমে গণনা কৰক",
+    "calculateFirstDesc": "হ্ৰাস পৰিকল্পনা সৃষ্টি কৰাৰ আগতে কাৰ্বন ফুটপ্ৰিণ্ট গণনা সম্পূৰ্ণ কৰক।",
+    "customTarget": "কাষ্টম লক্ষ্য",
+    "customTargetLabel": "লক্ষ্য হ্ৰাস (%)",
+    "customPlaceholder": "যেনে, ২৫",
+    "generatePlan": "পৰিকল্পনা সৃষ্টি কৰক",
+    "custom": "কাষ্টম"
+  },
+  "categories": {
+    "electricity": "বিদ্যুৎ",
+    "transportation": "পৰিবহন",
+    "flights": "বিমান",
+    "food": "খাদ্য",
+    "waste": "আৱৰ্জনা"
+  },
+  "scores": {
+    "Excellent": "উৎকৃষ্ট",
+    "Good": "ভাল",
+    "Moderate": "মাধ্যম",
+    "High": "উচ্চ",
+    "Critical": "গুৰুতৰ"
+  },
+  "badges": {
+    "earned": "অৰ্জন কৰা হ'ল",
+    "locked": "লক",
+    "greenStarter": {
+      "name": "সেউজীয়া আৰম্ভকাৰী",
+      "description": "আপোনাৰ প্ৰথম কাৰ্বন ফুটপ্ৰিণ্ট গণনা সম্পূৰ্ণ কৰক।"
+    },
+    "ecoLearner": {
+      "name": "ইকো শিক্ষাৰ্থী",
+      "description": "৬০ বা তাতকৈ অধিক কাৰ্বন স্ক'ৰ অৰ্জন কৰক।"
+    },
+    "ecoWarrior": {
+      "name": "ইকো যোদ্ধা",
+      "description": "আপোনাৰ হ্ৰাস প্লেনাৰৰ ৫০% কাৰ্য্য সম্পূৰ্ণ কৰক।"
+    },
+    "climateChampion": {
+      "name": "জলবায়ু চেম্পিয়ন",
+      "description": "আপোনাৰ প্ৰথম গণনাৰ তুলনাত ফুটপ্ৰিণ্ট ১০% হ্ৰাস কৰক।"
+    },
+    "earthGuardian": {
+      "name": "পৃথিৱী ৰক্ষক",
+      "description": "উৎকৃষ্ট স্ক'ৰ অৰ্জন কৰক আৰু সকলো প্লেনাৰ কাৰ্য্য সম্পূৰ্ণ কৰক।"
+    }
+  },
+  "footer": {
+    "quickLinks": "দ্ৰুত লিংক",
+    "missionTitle": "আমাৰ লক্ষ্য",
+    "mission": "স্থায়ী ভৱিষ্যতৰ বাবে ভাৰতীয়সকলক নিজৰ কাৰ্বন ফুটপ্ৰিণ্ট বুজি, ট্ৰেক আৰু হ্ৰাস কৰাত সক্ষম কৰা।",
+    "copyright": "সকলো অধিকাৰ সংৰক্ষিত।",
+    "madeWith": "পৃথিৱীৰ বাবে প্ৰেমেৰে নিৰ্মিত"
+  },
+  "common": {
+    "loading": "ল'ড হৈ আছে...",
+    "save": "সংৰক্ষণ",
+    "close": "ম'ডেল বন্ধ কৰক",
+    "co2": "kg CO₂",
+    "co2Tonnes": "টন CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

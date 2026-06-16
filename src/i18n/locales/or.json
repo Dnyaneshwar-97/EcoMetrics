@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "EcoMetrics",
+    "tagline": "ଭାରତ ପାଇଁ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ସଚେତନତା ପ୍ଲାଟଫର୍ମ"
+  },
+  "nav": {
+    "home": "ମୂଳପୃଷ୍ଠା",
+    "calculator": "କାଲକୁଲେଟର",
+    "tracker": "ଟ୍ରାକର",
+    "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+    "planner": "ପ୍ଲାନର",
+    "openMenu": "ମେନୁ ଖୋଲନ୍ତୁ",
+    "closeMenu": "ମେନୁ ବନ୍ଦ କରନ୍ତୁ",
+    "selectLanguage": "ଭାଷା ବାଛନ୍ତୁ",
+    "badges": "ବ୍ୟାଜ"
+  },
+  "theme": {
+    "light": "ଲାଇଟ୍ ମୋଡ଼କୁ ବଦଳାନ୍ତୁ",
+    "dark": "ଡାର୍କ୍ ମୋଡ଼କୁ ବଦଳାନ୍ତୁ"
+  },
+  "hero": {
+    "badge": "ଭାରତ ପାଇଁ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ସଚେତନତା",
+    "title": "ଆପଣଙ୍କ",
+    "titleHighlight": "କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ",
+    "subtitle": "ଭାରତ-ନିର୍ଦ୍ଦିଷ୍ଟ ତଥ୍ୟ ସହିତ ଆପଣଙ୍କ ପରିବେଶଗତ ପ୍ରଭାବ ଗଣନା, ଟ୍ରାକ୍ ଏବଂ ହ୍ରାସ କରନ୍ତୁ। ଏକ ସ୍ଥାୟୀ ଭବିଷ୍ୟତ ଆଡ଼କୁ ଚଳିତ ଆନ୍ଦୋଳନରେ ଯୋଗ ଦିଅନ୍ତୁ।",
+    "ctaCalculate": "ମୋର କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା କରନ୍ତୁ",
+    "ctaReduce": "ଆଜିଠାରୁ ହ୍ରାସ ଆରମ୍ଭ କରନ୍ତୁ",
+    "imageAlt": "ଜଙ୍ଗଲର ଉପରୁ ନିମ୍ନଦୃଷ୍ଟି, ଯେଉଁଠାରେ ପାଦଛାପ ଆକାରର ଖାଲି ସ୍ଥାନ ଅଛି, ପ୍ରକୃତି ଉପରେ ମାନବ ପ୍ରଭାବର ପ୍ରତୀକ"
+  },
+  "education": {
+    "title": "କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ କ'ଣ?",
+    "description": "କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ହେଉଛି ଆମ କାର୍ଯ୍ୟକଳାପରୁ ଉତ୍ପନ୍ନ ହେଉଥିବା ଗ୍ରୀନହାଉସ୍ ଗ୍ୟାସର (କାର୍ବନ ଡାଇଅକ୍ସାଇଡ୍ ଏବଂ ମିଥେନ୍ ସହିତ) ମୋଟ ପରିମାଣ। ଏହାକୁ ପ୍ରତି ବର୍ଷ CO₂ ସମତୁଲ୍ୟ ଟନ୍‌ରେ ମାପାଯାଏ।",
+    "whyItMatters": "ଭାରତ ବିଶ୍ୱର ତୃତୀୟ ବୃହତ୍ତମ ଉତ୍ସର୍ଜନକାରୀ। ଆପଣଙ୍କ ଫୁଟପ୍ରିଣ୍ଟ ବୁଝିବା ଜଳବାୟୁ ପରିବର୍ତ୍ତନ ପ୍ରତିରୋଧ, ଜୈବ ବିବିଧତା ସୁରକ୍ଷା ଏବଂ ଆଗାମୀ ପିଢ଼ିମାନଙ୍କ ପାଇଁ ସ୍ଥାୟୀ ଭବିଷ୍ୟତ ନିର୍ମାଣରେ ସାହାଯ୍ୟ କରେ।",
+    "sourcesTitle": "ଉତ୍ସର୍ଜନର ଉତ୍ସ"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "ପରିବହନ",
+      "description": "ଗାଡ଼ି, ବସ, ଟ୍ରେନ୍ ଏବଂ ବିମାନ ବ୍ୟକ୍ତିଗତ ଉତ୍ସର୍ଜନରେ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଯୋଗଦାନ କରନ୍ତି।"
+    },
+    "electricity": {
+      "title": "ବିଦ୍ୟୁତ୍ ବ୍ୟବହାର",
+      "description": "କୋଇଲା ଏବଂ ଗ୍ୟାସରୁ ବିଦ୍ୟୁତ୍ ଉତ୍ପାଦନ ବହୁ ପରିମାଣ CO₂ ଉତ୍ସର୍ଜନ କରେ।"
+    },
+    "food": {
+      "title": "ଖାଦ୍ୟ ଉତ୍ପାଦନ",
+      "description": "କୃଷି, ବିଶେଷକରି ମାଂସ ଉତ୍ପାଦନ, ପ୍ରଚୁର ଗ୍ରୀନହାଉସ୍ ଗ୍ୟାସ ଉତ୍ପନ୍ନ କରେ।"
+    },
+    "waste": {
+      "title": "ଆବର୍ଜନା ଉତ୍ପାଦନ",
+      "description": "ଲ୍ୟାଣ୍ଡଫିଲ୍‌ ମିଥେନ୍ ଉତ୍ପନ୍ନ କରେ, ଯାହା ଏକ ଶକ୍ତିଶାଳୀ ଗ୍ରୀନହାଉସ୍ ଗ୍ୟାସ।"
+    }
+  },
+  "impact": {
+    "title": "ପରିବେଶଗତ ପ୍ରଭାବ",
+    "subtitle": "କାର୍ବନ ଉତ୍ସର୍ଜନ ଅନେକ ଉପାୟରେ ଆମ ଗ୍ରହକୁ ପ୍ରଭାବିତ କରେ। ଏହି ପ୍ରଭାବଗୁଡ଼ିକ ବୁଝିବା ପରିବର୍ତ୍ତନ ପାଇଁ ପ୍ରେରଣା ଦିଏ।",
+    "calculatedTitle": "କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ କିପରି ଗଣନା କରାଯାଏ",
+    "calculatedSubtitle": "ଆମେ ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ ଉତ୍ସର୍ଜନ ଅନୁମାନ କରିବା ପାଇଁ ପାଞ୍ଚଟି ମୁଖ୍ୟ ଜୀବନଶୈଳୀ ବର୍ଗର ବିଶ୍ଳେଷଣ କରୁ।",
+    "tipsTitle": "ହ୍ରାସ ପରାମର୍ଶ",
+    "tipsSubtitle": "ଦୈନିକ ଅଭ୍ୟାସରେ ଛୋଟ ପରିବର୍ତ୍ତନ ବହୁ ପ୍ରଭାବ ପକାଇପାରେ।"
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "ବିଶ୍ୱ ତାପମାତ୍ରା ବୃଦ୍ଧି",
+      "description": "ବୃଦ୍ଧିପାଉଥିବା ତାପମାତ୍ରା ବିଶ୍ୱବ୍ୟାପୀ ପାରିସ୍ଥିତିକ ତନ୍ତ୍ର ଏବଂ ପାଗ ପ୍ରଭାବିତ କରେ।"
+    },
+    "climateChange": {
+      "title": "ଜଳବାୟୁ ପରିବର୍ତ୍ତନ",
+      "description": "ତାପମାତ୍ରା ଏବଂ ପାଗ ପ୍ୟାଟର୍ନର ଦୀର୍ଘକାଳୀନ ପରିବର୍ତ୍ତନ ଜୀବିକାକୁ ବ୍ୟାଘାତ କରେ।"
+    },
+    "deforestation": {
+      "title": "ବନ ନଷ୍ଟ",
+      "description": "କୃଷି ପାଇଁ ବନ ସଫା କରାଯାଏ, CO₂ ଶୋଷଣ କ୍ଷମତା ହ୍ରାସ ପାଏ।"
+    },
+    "airPollution": {
+      "title": "ବାୟୁ ପ୍ରଦୂଷଣ",
+      "description": "ଜୀବାଶ୍ମ ଇନ୍ଧନ ଜଳାଇବା ସ୍ୱାସ୍ଥ୍ୟକୁ ପ୍ରଭାବିତ କରୁଥିବା ହାନିକର ପ୍ରଦୂଷକ ଉତ୍ସର୍ଜନ କରେ।"
+    },
+    "biodiversity": {
+      "title": "ଜୈବ ବିବିଧତା ହ୍ରାସ",
+      "description": "ଜଳବା୹ୁ ପରିବର୍ତ୍ତନରେ ବାସସ୍ଥାନ ନଷ୍ଟ ହେବାରେ ପ୍ରଜାତି ଲୋପ ତ୍ବରାନ୍ୱିତ ହୁଏ।"
+    },
+    "extremeWeather": {
+      "title": "ଚରମ ପାଗ",
+      "description": "ଅଧିକ ବାରବାର ବନ୍ୟା, ଖରା ଏବଂ ବାତ୍ୟା ସମୁଦାୟକୁ ବିପଦରେ ପକାଏ।"
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "ଘରୋଇ ବିଦ୍ୟୁତ୍",
+      "unit": "kWh/ମାସ"
+    },
+    "transportation": {
+      "title": "ପରିବହନ",
+      "unit": "km/ମାସ"
+    },
+    "flights": {
+      "title": "ବିମାନ ଯାତ୍ରା",
+      "unit": "ବିମାନ/ବର୍ଷ"
+    },
+    "food": {
+      "title": "ଖାଦ୍ୟ ଅଭ୍ୟାସ",
+      "unit": "ଖାଦ୍ୟ ପ୍ରକାର"
+    },
+    "waste": {
+      "title": "ଆବର୍ଜନା ଉତ୍ପାଦନ",
+      "unit": "kg/ସପ୍ତାହ"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "ଜନସାଧାରଣ ପରିବହନ ବ୍ୟବହାର କରନ୍ତୁ",
+      "description": "ଦୈନିକ ଯାତାୟାତ ପାଇଁ ବସ କିମ୍ବା ମେଟ୍ରୋକୁ ବଦଳାନ୍ତୁ, ଉତ୍ସର୍ଜନ ବହୁ ହ୍ରାସ ହେବ।"
+    },
+    "ledLights": {
+      "title": "LED ବଳବକୁ ବଦଳାନ୍ତୁ",
+      "description": "LED ବଳବ ଇନ୍କାଣ୍ଡେସେଣ୍ଟ ବଳବ ଅପେକ୍ଷା ୭୫% ପର୍ଯ୍ୟନ୍ତ କମ ଶକ୍ତି ବ୍ୟବହାର କରେ।"
+    },
+    "solarPanels": {
+      "title": "ସୌର ପ୍ୟାନେଲ ସଂସ୍ଥାପନ କରନ୍ତୁ",
+      "description": "ଶୁଦ୍ଧ ଶକ୍ତି ଉତ୍ପାଦନ କରନ୍ତୁ ଏବଂ ଗ୍ରିଡ୍ ବିଦ୍ୟୁତ୍ ଉପରେ ନିର୍ଭରତା ହ୍ରାସ କରନ୍ତୁ।"
+    },
+    "reduceFoodWaste": {
+      "title": "ଖାଦ୍ୟ ଅପଚୟ ହ୍ରାସ କରନ୍ତୁ",
+      "description": "ଖାଦ୍ୟ ଅପଚୟ କମାଇବା ପାଇଁ ଭୋଜନ ଯୋଜନା କରନ୍ତୁ ଏବଂ ସଠିକ୍ ଭାବରେ ସଞ୍ଚୟ କରନ୍ତୁ।"
+    },
+    "recycle": {
+      "title": "ରିସାଇକଲ୍ କରନ୍ତୁ",
+      "description": "କାଗଜ, ପ୍ଲାଷ୍ଟିକ୍ ଏବଂ ଧାତୁ ଆବର୍ଜନା ଅଲଗା କରି ରିସାଇକଲ୍ କରନ୍ତୁ।"
+    },
+    "plantTrees": {
+      "title": "ଗଛ ଲଗାନ୍ତୁ",
+      "description": "ଗଛ CO₂ ଶୋଷଣ କରେ ଏବଂ ଆପଣଙ୍କ ସମୁଦାୟରେ ବାୟୁ ଗୁଣବତ୍ତା ଉନ୍ନତ କରେ।"
+    }
+  },
+  "stats": {
+    "sectionTitle": "ସ୍ଥାୟୀତା ପରିସଂଖ୍ୟାନ",
+    "sectionSubtitle": "ଭାରତ ଏବଂ ବିଶ୍ୱରେ କାର୍ବନ ଉତ୍ସର୍ଜନ ସମ୍ବନ୍ଧୀୟ ମୁଖ୍ୟ ତଥ୍ୟ।",
+    "indianAverage": {
+      "label": "ଭାରତୀୟ ଔସତ ବାର୍ଷିକ ଫୁଟପ୍ରିଣ୍ଟ",
+      "unit": "ଟନ୍ CO₂/ବର୍ଷ"
+    },
+    "globalEmissions": {
+      "label": "ବିଶ୍ୱ ବାର୍ଷିକ ଉତ୍ସର୍ଜନ",
+      "unit": "ବିଲିୟନ୍ ଟନ୍ CO₂"
+    },
+    "treesRequired": {
+      "label": "୧ ଟନ୍ CO₂ ଶୋଷଣ ପାଇଁ ଗଛ",
+      "unit": "ଗଛ/ବର୍ଷ"
+    },
+    "topContributor": {
+      "label": "ମୁଖ୍ୟ ଉତ୍ସର୍ଜନ ଯୋଗଦାତା",
+      "unit": "୭୩% ଉତ୍ସର୍ଜନ",
+      "value": "ଶକ୍ତି"
+    }
+  },
+  "tipsCarousel": {
+    "title": "ଦ୍ରୁତ ସ୍ଥାୟୀତା ପରାମର୍ଶ",
+    "previous": "ପୂର୍ବବର୍ତ୍ତୀ ପରାମର୍ଶ",
+    "next": "ପରବର୍ତ୍ତୀ ପରାମର୍ଶ",
+    "items": [
+      "ବ୍ୟବହାର ନହେଲେ ଉପକରଣ ବନ୍ଦ କରନ୍ତୁ।",
+      "ଛୋଟ ଦୂରତା ପାଇଁ ଗାଡ଼ି ବଦଳରେ ପଦଚାରଣା କରନ୍ତୁ।",
+      "କିଣିବା ସମୟରେ ପୁନଃବ୍ୟବହାର ଯୋଗ୍ୟ ବ୍ୟାଗ ବ୍ୟବହାର କରନ୍ତୁ।",
+      "ଆଗଧାରୀ ଭୋଜନ ଯୋଜନା କରି ଖାଦ୍ୟ ଅପଚୟ ହ୍ରାସ କରନ୍ତୁ।",
+      "ଶକ୍ତି ବଞ୍ଚାଇବା ପାଇଁ LED ବଳବକୁ ବଦଳାନ୍ତୁ।",
+      "ଯେତେ ସମ୍ଭବ ଜନସାଧାରଣ ପରିବହନ ନିଅନ୍ତୁ।",
+      "ବ୍ୟବହାର ନହେଲେ ଚାର୍ଜର ଅନପ୍ଲଗ୍ କରନ୍ତୁ।",
+      "ସ୍ଥାନୀୟ ଏବଂ ଋତୁକାଳୀନ ଉତ୍ପାଦ କିଣନ୍ତୁ।",
+      "ଜଳ ଏବଂ ଶକ୍ତି ବଞ୍ଚାଇବା ପାଇଁ ଲିକ୍ ମରାମତି କରନ୍ତୁ।",
+      "ଘରେ ଜୈବ ଆବର୍ଜନା କମ୍ପୋଷ୍ଟ କରନ୍ତୁ।",
+      "ରିଫିଲ୍ ଯୋଗ୍ୟ ଜଳ ବୋତଲ ବ୍ୟବହାର କରନ୍ତୁ।",
+      "ଡ୍ରାୟର୍ ବଦଳରେ ବାୟୁରେ କପଡ଼ା ଶୁଖାନ୍ତୁ।"
+    ]
+  },
+  "calculator": {
+    "title": "କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ କାଲକୁଲେଟର",
+    "subtitle": "ଭାରତ-ନିର୍ଦ୍ଦିଷ୍ଟ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା କରିବା ପାଇଁ ଆପଣଙ୍କ ଜୀବନଶୈଳୀ ବିବରଣୀ ପ୍ରବେଶ କରନ୍ତୁ।",
+    "yourDetails": "ଆପଣଙ୍କ ବିବରଣୀ",
+    "electricityLabel": "ମାସିକ ବିଦ୍ୟୁତ୍ ବ୍ୟବହାର (kWh)",
+    "vehicleLabel": "ଯାନ ପ୍ରକାର",
+    "distanceLabel": "ମାସିକ ଯାତ୍ରା ଦୂରତା (km)",
+    "domesticFlights": "ଦେଶୀୟ ବିମାନ/ବର୍ଷ",
+    "internationalFlights": "ଆନ୍ତର୍ଜାତୀୟ ବିମାନ/ବର୍ଷ",
+    "foodLabel": "ଖାଦ୍ୟ ଅଭ୍ୟାସ",
+    "wasteLabel": "ସାପ୍ତାହିକ ଆବର୍ଜନା (kg)",
+    "householdLabel": "ପରିବାର ଆକାର (ସଦସ୍ୟ)",
+    "yourFootprint": "ଆପଣଙ୍କ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ",
+    "monthly": "ମାସିକ",
+    "annual": "ବାର୍ଷିକ",
+    "save": "ଗଣନା ସଞ୍ଚୟ କରନ୍ତୁ",
+    "saved": "ସଫଳତାର ସହିତ ସଞ୍ଚୟ ହେଲା!",
+    "environmentalImpact": "ପରିବେଶଗତ ପ୍ରଭାବ",
+    "treesOffset": "ଆପଣଙ୍କ ଉତ୍ସର୍ଜନ ଅଫସେଟ୍ ପାଇଁ ବାର୍ଷିକ {{count}} ଗଛ ଆବଶ୍ୟକ।",
+    "recommendationsTitle": "ସ୍ମାର୍ଟ ସୁପାରିଶ",
+    "vehicles": {
+      "petrol_car": "ପେଟ୍ରୋଲ୍ ଗାଡ଼ି",
+      "diesel_car": "ଡିଜେଲ୍ ଗାଡ଼ି",
+      "electric_vehicle": "ବିଦ୍ୟୁତ୍ ଯାନ",
+      "motorcycle": "ମୋଟରସାଇକଲ",
+      "public_transport": "ଜନସାଧାରଣ ପରିବହନ"
+    },
+    "foodTypes": {
+      "vegan": "ଭେଗାନ",
+      "vegetarian": "ଶାକାହାରୀ",
+      "mixed": "ମିଶ୍ର ଖାଦ୍ୟ",
+      "high_meat": "ଅଧିକ ମାଂସ ସେବନ"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "ଆବଶ୍ୟକ ଗଛ",
+    "kmDriven": "ଚାଳିତ km",
+    "coalBurned": "ଜଳିଥିବା କୋଇଲା",
+    "phoneCharges": "ଫୋନ୍ ଚାର୍ଜ",
+    "electricity": "ବିଦ୍ୟୁତ୍",
+    "treesUnit": "ଗଛ/ବର୍ଷ",
+    "kmUnit": "km ସମତୁଲ୍ୟ",
+    "coalUnit": "kg କୋଇଲା",
+    "chargesUnit": "ଚାର୍ଜ",
+    "kwhUnit": "kWh ସମତୁଲ୍ୟ"
+  },
+  "tracker": {
+    "title": "କାର୍ବନ ଟ୍ରାକର",
+    "subtitle": "ଆପଣଙ୍କ ସଞ୍ଚୟ ହୋଇଥିବା ଗଣନା ଟ୍ରାକ୍ କରନ୍ତୁ ଏବଂ ସମୟ ସହିତ ଉନ୍ନତି ନିରୀକ୍ଷଣ କରନ୍ତୁ।",
+    "newCalculation": "ନୂଆ ଗଣନା",
+    "periods": {
+      "daily": "ଦୈନିକ",
+      "weekly": "ସାପ୍ତାହିକ",
+      "monthly": "ମାସିକ",
+      "yearly": "ବାର୍ଷିକ"
+    },
+    "footprint": "ଫୁଟପ୍ରିଣ୍ଟ",
+    "recorded": "ରେକର୍ଡ ହୋଇଛି",
+    "emptyTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଗଣନା ନାହିଁ",
+    "emptyPeriodTitle": "ଏହି ଅବଧିରେ କୌଣସି ଗଣନା ନାହିଁ",
+    "emptyDesc": "ଆପଣଙ୍କ ପ୍ରଗତି ଟ୍ରାକ୍ କରିବା ପାଇଁ ପ୍ରଥମେ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା କରନ୍ତୁ।",
+    "emptyPeriodDesc": "ଚୟନିତ {{period}} ଦୃଶ୍ୟରେ କୌଣସି ସଞ୍ଚୟ ହୋଇଥିବା ଗଣନା ମେଳ ଖାଉନାହିଁ। ଅନ୍ୟ ଅବଧି ଚେଷ୍ଟା କରନ୍ତୁ କିମ୍ବା ନୂଆ ଗଣନା ଯୋଡ଼ନ୍ତୁ।",
+    "calculateNow": "ବର୍ତ୍ତମାନ ଗଣନା କରନ୍ତୁ",
+    "delete": "ଗଣନା ଡିଲିଟ୍ କରନ୍ତୁ"
+  },
+  "dashboard": {
+    "title": "ବିଶ୍ଳେଷଣ ଡ୍ୟାସବୋର୍ଡ",
+    "subtitle": "ଆପଣଙ୍କ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ପ୍ରବୃତ୍ତି ଏବଂ ପ୍ରଗତି ଦୃଶ୍ୟମାନ କରନ୍ତୁ।",
+    "export": "PDF ରିପୋର୍ଟ ରପ୍ତାନି କରନ୍ତୁ",
+    "exporting": "ରପ୍ତାନି ହେଉଛି...",
+    "noDataTitle": "କୌଣସି ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ",
+    "noDataDesc": "ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ଡ୍ୟାସବୋର୍ଡ ଦେଖିବା ପାଇଁ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ।",
+    "goToCalculator": "କାଲକୁଲେଟରକୁ ଯାଆନ୍ତୁ",
+    "charts": {
+      "monthlyTrend": "ମାସିକ ଫୁଟପ୍ରିଣ୍ଟ ପ୍ରବୃତ୍ତି",
+      "categoryPie": "ବର୍ଗ ଯୋଗଦାନ",
+      "annualProgress": "ବାର୍ଷିକ ପ୍ରଗତି (kg CO₂/ବର୍ଷ)",
+      "reductionTrend": "ହ୍ରାସ ପ୍ରବୃତ୍ତି (%)",
+      "scoreHistory": "କାର୍ବନ ସ୍କୋର୍ ଇତିହାସ"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "କାର୍ବନ ହ୍ରାସ ପ୍ଲାନର",
+    "subtitle": "ଲକ୍ଷ୍ୟ ନିର୍ଦ୍ଧାରଣ କରନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ଫୁଟପ୍ରିଣ୍ଟ ହ୍ରାସ ପାଇଁ ବ୍ୟକ୍ତିଗତ ସାପ୍ତାହିକ ଯୋଜନା ପାଆନ୍ତୁ।",
+    "selectTarget": "ଆପଣଙ୍କ ଲକ୍ଷ୍ୟ ହ୍ରାସ ବାଛନ୍ତୁ",
+    "basedOn": "ଆପଣଙ୍କ {{footprint}} ବାର୍ଷିକ ଫୁଟପ୍ରିଣ୍ଟ ଉପରେ ଆଧାରିତ",
+    "targetReduction": "ଲକ୍ଷ୍ୟ ହ୍ରାସ",
+    "expectedReduction": "ଆଶାକୃତ ହ୍ରାସ",
+    "treesSaved": "ବଞ୍ଚିଥିବା ଗଛ",
+    "progress": "ପ୍ରଗତି",
+    "tasks": "କାର୍ଯ୍ୟ",
+    "achievedReduction": "ହାସଲ ହୋଇଥିବା ହ୍ରାସ: {{amount}} ({{percent}}%)",
+    "week": "ସପ୍ତାହ {{n}}",
+    "createNew": "ନୂଆ ଯୋଜନା ସୃଷ୍ଟି କରନ୍ତୁ",
+    "calculateFirstTitle": "ପ୍ରଥମେ ଗଣନା କରନ୍ତୁ",
+    "calculateFirstDesc": "ହ୍ରାସ ଯୋଜନା ସୃଷ୍ଟି କରିବା ପୂର୍ବରୁ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ।",
+    "customTarget": "କଷ୍ଟମ୍ ଲକ୍ଷ୍ୟ",
+    "customTargetLabel": "ଲକ୍ଷ୍ୟ ହ୍ରାସ (%)",
+    "customPlaceholder": "ଉଦା., ୨୫",
+    "generatePlan": "ଯୋଜନା ସୃଷ୍ଟି କରନ୍ତୁ",
+    "custom": "କଷ୍ଟମ୍"
+  },
+  "categories": {
+    "electricity": "ବିଦ୍ୟୁତ୍",
+    "transportation": "ପରିବହନ",
+    "flights": "ବିମାନ",
+    "food": "ଖାଦ୍ୟ",
+    "waste": "ଆବର୍ଜନା"
+  },
+  "scores": {
+    "Excellent": "ଉତ୍କୃଷ୍ଟ",
+    "Good": "ଭଲ",
+    "Moderate": "ମଧ୍ୟମ",
+    "High": "ଉଚ୍ଚ",
+    "Critical": "ଜରୁରୀ"
+  },
+  "badges": {
+    "earned": "ଅର୍ଜନ କରାଯାଇଛି",
+    "locked": "ଲକ୍",
+    "greenStarter": {
+      "name": "ସବୁଜ ଆରମ୍ଭକାରୀ",
+      "description": "ଆପଣଙ୍କ ପ୍ରଥମ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଗଣନା ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ।"
+    },
+    "ecoLearner": {
+      "name": "ଇକୋ ଶିଖୁଆ",
+      "description": "୬୦ କିମ୍ବା ତାଠାରୁ ଅଧିକ କାର୍ବନ ସ୍କୋର୍ ହାସଲ କରନ୍ତୁ।"
+    },
+    "ecoWarrior": {
+      "name": "ଇକୋ ଯୋଦ୍ଧା",
+      "description": "ଆପଣଙ୍କ ହ୍ରାସ ପ୍ଲାନରର ୫୦% କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ।"
+    },
+    "climateChampion": {
+      "name": "ଜଳବାୟୁ ଚାମ୍ପିଅନ୍",
+      "description": "ଆପଣଙ୍କ ପ୍ରଥମ ଗଣନା ତୁଳନାରେ ଫୁଟପ୍ରିଣ୍ଟ ୧୦% ହ୍ରାସ କରନ୍ତୁ।"
+    },
+    "earthGuardian": {
+      "name": "ପୃଥିବୀ ରକ୍ଷକ",
+      "description": "ଉତ୍କୃଷ୍ଟ ସ୍କୋର୍ ହାସଲ କରନ୍ତୁ ଏବଂ ସମସ୍ତ ପ୍ଲାନର କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ।"
+    }
+  },
+  "footer": {
+    "quickLinks": "ଦ୍ରୁତ ଲିଙ୍କ",
+    "missionTitle": "ଆମର ଲକ୍ଷ୍ୟ",
+    "mission": "ଭାରତୀୟମାନଙ୍କୁ ସ୍ଥାୟୀ ଭବିଷ୍ୟତ ପାଇଁ ସେମାନଙ୍କ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ବୁଝିବା, ଟ୍ରାକ୍ ଏବଂ ହ୍ରାସ କରିବାରେ ସଶକ୍ତ କରିବା।",
+    "copyright": "ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।",
+    "madeWith": "ପୃଥିବୀ ପାଇଁ ପ୍ରେମରେ ନିର୍ମିତ"
+  },
+  "common": {
+    "loading": "ଲୋଡ୍ ହେଉଛି...",
+    "save": "ସଞ୍ଚୟ",
+    "close": "ମୋଡାଲ୍ ବନ୍ଦ କରନ୍ତୁ",
+    "co2": "kg CO₂",
+    "co2Tonnes": "ଟନ୍ CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

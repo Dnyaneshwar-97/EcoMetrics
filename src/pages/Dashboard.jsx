@@ -1,27 +1,33 @@
 import { useMemo, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { BarChart3, Download, Loader2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { BarChart3, Download, Loader2, Award, ChevronRight } from 'lucide-react';
 import PageWrapper from '../components/layout/PageWrapper';
 import TrendChart from '../components/charts/TrendChart';
 import CategoryPieChart from '../components/charts/CategoryPieChart';
 import ProgressBarChart from '../components/charts/ProgressBarChart';
 import ReductionAreaChart from '../components/charts/ReductionAreaChart';
-import BadgeDisplay from '../components/ui/BadgeDisplay';
 import Button from '../components/ui/Button';
 import TipsCarousel from '../components/sections/TipsCarousel';
 import { useCarbonData } from '../hooks/useLocalStorage';
-import { evaluateBadges } from '../services/badgeService';
+import { evaluateBadges, getEarnedBadgeCount } from '../services/badgeService';
 import { generateRecommendations } from '../services/recommendationService';
 import { getMonthLabel } from '../utils/formatters';
 import { calculateImprovement } from '../utils/calculations';
 import { generatePdfReport, captureDashboardCharts, CHART_EXPORT_IDS } from '../utils/pdfExport';
 import { ROUTES } from '../constants/ui';
 
-const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTH_INDICES = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 const Dashboard = () => {
+  const { t, i18n } = useTranslation();
   const { calculations, latestCalculation, plan, loading } = useCarbonData();
   const [exporting, setExporting] = useState(false);
+
+  const monthNames = useMemo(() => {
+    const formatter = new Intl.DateTimeFormat(i18n.language, { month: 'short' });
+    return MONTH_INDICES.map((index) => formatter.format(new Date(2024, index, 1)));
+  }, [i18n.language]);
 
   const badges = useMemo(
     () => evaluateBadges(calculations, plan),
@@ -57,7 +63,7 @@ const Dashboard = () => {
       monthlyTotals[month].push(calc.annualFootprintKg);
     });
 
-    return MONTH_NAMES.map((name, index) => ({
+    return monthNames.map((name, index) => ({
       label: name,
       value: monthlyTotals[index]
         ? Math.round(
@@ -65,7 +71,7 @@ const Dashboard = () => {
           )
         : 0,
     }));
-  }, [calculations]);
+  }, [calculations, monthNames]);
 
   const reductionData = useMemo(() => {
     const reversed = [...calculations].reverse();
@@ -108,7 +114,7 @@ const Dashboard = () => {
   if (loading) {
     return (
       <PageWrapper className="py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center text-slate-500">Loading...</div>
+        <div className="max-w-7xl mx-auto px-4 text-center text-slate-500">{t('common.loading')}</div>
       </PageWrapper>
     );
   }
@@ -118,12 +124,10 @@ const Dashboard = () => {
       <PageWrapper className="py-12">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <BarChart3 className="w-16 h-16 text-slate-300 dark:text-slate-600 mx-auto mb-4" aria-hidden="true" />
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">No Data Available</h2>
-          <p className="text-slate-500 dark:text-slate-400 mb-6">
-            Complete a carbon footprint calculation to view your analytics dashboard.
-          </p>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('dashboard.noDataTitle')}</h2>
+          <p className="text-slate-500 dark:text-slate-400 mb-6">{t('dashboard.noDataDesc')}</p>
           <Link to={ROUTES.CALCULATOR}>
-            <Button>Go to Calculator</Button>
+            <Button>{t('dashboard.goToCalculator')}</Button>
           </Link>
         </div>
       </PageWrapper>
@@ -137,11 +141,9 @@ const Dashboard = () => {
           <div>
             <h1 className="section-title mb-2 flex items-center gap-3">
               <BarChart3 className="w-8 h-8 text-emerald-600" aria-hidden="true" />
-              Analytics Dashboard
+              {t('dashboard.title')}
             </h1>
-            <p className="text-slate-600 dark:text-slate-400">
-              Visualize your carbon footprint trends and progress.
-            </p>
+            <p className="text-slate-600 dark:text-slate-400">{t('dashboard.subtitle')}</p>
           </div>
           <Button variant="secondary" onClick={handleExportPdf} disabled={exporting}>
             {exporting ? (
@@ -149,7 +151,7 @@ const Dashboard = () => {
             ) : (
               <Download className="w-5 h-5" aria-hidden="true" />
             )}
-            {exporting ? 'Exporting...' : 'Export PDF Report'}
+            {exporting ? t('dashboard.exporting') : t('dashboard.export')}
           </Button>
         </div>
 
@@ -157,24 +159,24 @@ const Dashboard = () => {
           <TrendChart
             data={trendData}
             dataKey="footprint"
-            title="Monthly Footprint Trend"
+            title={t('dashboard.charts.monthlyTrend')}
             exportId={CHART_EXPORT_IDS.MONTHLY_TREND}
           />
           <CategoryPieChart
             data={latestCalculation?.categories}
-            title="Category Contribution"
+            title={t('dashboard.charts.categoryPie')}
             exportId={CHART_EXPORT_IDS.CATEGORY_PIE}
           />
           <ProgressBarChart
             data={annualProgressData}
             dataKey="value"
-            title="Annual Progress (kg CO₂/year)"
+            title={t('dashboard.charts.annualProgress')}
             exportId={CHART_EXPORT_IDS.ANNUAL_PROGRESS}
           />
           <ReductionAreaChart
             data={reductionData}
             dataKey="reduction"
-            title="Reduction Trend (%)"
+            title={t('dashboard.charts.reductionTrend')}
             exportId={CHART_EXPORT_IDS.REDUCTION_TREND}
           />
         </div>
@@ -184,14 +186,34 @@ const Dashboard = () => {
             data={scoreHistoryData}
             dataKey="score"
             color="#3b82f6"
-            title="Carbon Score History"
+            title={t('dashboard.charts.scoreHistory')}
             exportId={CHART_EXPORT_IDS.SCORE_HISTORY}
           />
         </div>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Your Badges</h2>
-          <BadgeDisplay badges={badges} exportId={CHART_EXPORT_IDS.BADGES} />
+          <Link
+            to={ROUTES.BADGES}
+            className="glass-card p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-xl transition-all group"
+          >
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl group-hover:scale-105 transition-transform">
+                <Award className="w-7 h-7 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
+                  {t('dashboard.badgesLinkTitle')}
+                </h2>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  {t('dashboard.badgesLinkDesc', { earned: getEarnedBadgeCount(badges), total: badges.length })}
+                </p>
+              </div>
+            </div>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+              {t('dashboard.viewBadges')}
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+            </span>
+          </Link>
         </section>
 
         <div className="max-w-2xl mx-auto">

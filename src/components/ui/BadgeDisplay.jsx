@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { getIcon } from '../../utils/icons';
+import { kebabToCamel } from '../../utils/i18nHelpers';
 import { BADGE_STATUS } from '../../constants/badges';
 
 const BadgeDisplay = ({ badges, compact = false, exportId }) => {
+  const { t } = useTranslation();
+
   if (!badges?.length) return null;
 
   return (
@@ -11,6 +15,7 @@ const BadgeDisplay = ({ badges, compact = false, exportId }) => {
       {badges.map((badge, index) => {
         const IconComponent = getIcon(badge.icon);
         const isEarned = badge.status === BADGE_STATUS.EARNED;
+        const key = kebabToCamel(badge.id);
 
         return (
           <motion.div
@@ -36,9 +41,13 @@ const BadgeDisplay = ({ badges, compact = false, exportId }) => {
                 aria-hidden="true"
               />
             </div>
-            <h4 className="font-semibold text-slate-900 dark:text-white text-sm">{badge.name}</h4>
+            <h4 className="font-semibold text-slate-900 dark:text-white text-sm">
+              {t(`badges.${key}.name`)}
+            </h4>
             {!compact && (
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{badge.description}</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                {t(`badges.${key}.description`)}
+              </p>
             )}
             <span
               className={`inline-block mt-2 text-xs font-medium px-2 py-0.5 rounded-full ${
@@ -47,7 +56,7 @@ const BadgeDisplay = ({ badges, compact = false, exportId }) => {
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
               }`}
             >
-              {isEarned ? 'Earned' : 'Locked'}
+              {isEarned ? t('badges.earned') : t('badges.locked')}
             </span>
           </motion.div>
         );

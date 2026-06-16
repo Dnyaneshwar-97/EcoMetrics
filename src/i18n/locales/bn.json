@@ -1,0 +1,352 @@
+{
+  "app": {
+    "name": "EcoMetrics",
+    "tagline": "ভারতের জন্য কার্বন ফুটপ্রিন্ট সচেতনতা প্ল্যাটফর্ম"
+  },
+  "nav": {
+    "home": "হোম",
+    "calculator": "ক্যালকুলেটর",
+    "tracker": "ট্র্যাকার",
+    "dashboard": "ড্যাশবোর্ড",
+    "planner": "প্ল্যানার",
+    "openMenu": "মেনু খুলুন",
+    "closeMenu": "মেনু বন্ধ করুন",
+    "selectLanguage": "ভাষা নির্বাচন করুন",
+    "badges": "ব্যাজ"
+  },
+  "theme": {
+    "light": "লাইট মোডে স্যুইচ করুন",
+    "dark": "ডার্ক মোডে স্যুইচ করুন"
+  },
+  "hero": {
+    "badge": "ভারতের জন্য কার্বন ফুটপ্রিন্ট সচেতনতা",
+    "title": "আপনার বুঝুন",
+    "titleHighlight": "কার্বন ফুটপ্রিন্ট",
+    "subtitle": "ভারত-নির্দিষ্ট তথ্য দিয়ে আপনার পরিবেশগত প্রভাব গণনা, ট্র্যাক এবং হ্রাস করুন। একটি টেকসই ভবিষ্যতের দিকে আন্দোলনে যোগ দিন।",
+    "ctaCalculate": "আমার কার্বন ফুটপ্রিন্ট গণনা করুন",
+    "ctaReduce": "আজ থেকেই হ্রাস শুরু করুন",
+    "imageAlt": "বনের উপর থেকে দৃশ্য যেখানে পায়ের ছাপের আকৃতির খালি জায়গা, প্রকৃতির উপর মানুষের প্রভাবের প্রতীক"
+  },
+  "education": {
+    "title": "কার্বন ফুটপ্রিন্ট কী?",
+    "description": "কার্বন ফুটপ্রিন্ট হল আমাদের কাজকর্ম থেকে উৎপন্ন গ্রিনহাউস গ্যাসের (কার্বন ডাইঅক্সাইড ও মিথেন সহ) মোট পরিমাণ। এটি প্রতি বছর CO₂ সমতুল্য টনে পরিমাপ করা হয়।",
+    "whyItMatters": "ভারত বিশ্বের তৃতীয় বৃহত্তম নির্গমনকারী। আপনার ফুটপ্রিন্ট বোঝা জলবায়ু পরিবর্তন মোকাবিলা, জীববৈচিত্র্য রক্ষা এবং ভবিষ্যৎ প্রজন্মের জন্য টেকসই ভবিষ্যৎ গড়তে সাহায্য করে।",
+    "sourcesTitle": "নির্গমনের উৎস"
+  },
+  "emissionSources": {
+    "transportation": {
+      "title": "পরিবহন",
+      "description": "গাড়ি, বাস, ট্রেন ও বিমান ব্যক্তিগত নির্গমনে উল্লেখযোগ্য অবদান রাখে।"
+    },
+    "electricity": {
+      "title": "বিদ্যুৎ ব্যবহার",
+      "description": "কয়লা ও গ্যাস থেকে বিদ্যুৎ উৎপাদন প্রচুর পরিমাণ CO₂ নির্গত করে।"
+    },
+    "food": {
+      "title": "খাদ্য উৎপাদন",
+      "description": "কৃষি, বিশেষ করে মাংস উৎপাদন, প্রচুর গ্রিনহাউস গ্যাস তৈরি করে।"
+    },
+    "waste": {
+      "title": "বর্জ্য উৎপাদন",
+      "description": "ল্যান্ডফিল মিথেন উৎপন্ন করে, যা একটি শক্তিশালী গ্রিনহাউস গ্যাস।"
+    }
+  },
+  "impact": {
+    "title": "পরিবেশগত প্রভাব",
+    "subtitle": "কার্বন নির্গমন আমাদের গ্রহকে বিভিন্নভাবে প্রভাবিত করে। এই প্রভাবগুলো বোঝা পরিবর্তনের জন্য অনুপ্রেরণা দেয়।",
+    "calculatedTitle": "কার্বন ফুটপ্রিন্ট কীভাবে গণনা করা হয়",
+    "calculatedSubtitle": "আপনার ব্যক্তিগত নির্গমন অনুমান করতে আমরা পাঁচটি প্রধান জীবনধারার বিভাগ বিশ্লেষণ করি।",
+    "tipsTitle": "হ্রাসের পরামর্শ",
+    "tipsSubtitle": "দৈনন্দিন অভ্যাসে ছোট পরিবর্তন উল্লেখযোগ্য পার্থক্য তৈরি করতে পারে।"
+  },
+  "environmentalImpacts": {
+    "globalWarming": {
+      "title": "বৈশ্বিক উষ্ণায়ন",
+      "description": "তাপমাত্রা বৃদ্ধি বিশ্বজুড়ে বাস্তুতন্ত্র ও আবহাওয়ার ধরনকে প্রভাবিত করে।"
+    },
+    "climateChange": {
+      "title": "জলবায়ু পরিবর্তন",
+      "description": "তাপমাত্রা ও আবহাওয়ার দীর্ঘমেয়াদি পরিবর্তন জীবিকাকে বিঘ্নিত করে।"
+    },
+    "deforestation": {
+      "title": "বন নিধন",
+      "description": "কৃষির জন্য বন পরিষ্কার করা হয়, CO₂ শোষণ ক্ষমতা হ্রাস পায়।"
+    },
+    "airPollution": {
+      "title": "বায়ু দূষণ",
+      "description": "জীবাশ্ম জ্বালানি পোড়ালে ক্ষতিকর দূষক নির্গত হয় যা স্বাস্থ্যকে প্রভাবিত করে।"
+    },
+    "biodiversity": {
+      "title": "জীববৈচিত্র্য হ্রাস",
+      "description": "জলবায়ু পরিবর্তনে আবাসস্থল ধ্বংস হওয়ায় প্রজাতি বিলুপ্তি ত্বরান্বিত হয়।"
+    },
+    "extremeWeather": {
+      "title": "চরম আবহাওয়া",
+      "description": "আরও ঘন ঘন বন্যা, খরা ও ঘূর্ণিঝড় সম্প্রদায়কে হুমকির মুখে ফেলে।"
+    }
+  },
+  "calcCategories": {
+    "electricity": {
+      "title": "গৃহস্থালি বিদ্যুৎ",
+      "unit": "kWh/মাস"
+    },
+    "transportation": {
+      "title": "পরিবহন",
+      "unit": "km/মাস"
+    },
+    "flights": {
+      "title": "বিমান ভ্রমণ",
+      "unit": "বিমান/বছর"
+    },
+    "food": {
+      "title": "খাদ্যাভ্যাস",
+      "unit": "খাদ্যের ধরন"
+    },
+    "waste": {
+      "title": "বর্জ্য উৎপাদন",
+      "unit": "kg/সপ্তাহ"
+    }
+  },
+  "reductionTips": {
+    "publicTransport": {
+      "title": "গণপরিবহন ব্যবহার করুন",
+      "description": "দৈনন্দিন যাতায়াতে বাস বা মেট্রো ব্যবহার করে নির্গমন উল্লেখযোগ্যভাবে কমান।"
+    },
+    "ledLights": {
+      "title": "LED বাতি ব্যবহার করুন",
+      "description": "LED বাল্ব সাধারণ তাপ বাল্বের তুলনায় ৭৫% পর্যন্ত কম শক্তি ব্যবহার করে।"
+    },
+    "solarPanels": {
+      "title": "সৌর প্যানেল স্থাপন করুন",
+      "description": "পরিষ্কার শক্তি উৎপাদন করুন এবং গ্রিড বিদ্যুতের উপর নির্ভরতা কমান।"
+    },
+    "reduceFoodWaste": {
+      "title": "খাদ্য বর্জ্য কমান",
+      "description": "খাবার পরিকল্পনা করুন এবং সঠিকভাবে সংরক্ষণ করে বর্জ্য কমান।"
+    },
+    "recycle": {
+      "title": "পুনর্ব্যবহার",
+      "description": "কাগজ, প্লাস্টিক ও ধাতব বর্জ্য আলাদা করে পুনর্ব্যবহার করুন।"
+    },
+    "plantTrees": {
+      "title": "গাছ লাগান",
+      "description": "গাছ CO₂ শোষণ করে এবং আপনার এলাকার বায়ুর গুণমান উন্নত করে।"
+    }
+  },
+  "stats": {
+    "sectionTitle": "টেকসই উন্নয়নের পরিসংখ্যান",
+    "sectionSubtitle": "ভারত ও বিশ্বে কার্বন নির্গমন সম্পর্কে মূল তথ্য।",
+    "indianAverage": {
+      "label": "গড় ভারতীয় বার্ষিক ফুটপ্রিন্ট",
+      "unit": "টন CO₂/বছর"
+    },
+    "globalEmissions": {
+      "label": "বৈশ্বিক বার্ষিক নির্গমন",
+      "unit": "বিলিয়ন টন CO₂"
+    },
+    "treesRequired": {
+      "label": "১ টন CO₂ শোষণে প্রয়োজনীয় গাছ",
+      "unit": "গাছ/বছর"
+    },
+    "topContributor": {
+      "label": "প্রধান নির্গমনের উৎস",
+      "unit": "নির্গমনের ৭৩%",
+      "value": "শক্তি"
+    }
+  },
+  "tipsCarousel": {
+    "title": "দ্রুত টেকসই পরামর্শ",
+    "previous": "আগের পরামর্শ",
+    "next": "পরের পরামর্শ",
+    "items": [
+      "ব্যবহার না করলে যন্ত্রপাতি বন্ধ রাখুন।",
+      "স্বল্প দূরত্বে গাড়ির বদলে হাঁটুন।",
+      "কেনাকাটায় পুনর্ব্যবহারযোগ্য ব্যাগ ব্যবহার করুন।",
+      "আগে থেকে খাবার পরিকল্পনা করে খাদ্য বর্জ্য কমান।",
+      "শক্তি সাশ্রয়ের জন্য LED বাল্ব ব্যবহার করুন।",
+      "যতটা সম্ভব গণপরিবহন ব্যবহার করুন।",
+      "ব্যবহার না করলে চার্জার unplug করুন।",
+      "স্থানীয় ও মৌসুমি পণ্য কিনুন।",
+      "ফুটো ঠিক করে জল ও শক্তি সাশ্রয় করুন।",
+      "বাড়িতে জৈব বর্জ্য কম্পোস্ট করুন।",
+      "পুনরায় ভরাটযোগ্য জলের বোতল ব্যবহার করুন।",
+      "ড্রায়ারের বদলে কাপড় বাতাসে শুকান।"
+    ]
+  },
+  "calculator": {
+    "title": "কার্বন ফুটপ্রিন্ট ক্যালকুলেটর",
+    "subtitle": "ভারত-নির্দিষ্ট কার্বন ফুটপ্রিন্ট গণনা করতে আপনার জীবনধারার বিবরণ লিখুন।",
+    "yourDetails": "আপনার বিবরণ",
+    "electricityLabel": "মাসিক বিদ্যুৎ ব্যবহার (kWh)",
+    "vehicleLabel": "যানবাহনের ধরন",
+    "distanceLabel": "মাসিক ভ্রমণ দূরত্ব (km)",
+    "domesticFlights": "অভ্যন্তরীণ বিমান/বছর",
+    "internationalFlights": "আন্তর্জাতিক বিমান/বছর",
+    "foodLabel": "খাদ্যাভ্যাস",
+    "wasteLabel": "সাপ্তাহিক বর্জ্য (kg)",
+    "householdLabel": "পরিবারের সদস্য সংখ্যা",
+    "yourFootprint": "আপনার কার্বন ফুটপ্রিন্ট",
+    "monthly": "মাসিক",
+    "annual": "বার্ষিক",
+    "save": "গণনা সংরক্ষণ করুন",
+    "saved": "সফলভাবে সংরক্ষিত!",
+    "environmentalImpact": "পরিবেশগত প্রভাব",
+    "treesOffset": "আপনার নির্গমন সমাহার করতে বার্ষিক {{count}}টি গাছ প্রয়োজন।",
+    "recommendationsTitle": "স্মার্ট সুপারিশ",
+    "vehicles": {
+      "petrol_car": "পেট্রোল গাড়ি",
+      "diesel_car": "ডিজেল গাড়ি",
+      "electric_vehicle": "বৈদ্যুতিক যান",
+      "motorcycle": "মোটরসাইকেল",
+      "public_transport": "গণপরিবহন"
+    },
+    "foodTypes": {
+      "vegan": "ভেগান",
+      "vegetarian": "নিরামিষ",
+      "mixed": "মিশ্র খাদ্য",
+      "high_meat": "উচ্চ মাংস গ্রহণ"
+    }
+  },
+  "impactCards": {
+    "treesRequired": "প্রয়োজনীয় গাছ",
+    "kmDriven": "চালিত km",
+    "coalBurned": "পোড়ানো কয়লা",
+    "phoneCharges": "ফোন চার্জ",
+    "electricity": "বিদ্যুৎ",
+    "treesUnit": "গাছ/বছর",
+    "kmUnit": "km সমতুল্য",
+    "coalUnit": "kg কয়লা",
+    "chargesUnit": "চার্জ",
+    "kwhUnit": "kWh সমতুল্য"
+  },
+  "tracker": {
+    "title": "কার্বন ট্র্যাকার",
+    "subtitle": "আপনার সংরক্ষিত গণনা ট্র্যাক করুন এবং সময়ের সাথে উন্নতি পর্যবেক্ষণ করুন।",
+    "newCalculation": "নতুন গণনা",
+    "periods": {
+      "daily": "দৈনিক",
+      "weekly": "সাপ্তাহিক",
+      "monthly": "মাসিক",
+      "yearly": "বার্ষিক"
+    },
+    "footprint": "ফুটপ্রিন্ট",
+    "recorded": "রেকর্ড করা",
+    "emptyTitle": "এখনও কোনো গণনা নেই",
+    "emptyPeriodTitle": "এই সময়কালে কোনো গণনা নেই",
+    "emptyDesc": "আপনার অগ্রগতি ট্র্যাক করতে কার্বন ফুটপ্রিন্ট গণনা করে শুরু করুন।",
+    "emptyPeriodDesc": "নির্বাচিত {{period}} দৃশ্যে কোনো সংরক্ষিত গণনা নেই। অন্য সময়কাল চেষ্টা করুন বা নতুন গণনা যোগ করুন।",
+    "calculateNow": "এখনই গণনা করুন",
+    "delete": "গণনা মুছুন"
+  },
+  "dashboard": {
+    "title": "বিশ্লেষণ ড্যাশবোর্ড",
+    "subtitle": "আপনার কার্বন ফুটপ্রিন্টের প্রবণতা ও অগ্রগতি দেখুন।",
+    "export": "PDF রিপোর্ট রপ্তানি",
+    "exporting": "রপ্তানি হচ্ছে...",
+    "noDataTitle": "কোনো তথ্য নেই",
+    "noDataDesc": "বিশ্লেষণ ড্যাশবোর্ড দেখতে কার্বন ফুটপ্রিন্ট গণনা সম্পূর্ণ করুন।",
+    "goToCalculator": "ক্যালকুলেটরে যান",
+    "charts": {
+      "monthlyTrend": "মাসিক ফুটপ্রিন্ট প্রবণতা",
+      "categoryPie": "বিভাগ অনুযায়ী অবদান",
+      "annualProgress": "বার্ষিক অগ্রগতি (kg CO₂/বছর)",
+      "reductionTrend": "হ্রাস প্রবণতা (%)",
+      "scoreHistory": "কার্বন স্কোর ইতিহাস"
+    },
+    "badgesLinkTitle": "Your Sustainability Badges",
+    "badgesLinkDesc": "{{earned}} of {{total}} badges unlocked — view your journey",
+    "viewBadges": "View Badges"
+  },
+  "planner": {
+    "title": "কার্বন হ্রাস পরিকল্পনাকারী",
+    "subtitle": "লক্ষ্য নির্ধারণ করুন এবং আপনার ফুটপ্রিন্ট হ্রাসের জন্য ব্যক্তিগত সাপ্তাহিক পরিকল্পনা পান।",
+    "selectTarget": "আপনার লক্ষ্য হ্রাস নির্বাচন করুন",
+    "basedOn": "আপনার বার্ষিক ফুটপ্রিন্ট {{footprint}} এর উপর ভিত্তি করে",
+    "targetReduction": "লক্ষ্য হ্রাস",
+    "expectedReduction": "প্রত্যাশিত হ্রাস",
+    "treesSaved": "রক্ষিত গাছ",
+    "progress": "অগ্রগতি",
+    "tasks": "কাজ",
+    "achievedReduction": "অর্জিত হ্রাস: {{amount}} ({{percent}}%)",
+    "week": "সপ্তাহ {{n}}",
+    "createNew": "নতুন পরিকল্পনা তৈরি করুন",
+    "calculateFirstTitle": "প্রথমে গণনা করুন",
+    "calculateFirstDesc": "হ্রাস পরিকল্পনা তৈরির আগে কার্বন ফুটপ্রিন্ট গণনা সম্পূর্ণ করুন।",
+    "customTarget": "কাস্টম লক্ষ্য",
+    "customTargetLabel": "লক্ষ্য হ্রাস (%)",
+    "customPlaceholder": "যেমন, ২৫",
+    "generatePlan": "পরিকল্পনা তৈরি করুন",
+    "custom": "কাস্টম"
+  },
+  "categories": {
+    "electricity": "বিদ্যুৎ",
+    "transportation": "পরিবহন",
+    "flights": "বিমান ভ্রমণ",
+    "food": "খাদ্য",
+    "waste": "বর্জ্য"
+  },
+  "scores": {
+    "Excellent": "চমৎকার",
+    "Good": "ভালো",
+    "Moderate": "মাঝারি",
+    "High": "উচ্চ",
+    "Critical": "গুরুতর"
+  },
+  "badges": {
+    "earned": "অর্জিত",
+    "locked": "লক করা",
+    "greenStarter": {
+      "name": "সবুজ শুরু",
+      "description": "আপনার প্রথম কার্বন ফুটপ্রিন্ট গণনা সম্পূর্ণ করুন।"
+    },
+    "ecoLearner": {
+      "name": "ইকো শিক্ষার্থী",
+      "description": "৬০ বা তার বেশি কার্বন স্কোর অর্জন করুন।"
+    },
+    "ecoWarrior": {
+      "name": "ইকো যোদ্ধা",
+      "description": "আপনার হ্রাস পরিকল্পনার ৫০% কাজ সম্পূর্ণ করুন।"
+    },
+    "climateChampion": {
+      "name": "জলবায়ু চ্যাম্পিয়ন",
+      "description": "প্রথম গণনার তুলনায় আপনার ফুটপ্রিন্ট ১০% হ্রাস করুন।"
+    },
+    "earthGuardian": {
+      "name": "পৃথিবীর রক্ষক",
+      "description": "চমৎকার স্কোর অর্জন করুন এবং সব পরিকল্পনার কাজ সম্পূর্ণ করুন।"
+    }
+  },
+  "footer": {
+    "quickLinks": "দ্রুত লিংক",
+    "missionTitle": "আমাদের লক্ষ্য",
+    "mission": "ভারতীয়দের তাদের কার্বন ফুটপ্রিন্ট বোঝা, ট্র্যাক ও হ্রাস করতে ক্ষমতায়ন করা একটি টেকসই ভবিষ্যতের জন্য।",
+    "copyright": "সর্বস্বত্ব সংরক্ষিত।",
+    "madeWith": "পৃথিবীর জন্য ভালোবাসায় তৈরি"
+  },
+  "common": {
+    "loading": "লোড হচ্ছে...",
+    "save": "সংরক্ষণ",
+    "close": "মডাল বন্ধ করুন",
+    "co2": "kg CO₂",
+    "co2Tonnes": "টন CO₂"
+  },
+  "badgesPage": {
+    "title": "Your Badges",
+    "subtitle": "Progress through your sustainability adventure — earn milestones as you reduce your footprint.",
+    "unlockedCount": "{{earned}} of {{total}} badges unlocked",
+    "nextMilestone": "Next Milestone",
+    "roadmapHint": "Follow the path from Green Starter to Earth Guardian",
+    "emptyTitle": "Start Your Journey",
+    "emptyDesc": "Complete your first carbon calculation to begin earning badges.",
+    "downloadPng": "Download PNG",
+    "downloadSvg": "Download SVG",
+    "share": "Share Badge",
+    "shareText": "I earned the {{badge}} badge on {{app}}!",
+    "shareFallback": "Sharing not supported — badge PNG downloaded instead.",
+    "exportHint": "Download or share the selected badge as an image.",
+    "exportFooter": "Sustainability Badge",
+    "previousBadge": "Previous badge",
+    "nextBadge": "Next badge",
+    "exportLockedHint": "Earn this badge to download it as an image."
+  }
+}

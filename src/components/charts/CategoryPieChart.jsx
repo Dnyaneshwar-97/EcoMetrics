@@ -6,20 +6,22 @@ import {
   ResponsiveContainer,
   Legend,
 } from 'recharts';
+import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../hooks/useTheme';
-import { CHART_COLORS, CATEGORY_LABELS } from '../../constants/ui';
+import { CHART_COLORS } from '../../constants/ui';
 
 const CategoryPieChart = ({ data, title, exportId }) => {
+  const { t } = useTranslation();
   const { isDark } = useTheme();
 
   const chartData = Object.entries(data ?? {}).map(([key, value]) => ({
-    name: CATEGORY_LABELS[key] ?? key,
+    name: t(`categories.${key}`, { defaultValue: key }),
     value: Math.round(value * 10) / 10,
     color: CHART_COLORS[key] ?? '#10b981',
   }));
 
   return (
-    <div id={exportId} className="glass-card p-6 bg-white dark:bg-slate-800">
+    <div id={exportId} className="glass-card p-6">
       {title && <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">{title}</h3>}
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>
