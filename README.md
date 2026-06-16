@@ -188,7 +188,7 @@ npm run preview
 
 ## Testing
 
-Automated tests use **Vitest** and **React Testing Library**. They focus on smoke/render checks and basic persistence — not carbon calculation logic.
+Automated tests use **Vitest** and **React Testing Library**. Coverage includes core utilities, services, validation, UI components, and persistence.
 
 ```bash
 npm test          # run once
@@ -197,6 +197,12 @@ npm run test:watch  # watch mode
 
 | Test file | What it validates |
 |-----------|-------------------|
+| `src/test/calculations.test.js` | Score, categories, environmental impact, clamp |
+| `src/test/validators.test.js` | Calculator and planner input validation |
+| `src/test/carbonCalculatorService.test.js` | Footprint calculation and record creation |
+| `src/test/plannerService.test.js` | Plan generation, task toggle/update, progress |
+| `src/test/badgeService.test.js` | Badge earned/locked criteria for all five badges |
+| `src/test/recommendationService.test.js` | Recommendation rules and savings totals |
 | `src/test/storageService.test.js` | localStorage save, delete, clear |
 | `src/test/languages.test.js` | Language list, Urdu RTL flag, font mapping |
 | `src/components/ui/Badge.test.jsx` | Score badge renders with accessible label |
