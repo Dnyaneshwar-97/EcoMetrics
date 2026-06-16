@@ -12,6 +12,7 @@
     "openMenu": "મેનુ ખોલો",
     "closeMenu": "મેનુ બંધ કરો",
     "selectLanguage": "ભાષા પસંદ કરો",
+    "homeLink": "EcoMetrics home",
     "badges": "બેજ"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "લક્ષ્ય ઘટાડો (%)",
     "customPlaceholder": "દા.ત., 25",
     "generatePlan": "યોજના બનાવો",
-    "custom": "કસ્ટમ"
+    "custom": "કસ્ટમ",
+    "markComplete": "કાર્ય પૂર્ણ તરીકે ચિહ્નિત કરો",
+    "markIncomplete": "કાર્ય અપૂર્ણ તરીકે ચિહ્નિત કરો",
+    "editTask": "કાર્ય સંપાદિત કરો",
+    "editTaskInput": "કાર્ય ટેક્સ્ટ સંપાદિત કરો"
   },
   "categories": {
     "electricity": "વીજળી",
@@ -329,6 +334,7 @@
     "loading": "લોડ થઈ રહ્યું છે...",
     "save": "સાચવો",
     "close": "મોડલ બંધ કરો",
+    "skipToContent": "મુખ્ય સામગ્રી પર જાઓ",
     "co2": "kg CO₂",
     "co2Tonnes": "ટન CO₂"
   },

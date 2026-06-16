@@ -19,7 +19,11 @@ const Navbar = () => {
     <nav className="sticky top-0 z-40 bg-slate-100/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-300/60 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to={ROUTES.HOME} className="flex items-center gap-3 group min-w-0">
+          <Link
+            to={ROUTES.HOME}
+            className="flex items-center gap-3 group min-w-0"
+            aria-label={t('nav.homeLink')}
+          >
             <AppLogo size="lg" className="group-hover:scale-[1.03] transition-transform" />
             <span className="text-xl sm:text-2xl font-bold text-gradient truncate">{t('app.name')}</span>
           </Link>

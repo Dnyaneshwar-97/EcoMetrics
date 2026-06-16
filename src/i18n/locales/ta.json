@@ -12,6 +12,7 @@
     "openMenu": "மெனுவைத் திற",
     "closeMenu": "மெனுவை மூடு",
     "selectLanguage": "மொழியைத் தேர்ந்தெடு",
+    "homeLink": "EcoMetrics home",
     "badges": "பேட்ஜ்கள்"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "இலக்கு குறைப்பு (%)",
     "customPlaceholder": "எ.கா., 25",
     "generatePlan": "திட்டம் உருவாக்கு",
-    "custom": "தனிப்பயன்"
+    "custom": "தனிப்பயன்",
+    "markComplete": "பணியை முடிந்ததாகக் குறிக்கவும்",
+    "markIncomplete": "பணியை முடிக்கப்படாததாகக் குறிக்கவும்",
+    "editTask": "பணியைத் திருத்தவும்",
+    "editTaskInput": "பணி உரையைத் திருத்தவும்"
   },
   "categories": {
     "electricity": "மின்சாரம்",
@@ -329,6 +334,7 @@
     "loading": "ஏற்றுகிறது...",
     "save": "சேமி",
     "close": "மாடலை மூடு",
+    "skipToContent": "முதன்மை உள்ளடக்கத்திற்குச் செல்லவும்",
     "co2": "kg CO₂",
     "co2Tonnes": "டன் CO₂"
   },

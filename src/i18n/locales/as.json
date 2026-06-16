@@ -12,6 +12,7 @@
     "openMenu": "মেনু খোলক",
     "closeMenu": "মেনু বন্ধ কৰক",
     "selectLanguage": "ভাষা বাছক",
+    "homeLink": "EcoMetrics home",
     "badges": "বেজ"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "লক্ষ্য হ্ৰাস (%)",
     "customPlaceholder": "যেনে, ২৫",
     "generatePlan": "পৰিকল্পনা সৃষ্টি কৰক",
-    "custom": "কাষ্টম"
+    "custom": "কাষ্টম",
+    "markComplete": "কাৰ্য সম্পূৰ্ণ হিচাপে চিহ্নিত কৰক",
+    "markIncomplete": "কাৰ্য অসম্পূৰ্ণ হিচাপে চিহ্নিত কৰক",
+    "editTask": "কাৰ্য সম্পাদনা কৰক",
+    "editTaskInput": "কাৰ্যৰ পাঠ সম্পাদনা কৰক"
   },
   "categories": {
     "electricity": "বিদ্যুৎ",
@@ -329,6 +334,7 @@
     "loading": "ল'ড হৈ আছে...",
     "save": "সংৰক্ষণ",
     "close": "ম'ডেল বন্ধ কৰক",
+    "skipToContent": "মূল বিষয়বস্তুলৈ যাওক",
     "co2": "kg CO₂",
     "co2Tonnes": "টন CO₂"
   },

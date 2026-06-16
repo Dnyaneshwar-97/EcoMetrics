@@ -12,6 +12,7 @@
     "openMenu": "मेनू खोलें",
     "closeMenu": "मेनू बंद करें",
     "selectLanguage": "भाषा चुनें",
+    "homeLink": "EcoMetrics होम",
     "badges": "बैज"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "लक्ष्य कमी (%)",
     "customPlaceholder": "उदा., 25",
     "generatePlan": "योजना बनाएं",
-    "custom": "कस्टम"
+    "custom": "कस्टम",
+    "markComplete": "कार्य को पूर्ण के रूप में चिह्नित करें",
+    "markIncomplete": "कार्य को अपूर्ण के रूप में चिह्नित करें",
+    "editTask": "कार्य संपादित करें",
+    "editTaskInput": "कार्य पाठ संपादित करें"
   },
   "categories": {
     "electricity": "बिजली",
@@ -329,6 +334,7 @@
     "loading": "लोड हो रहा है...",
     "save": "सहेजें",
     "close": "मोडल बंद करें",
+    "skipToContent": "मुख्य सामग्री पर जाएं",
     "co2": "kg CO₂",
     "co2Tonnes": "टन CO₂"
   },

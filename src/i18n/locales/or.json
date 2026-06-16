@@ -12,6 +12,7 @@
     "openMenu": "ମେନୁ ଖୋଲନ୍ତୁ",
     "closeMenu": "ମେନୁ ବନ୍ଦ କରନ୍ତୁ",
     "selectLanguage": "ଭାଷା ବାଛନ୍ତୁ",
+    "homeLink": "EcoMetrics home",
     "badges": "ବ୍ୟାଜ"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "ଲକ୍ଷ୍ୟ ହ୍ରାସ (%)",
     "customPlaceholder": "ଉଦା., ୨୫",
     "generatePlan": "ଯୋଜନା ସୃଷ୍ଟି କରନ୍ତୁ",
-    "custom": "କଷ୍ଟମ୍"
+    "custom": "କଷ୍ଟମ୍",
+    "markComplete": "କାର୍ଯ୍ୟକୁ ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "markIncomplete": "କାର୍ଯ୍ୟକୁ ଅସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "editTask": "କାର୍ଯ୍ୟ ସମ୍ପାଦନା କରନ୍ତୁ",
+    "editTaskInput": "କାର୍ଯ୍ୟ ପାଠ୍ୟ ସମ୍ପାଦନା କରନ୍ତୁ"
   },
   "categories": {
     "electricity": "ବିଦ୍ୟୁତ୍",
@@ -329,6 +334,7 @@
     "loading": "ଲୋଡ୍ ହେଉଛି...",
     "save": "ସଞ୍ଚୟ",
     "close": "ମୋଡାଲ୍ ବନ୍ଦ କରନ୍ତୁ",
+    "skipToContent": "ମୁଖ୍ୟ ବିଷୟବସ୍ତୁକୁ ଯାଆନ୍ତୁ",
     "co2": "kg CO₂",
     "co2Tonnes": "ଟନ୍ CO₂"
   },

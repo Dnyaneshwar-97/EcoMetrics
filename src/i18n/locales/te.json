@@ -12,6 +12,7 @@
     "openMenu": "మెను తెరవండి",
     "closeMenu": "మెను మూసివేయండి",
     "selectLanguage": "భాషను ఎంచుకోండి",
+    "homeLink": "EcoMetrics home",
     "badges": "బ్యాడ్జ్‌లు"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "లక్ష్య తగ్గింపు (%)",
     "customPlaceholder": "ఉదా., 25",
     "generatePlan": "ప్రణాళిక సృష్టించండి",
-    "custom": "అనుకూల"
+    "custom": "అనుకూల",
+    "markComplete": "పనిని పూర్తయినట్లు గుర్తించండి",
+    "markIncomplete": "పనిని పూర్తి కానిదిగా గుర్తించండి",
+    "editTask": "పనిని సవరించండి",
+    "editTaskInput": "పని టెక్స్ట్‌ను సవరించండి"
   },
   "categories": {
     "electricity": "విద్యుత్",
@@ -329,6 +334,7 @@
     "loading": "లోడ్ avutondi...",
     "save": "భద్రపరచండి",
     "close": "modal moosiveyandi",
+    "skipToContent": "ప్రధాన కంటెంట్‌కు వెళ్లండి",
     "co2": "kg CO₂",
     "co2Tonnes": "టన్ను CO₂"
   },

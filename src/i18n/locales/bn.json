@@ -12,6 +12,7 @@
     "openMenu": "মেনু খুলুন",
     "closeMenu": "মেনু বন্ধ করুন",
     "selectLanguage": "ভাষা নির্বাচন করুন",
+    "homeLink": "EcoMetrics home",
     "badges": "ব্যাজ"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "লক্ষ্য হ্রাস (%)",
     "customPlaceholder": "যেমন, ২৫",
     "generatePlan": "পরিকল্পনা তৈরি করুন",
-    "custom": "কাস্টম"
+    "custom": "কাস্টম",
+    "markComplete": "কাজ সম্পূর্ণ হিসাবে চিহ্নিত করুন",
+    "markIncomplete": "কাজ অসম্পূর্ণ হিসাবে চিহ্নিত করুন",
+    "editTask": "কাজ সম্পাদনা করুন",
+    "editTaskInput": "কাজের টেক্সট সম্পাদনা করুন"
   },
   "categories": {
     "electricity": "বিদ্যুৎ",
@@ -329,6 +334,7 @@
     "loading": "লোড হচ্ছে...",
     "save": "সংরক্ষণ",
     "close": "মডাল বন্ধ করুন",
+    "skipToContent": "মূল বিষয়বস্তুতে যান",
     "co2": "kg CO₂",
     "co2Tonnes": "টন CO₂"
   },

@@ -12,6 +12,7 @@
     "openMenu": "मेनू उघडा",
     "closeMenu": "मेनू बंद करा",
     "selectLanguage": "भाषा निवडा",
+    "homeLink": "EcoMetrics होम",
     "badges": "बॅज"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "लक्ष्य कमी (%)",
     "customPlaceholder": "उदा., 25",
     "generatePlan": "योजना तयार करा",
-    "custom": "सानुकूल"
+    "custom": "सानुकूल",
+    "markComplete": "कार्य पूर्ण म्हणून चिन्हांकित करा",
+    "markIncomplete": "कार्य अपूर्ण म्हणून चिन्हांकित करा",
+    "editTask": "कार्य संपादित करा",
+    "editTaskInput": "कार्य मजकूर संपादित करा"
   },
   "categories": {
     "electricity": "वीज",
@@ -329,6 +334,7 @@
     "loading": "लोड होत आहे...",
     "save": "जतन करा",
     "close": "मोडल बंद करा",
+    "skipToContent": "मुख्य सामग्रीवर जा",
     "co2": "kg CO₂",
     "co2Tonnes": "टन CO₂"
   },

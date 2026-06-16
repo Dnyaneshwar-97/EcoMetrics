@@ -12,7 +12,8 @@
     "badges": "Badges",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "selectLanguage": "Select language"
+    "selectLanguage": "Select language",
+    "homeLink": "EcoMetrics home"
   },
   "theme": {
     "light": "Switch to light mode",
@@ -276,7 +277,11 @@
     "customTargetLabel": "Target Reduction (%)",
     "customPlaceholder": "e.g., 25",
     "generatePlan": "Generate Plan",
-    "custom": "Custom"
+    "custom": "Custom",
+    "markComplete": "Mark task as complete",
+    "markIncomplete": "Mark task as incomplete",
+    "editTask": "Edit task",
+    "editTaskInput": "Edit task text"
   },
   "categories": {
     "electricity": "Electricity",
@@ -348,6 +353,7 @@
     "loading": "Loading...",
     "save": "Save",
     "close": "Close modal",
+    "skipToContent": "Skip to main content",
     "co2": "kg CO₂",
     "co2Tonnes": "tonnes CO₂"
   }

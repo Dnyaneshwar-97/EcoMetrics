@@ -12,6 +12,7 @@
     "openMenu": "ਮੀਨੂ ਖੋਲ੍ਹੋ",
     "closeMenu": "ਮੀਨੂ ਬੰਦ ਕਰੋ",
     "selectLanguage": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "homeLink": "EcoMetrics home",
     "badges": "ਬੈਜ"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "ਟੀਚਾ ਕਮੀ (%)",
     "customPlaceholder": "ਉਦਾ., 25",
     "generatePlan": "ਯੋਜਨਾ ਬਣਾਓ",
-    "custom": "ਕਸਟਮ"
+    "custom": "ਕਸਟਮ",
+    "markComplete": "ਕਾਰਜ ਨੂੰ ਪੂਰਾ ਹੋਇਆ ਚਿੰਨ੍ਹਿਤ ਕਰੋ",
+    "markIncomplete": "ਕਾਰਜ ਨੂੰ ਅਧੂਰਾ ਚਿੰਨ੍ਹਿਤ ਕਰੋ",
+    "editTask": "ਕਾਰਜ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "editTaskInput": "ਕਾਰਜ ਟੈਕਸਟ ਸੰਪਾਦਿਤ ਕਰੋ"
   },
   "categories": {
     "electricity": "ਬਿਜਲੀ",
@@ -329,6 +334,7 @@
     "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
     "save": "ਸੰਭਾਲੋ",
     "close": "ਮੋਡਲ ਬੰਦ ਕਰੋ",
+    "skipToContent": "ਮੁੱਖ ਸਮੱਗਰੀ 'ਤੇ ਜਾਓ",
     "co2": "kg CO₂",
     "co2Tonnes": "ਟਨ CO₂"
   },

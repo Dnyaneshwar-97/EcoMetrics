@@ -31,21 +31,30 @@ const LoadingFallback = () => {
 
 const AppRoutes = () => {
   useLanguage();
+  const { t } = useTranslation();
 
   return (
     <BrowserRouter>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-xl focus:bg-emerald-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400"
+      >
+        {t('common.skipToContent')}
+      </a>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <Suspense fallback={<LoadingFallback />}>
-          <Routes>
-            <Route path={ROUTES.HOME} element={<Home />} />
-            <Route path={ROUTES.CALCULATOR} element={<Calculator />} />
-            <Route path={ROUTES.TRACKER} element={<Tracker />} />
-            <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
-            <Route path={ROUTES.PLANNER} element={<Planner />} />
-            <Route path={ROUTES.BADGES} element={<Badges />} />
-          </Routes>
-        </Suspense>
+        <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
+          <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+              <Route path={ROUTES.HOME} element={<Home />} />
+              <Route path={ROUTES.CALCULATOR} element={<Calculator />} />
+              <Route path={ROUTES.TRACKER} element={<Tracker />} />
+              <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
+              <Route path={ROUTES.PLANNER} element={<Planner />} />
+              <Route path={ROUTES.BADGES} element={<Badges />} />
+            </Routes>
+          </Suspense>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>

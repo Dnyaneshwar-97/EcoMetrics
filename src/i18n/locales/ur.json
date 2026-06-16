@@ -12,6 +12,7 @@
     "openMenu": "مینو کھولیں",
     "closeMenu": "مینو بند کریں",
     "selectLanguage": "زبان منتخب کریں",
+    "homeLink": "EcoMetrics home",
     "badges": "بیجز"
   },
   "theme": {
@@ -276,7 +277,11 @@
     "customTargetLabel": "ہدفِ کمی (%)",
     "customPlaceholder": "مثلاً، 25",
     "generatePlan": "منصوبہ بنائیں",
-    "custom": "اپنی مرضی"
+    "custom": "اپنی مرضی",
+    "markComplete": "کام مکمل نشان زد کریں",
+    "markIncomplete": "کام نامکمل نشان زد کریں",
+    "editTask": "کام میں ترمیم کریں",
+    "editTaskInput": "کام کا متن ترمیم کریں"
   },
   "categories": {
     "electricity": "بجلی",
@@ -329,6 +334,7 @@
     "loading": "لوڈ ہو رہا ہے...",
     "save": "محفوظ کریں",
     "close": "موڈل بند کریں",
+    "skipToContent": "مرکزی مواد پر جائیں",
     "co2": "kg CO₂",
     "co2Tonnes": "ٹن CO₂"
   },
