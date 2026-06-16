@@ -1,0 +1,92 @@
+/** India-specific emission factors (kg CO2 per unit) */
+export const EMISSION_FACTORS = {
+  ELECTRICITY: 0.82,
+  PETROL_CAR: 0.21,
+  DIESEL_CAR: 0.17,
+  ELECTRIC_VEHICLE: 0.05,
+  MOTORCYCLE: 0.1,
+  PUBLIC_TRANSPORT: 0.04,
+  DOMESTIC_FLIGHT: 90,
+  INTERNATIONAL_FLIGHT: 1100,
+  WASTE: 0.5,
+};
+
+export const FOOD_EMISSION_FACTORS = {
+  VEGAN: 1.5,
+  VEGETARIAN: 2.0,
+  MIXED: 3.3,
+  HIGH_MEAT: 5.0,
+};
+
+export const VEHICLE_TYPES = {
+  PETROL_CAR: 'petrol_car',
+  DIESEL_CAR: 'diesel_car',
+  ELECTRIC_VEHICLE: 'electric_vehicle',
+  MOTORCYCLE: 'motorcycle',
+  PUBLIC_TRANSPORT: 'public_transport',
+};
+
+export const FOOD_TYPES = {
+  VEGAN: 'vegan',
+  VEGETARIAN: 'vegetarian',
+  MIXED: 'mixed',
+  HIGH_MEAT: 'high_meat',
+};
+
+export const VEHICLE_EMISSION_MAP = {
+  [VEHICLE_TYPES.PETROL_CAR]: EMISSION_FACTORS.PETROL_CAR,
+  [VEHICLE_TYPES.DIESEL_CAR]: EMISSION_FACTORS.DIESEL_CAR,
+  [VEHICLE_TYPES.ELECTRIC_VEHICLE]: EMISSION_FACTORS.ELECTRIC_VEHICLE,
+  [VEHICLE_TYPES.MOTORCYCLE]: EMISSION_FACTORS.MOTORCYCLE,
+  [VEHICLE_TYPES.PUBLIC_TRANSPORT]: EMISSION_FACTORS.PUBLIC_TRANSPORT,
+};
+
+export const FOOD_EMISSION_MAP = {
+  [FOOD_TYPES.VEGAN]: FOOD_EMISSION_FACTORS.VEGAN,
+  [FOOD_TYPES.VEGETARIAN]: FOOD_EMISSION_FACTORS.VEGETARIAN,
+  [FOOD_TYPES.MIXED]: FOOD_EMISSION_FACTORS.MIXED,
+  [FOOD_TYPES.HIGH_MEAT]: FOOD_EMISSION_FACTORS.HIGH_MEAT,
+};
+
+/** Average Indian annual footprint in tonnes CO2 */
+export const AVERAGE_INDIAN_FOOTPRINT_TONNES = 1.9;
+
+/** Environmental conversion constants */
+export const CONVERSION_FACTORS = {
+  KG_CO2_PER_TREE_YEAR: 21,
+  KG_CO2_PER_KM_PETROL: 0.21,
+  KG_CO2_PER_KG_COAL: 2.4,
+  KG_CO2_PER_SMARTPHONE_CHARGE: 0.008,
+  KWH_PER_KG_CO2: 1.22,
+};
+
+/** Score thresholds */
+export const SCORE_THRESHOLDS = {
+  EXCELLENT: 80,
+  GOOD: 60,
+  MODERATE: 40,
+  HIGH: 20,
+};
+
+export const SCORE_CATEGORIES = {
+  EXCELLENT: 'Excellent',
+  GOOD: 'Good',
+  MODERATE: 'Moderate',
+  HIGH: 'High',
+  CRITICAL: 'Critical',
+};
+
+/** Input validation limits */
+export const INPUT_LIMITS = {
+  MIN_HOUSEHOLD_SIZE: 1,
+  MAX_HOUSEHOLD_SIZE: 20,
+  MAX_ELECTRICITY_KWH: 10000,
+  MAX_DISTANCE_KM: 50000,
+  MAX_FLIGHTS: 100,
+  MAX_WASTE_KG: 500,
+};
+
+/** Months per year for annualization */
+export const MONTHS_PER_YEAR = 12;
+export const DAYS_PER_YEAR = 365;
+export const WEEKS_PER_YEAR = 52;
