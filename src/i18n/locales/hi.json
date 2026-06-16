@@ -286,6 +286,8 @@
     "waste": "कचरा"
   },
   "scores": {
+    "label": "कार्बन स्कोर",
+    "ariaLabel": "कार्बन स्कोर {{score}}/100, {{category}}",
     "Excellent": "उत्कृष्ट",
     "Good": "अच्छा",
     "Moderate": "मध्यम",

@@ -286,6 +286,8 @@
     "waste": "ಕಸ"
   },
   "scores": {
+    "label": "ಕಾರ್ಬನ್ ಸ್ಕೋರ್",
+    "ariaLabel": "ಕಾರ್ಬನ್ ಸ್ಕೋರ್ {{score}}/100, {{category}}",
     "Excellent": "ಅತ್ಯುತ್ತಮ",
     "Good": "ಒಳ್ಳೆಯದು",
     "Moderate": "ಮಧ್ಯಮ",

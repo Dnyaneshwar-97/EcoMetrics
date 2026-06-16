@@ -286,6 +286,8 @@
     "waste": "فضلہ"
   },
   "scores": {
+    "label": "کاربن اسکور",
+    "ariaLabel": "کاربن اسکور {{score}}/100، {{category}}",
     "Excellent": "بہترین",
     "Good": "اچھا",
     "Moderate": "درمیانہ",

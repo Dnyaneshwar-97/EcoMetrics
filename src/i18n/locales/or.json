@@ -286,6 +286,8 @@
     "waste": "ଆବର୍ଜନା"
   },
   "scores": {
+    "label": "କାର୍ବନ ସ୍କୋର୍",
+    "ariaLabel": "କାର୍ବନ ସ୍କୋର୍ {{score}}/100, {{category}}",
     "Excellent": "ଉତ୍କୃଷ୍ଟ",
     "Good": "ଭଲ",
     "Moderate": "ମଧ୍ୟମ",

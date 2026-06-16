@@ -286,6 +286,8 @@
     "waste": "Waste"
   },
   "scores": {
+    "label": "Carbon Score",
+    "ariaLabel": "Carbon score {{score}} out of 100, {{category}}",
     "Excellent": "Excellent",
     "Good": "Good",
     "Moderate": "Moderate",

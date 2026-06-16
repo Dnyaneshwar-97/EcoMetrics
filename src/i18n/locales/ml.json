@@ -286,6 +286,8 @@
     "waste": "മാലിന്യം"
   },
   "scores": {
+    "label": "കാർബൺ സ്കോർ",
+    "ariaLabel": "കാർബൺ സ്കോർ {{score}}/100, {{category}}",
     "Excellent": "മികച്ചത്",
     "Good": "നല്ലത്",
     "Moderate": "മിതമായ",

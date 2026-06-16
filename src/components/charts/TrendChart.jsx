@@ -9,7 +9,29 @@ import {
 } from 'recharts';
 import { useTheme } from '../../hooks/useTheme';
 
-const TrendChart = ({ data, dataKey = 'footprint', color = '#10b981', title, exportId }) => {
+const ChartTooltip = ({ active, payload, label, valueLabel, isDark }) => {
+  if (!active || !payload?.length) return null;
+
+  const entry = payload[0];
+
+  return (
+    <div
+      className="rounded-xl px-3 py-2 text-sm shadow-md"
+      style={{
+        backgroundColor: isDark ? '#1e293b' : '#ffffff',
+        color: isDark ? '#e2e8f0' : '#334155',
+      }}
+    >
+      <p className="font-medium mb-1">{label}</p>
+      <p>
+        {valueLabel ? `${valueLabel}: ` : ''}
+        {entry.value}
+      </p>
+    </div>
+  );
+};
+
+const TrendChart = ({ data, dataKey = 'footprint', color = '#10b981', title, exportId, valueLabel }) => {
   const { isDark } = useTheme();
   const gridColor = isDark ? '#334155' : '#e2e8f0';
   const textColor = isDark ? '#94a3b8' : '#64748b';
@@ -23,12 +45,20 @@ const TrendChart = ({ data, dataKey = 'footprint', color = '#10b981', title, exp
           <XAxis dataKey="label" stroke={textColor} fontSize={12} />
           <YAxis stroke={textColor} fontSize={12} />
           <Tooltip
-            contentStyle={{
-              backgroundColor: isDark ? '#1e293b' : '#ffffff',
-              border: 'none',
-              borderRadius: '12px',
-              boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-            }}
+            {...(valueLabel
+              ? {
+                  content: (props) => (
+                    <ChartTooltip {...props} valueLabel={valueLabel} isDark={isDark} />
+                  ),
+                }
+              : {
+                  contentStyle: {
+                    backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                    border: 'none',
+                    borderRadius: '12px',
+                    boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                  },
+                })}
           />
           <Line type="monotone" dataKey={dataKey} stroke={color} strokeWidth={2} dot={{ fill: color, r: 4 }} activeDot={{ r: 6 }} />
         </LineChart>

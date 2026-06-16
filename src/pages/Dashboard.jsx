@@ -188,6 +188,7 @@ const Dashboard = () => {
             color="#3b82f6"
             title={t('dashboard.charts.scoreHistory')}
             exportId={CHART_EXPORT_IDS.SCORE_HISTORY}
+            valueLabel={t('scores.label')}
           />
         </div>
 

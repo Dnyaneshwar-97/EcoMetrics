@@ -286,6 +286,8 @@
     "waste": "আৱৰ্জনা"
   },
   "scores": {
+    "label": "কাৰ্বন স্ক’ৰ",
+    "ariaLabel": "কাৰ্বন স্ক’ৰ {{score}}/100, {{category}}",
     "Excellent": "উৎকৃষ্ট",
     "Good": "ভাল",
     "Moderate": "মাধ্যম",

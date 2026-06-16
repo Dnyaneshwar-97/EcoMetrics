@@ -286,6 +286,8 @@
     "waste": "বর্জ্য"
   },
   "scores": {
+    "label": "কার্বন স্কোর",
+    "ariaLabel": "কার্বন স্কোর {{score}}/100, {{category}}",
     "Excellent": "চমৎকার",
     "Good": "ভালো",
     "Moderate": "মাঝারি",

@@ -286,6 +286,8 @@
     "waste": "કચરો"
   },
   "scores": {
+    "label": "કાર્બન સ્કોર",
+    "ariaLabel": "કાર્બન સ્કોર {{score}}/100, {{category}}",
     "Excellent": "ઉત્તમ",
     "Good": "સારું",
     "Moderate": "મધ્યમ",

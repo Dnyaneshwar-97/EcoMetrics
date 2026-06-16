@@ -286,6 +286,8 @@
     "waste": "అపసరిత"
   },
   "scores": {
+    "label": "కార్బన్ స్కోర్",
+    "ariaLabel": "కార్బన్ స్కోర్ {{score}}/100, {{category}}",
     "Excellent": "అద్భుతం",
     "Good": "మంచidi",
     "Moderate": "మధ్యస్థ",

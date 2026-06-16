@@ -286,6 +286,8 @@
     "waste": "ਕੂੜਾ"
   },
   "scores": {
+    "label": "ਕਾਰਬਨ ਸਕੋਰ",
+    "ariaLabel": "ਕਾਰਬਨ ਸਕੋਰ {{score}}/100, {{category}}",
     "Excellent": "ਸ਼ਾਨਦਾਰ",
     "Good": "ਚੰਗਾ",
     "Moderate": "ਮੱਧਮ",

@@ -286,6 +286,8 @@
     "waste": "கழிவு"
   },
   "scores": {
+    "label": "கார்பன் மதிப்பெண்",
+    "ariaLabel": "கார்பன் மதிப்பெண் {{score}}/100, {{category}}",
     "Excellent": "சிறந்தது",
     "Good": "நல்லது",
     "Moderate": "மிதமான",
