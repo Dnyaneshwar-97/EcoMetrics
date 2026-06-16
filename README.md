@@ -55,6 +55,20 @@ src/
 └── context/        # React context providers
 ```
 
+## Deploy to Firebase
+
+Default Firebase project: **ecometrics-42c8c** (EcoMetrics)
+
+```bash
+# 1. Log in to Firebase (opens browser)
+npx firebase login
+
+# 2. Build and deploy to ecometrics-42c8c
+npm run deploy
+```
+
+Your site will be live at `https://ecometrics-42c8c.web.app`.
+
 ## License
 
 MIT
