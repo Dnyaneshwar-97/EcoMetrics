@@ -1,3 +1,5 @@
+import { TIME_PERIODS } from '../constants/ui';
+
 /**
  * Format number with locale
  */
@@ -96,13 +98,13 @@ export const filterByPeriod = (calculations, period, referenceDate = new Date())
     const calcTime = calcDate.getTime();
 
     switch (period) {
-      case 'daily':
+      case TIME_PERIODS.DAILY:
         return isSameCalendarDay(calcDate, referenceDate);
-      case 'weekly':
+      case TIME_PERIODS.WEEKLY:
         return ref - calcTime <= 7 * msPerDay;
-      case 'monthly':
+      case TIME_PERIODS.MONTHLY:
         return isSameCalendarMonth(calcDate, referenceDate);
-      case 'yearly':
+      case TIME_PERIODS.YEARLY:
         return isSameCalendarYear(calcDate, referenceDate);
       default:
         return ref - calcTime <= (rollingWindowDays[period] ?? 365) * msPerDay;

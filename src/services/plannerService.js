@@ -1,4 +1,5 @@
 import { PLANNER_TASKS } from '../constants/recommendations';
+import { CONVERSION_FACTORS } from '../constants/emissionFactors';
 import { scaleReductionPercent, generateId } from '../utils/calculations';
 
 /**
@@ -17,7 +18,7 @@ export const generatePlan = (targetPercent, baseFootprintKg) => {
 
   const totalReductionPercent = tasks.reduce((sum, t) => sum + t.reductionPercent, 0);
   const expectedReductionKg = Math.round((baseFootprintKg * totalReductionPercent) / 100);
-  const treesSaved = Math.ceil(expectedReductionKg / 21);
+  const treesSaved = Math.ceil(expectedReductionKg / CONVERSION_FACTORS.KG_CO2_PER_TREE_YEAR);
 
   return {
     id: generateId(),

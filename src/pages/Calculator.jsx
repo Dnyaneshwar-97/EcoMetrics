@@ -57,6 +57,16 @@ const CalculatorPage = () => {
     setSaved(true);
   }, [inputs, saveCalculation]);
 
+  const renderFieldError = (field) => {
+    const error = errors[field];
+    if (!error) return null;
+    return (
+      <p className="text-red-500 text-xs mt-1" id={`${field}-error`}>
+        {t(error.key, error.params)}
+      </p>
+    );
+  };
+
   const impact = result.environmentalImpact;
 
   return (
@@ -90,8 +100,9 @@ const CalculatorPage = () => {
                     onChange={(e) => handleChange('electricityKwh', e.target.value)}
                     className="input-field"
                     aria-invalid={!!errors.electricityKwh}
+                    aria-describedby={errors.electricityKwh ? 'electricityKwh-error' : undefined}
                   />
-                  {errors.electricityKwh && <p className="text-red-500 text-xs mt-1">{errors.electricityKwh}</p>}
+                  {renderFieldError('electricityKwh')}
                 </div>
 
                 <div>
@@ -122,8 +133,9 @@ const CalculatorPage = () => {
                     onChange={(e) => handleChange('monthlyDistanceKm', e.target.value)}
                     className="input-field"
                     aria-invalid={!!errors.monthlyDistanceKm}
+                    aria-describedby={errors.monthlyDistanceKm ? 'monthlyDistanceKm-error' : undefined}
                   />
-                  {errors.monthlyDistanceKm && <p className="text-red-500 text-xs mt-1">{errors.monthlyDistanceKm}</p>}
+                  {renderFieldError('monthlyDistanceKm')}
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -234,7 +246,7 @@ const CalculatorPage = () => {
                 <Badge category={result.scoreCategory} score={result.score} size="lg" />
               </div>
 
-              <Button onClick={handleSave} className="w-full">
+              <Button onClick={handleSave} className="w-full" aria-live="polite">
                 <Save className="w-5 h-5" aria-hidden="true" />
                 {saved ? t('calculator.saved') : t('calculator.save')}
               </Button>

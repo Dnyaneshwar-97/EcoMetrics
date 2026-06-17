@@ -102,6 +102,10 @@ describe('plannerService', () => {
       expect(progress.completedCount).toBe(1);
       expect(progress.totalCount).toBe(PLANNER_TASKS.length);
       expect(progress.progressPercent).toBe(Math.round((1 / PLANNER_TASKS.length) * 100));
+      expect(progress.achievedReductionPercent).toBe(plan.tasks[0].reductionPercent);
+      expect(progress.achievedReductionKg).toBe(
+        Math.round((plan.baseFootprintKg * plan.tasks[0].reductionPercent) / 100)
+      );
     });
 
     it('calculates 100% progress when all tasks are complete', () => {
@@ -114,6 +118,11 @@ describe('plannerService', () => {
       expect(progress.completedCount).toBe(PLANNER_TASKS.length);
       expect(progress.totalCount).toBe(PLANNER_TASKS.length);
       expect(progress.progressPercent).toBe(100);
+      const totalReductionPercent = plan.tasks.reduce((sum, task) => sum + task.reductionPercent, 0);
+      expect(progress.achievedReductionPercent).toBe(totalReductionPercent);
+      expect(progress.achievedReductionKg).toBe(
+        Math.round((plan.baseFootprintKg * totalReductionPercent) / 100)
+      );
     });
   });
 

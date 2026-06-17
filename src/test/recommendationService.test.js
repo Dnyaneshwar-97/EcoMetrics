@@ -33,7 +33,7 @@ describe('recommendationService', () => {
       const recommendations = generateRecommendations(createCalculationResult());
       expect(recommendations).toHaveLength(1);
       expect(recommendations[0].id).toBe('general-maintain');
-      expect(recommendations[0].title).toBe('Maintain Your Sustainable Habits');
+      expect(recommendations[0].titleKey).toBe('recommendations.fallbackTitle');
     });
 
     it('returns electricity recommendations when usage exceeds threshold', () => {
@@ -67,6 +67,75 @@ describe('recommendationService', () => {
 
       const recommendations = generateRecommendations(result);
       expect(recommendations.some((rec) => rec.category === 'transportation')).toBe(true);
+    });
+
+    it('returns flights recommendations when combined flights meet threshold', () => {
+      const result = createCalculationResult({
+        inputs: {
+          electricityKwh: 50,
+          monthlyDistanceKm: 50,
+          domesticFlights: 2,
+          internationalFlights: 2,
+          foodType: 'vegan',
+          weeklyWasteKg: 2,
+        },
+      });
+
+      const recommendations = generateRecommendations(result);
+      expect(recommendations.some((rec) => rec.category === 'flights')).toBe(true);
+    });
+
+    it('returns food recommendations for high meat diet', () => {
+      const result = createCalculationResult({
+        inputs: {
+          electricityKwh: 50,
+          monthlyDistanceKm: 50,
+          domesticFlights: 0,
+          internationalFlights: 0,
+          foodType: 'high_meat',
+          weeklyWasteKg: 2,
+        },
+      });
+
+      const recommendations = generateRecommendations(result);
+      expect(recommendations.some((rec) => rec.category === 'food')).toBe(true);
+    });
+
+    it('returns waste recommendations when weekly waste exceeds threshold', () => {
+      const result = createCalculationResult({
+        inputs: {
+          electricityKwh: 50,
+          monthlyDistanceKm: 50,
+          domesticFlights: 0,
+          internationalFlights: 0,
+          foodType: 'vegan',
+          weeklyWasteKg: 12,
+        },
+      });
+
+      const recommendations = generateRecommendations(result);
+      expect(recommendations.some((rec) => rec.category === 'waste')).toBe(true);
+    });
+
+    it('can return multiple category recommendations at once', () => {
+      const result = createCalculationResult({
+        inputs: {
+          electricityKwh: 300,
+          monthlyDistanceKm: 700,
+          domesticFlights: 3,
+          internationalFlights: 2,
+          foodType: 'high_meat',
+          weeklyWasteKg: 15,
+        },
+      });
+
+      const recommendations = generateRecommendations(result);
+      const categories = new Set(recommendations.map((rec) => rec.category));
+      expect(categories.has('electricity')).toBe(true);
+      expect(categories.has('transportation')).toBe(true);
+      expect(categories.has('flights')).toBe(true);
+      expect(categories.has('food')).toBe(true);
+      expect(categories.has('waste')).toBe(true);
     });
   });
 

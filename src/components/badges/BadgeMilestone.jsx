@@ -134,9 +134,9 @@ const BadgeMilestone = ({
           )}
         </div>
 
-        <h4 className={`font-semibold text-slate-900 dark:text-white leading-tight mb-1 ${styles.title}`}>
+        <h3 className={`font-semibold text-slate-900 dark:text-white leading-tight mb-1 ${styles.title}`}>
           {t(`badges.${key}.name`)}
-        </h4>
+        </h3>
         {styles.desc !== 'hidden' && (
           <p className={`text-slate-500 dark:text-slate-400 leading-snug mb-3 ${styles.desc}`}>
             {t(`badges.${key}.description`)}

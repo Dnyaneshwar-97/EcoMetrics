@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ClipboardList, Plus } from 'lucide-react';
 import PageWrapper from '../components/layout/PageWrapper';
@@ -56,19 +55,19 @@ const Tracker = () => {
             </h1>
             <p className="text-slate-600 dark:text-slate-400">{t('tracker.subtitle')}</p>
           </div>
-          <Link to={ROUTES.CALCULATOR}>
-            <Button>
-              <Plus className="w-5 h-5" aria-hidden="true" />
-              {t('tracker.newCalculation')}
-            </Button>
-          </Link>
+          <Button to={ROUTES.CALCULATOR}>
+            <Plus className="w-5 h-5" aria-hidden="true" />
+            {t('tracker.newCalculation')}
+          </Button>
         </div>
 
         <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
           {PERIOD_VALUES.map((value) => (
             <button
               key={value}
+              type="button"
               onClick={() => setPeriod(value)}
+              aria-pressed={period === value}
               className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
                 period === value
                   ? 'bg-emerald-600 text-white'
@@ -83,19 +82,17 @@ const Tracker = () => {
         {filteredCalculations.length === 0 ? (
           <div className="glass-card p-12 text-center">
             <ClipboardList className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" aria-hidden="true" />
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
               {calculations.length === 0 ? t('tracker.emptyTitle') : t('tracker.emptyPeriodTitle')}
-            </h3>
+            </h2>
             <p className="text-slate-500 dark:text-slate-400 mb-6">
               {calculations.length === 0
                 ? t('tracker.emptyDesc')
                 : t('tracker.emptyPeriodDesc', { period: t(`tracker.periods.${period}`) })}
             </p>
-            <Link to={ROUTES.CALCULATOR}>
-              <Button>
-                {calculations.length === 0 ? t('tracker.calculateNow') : t('tracker.newCalculation')}
-              </Button>
-            </Link>
+            <Button to={ROUTES.CALCULATOR}>
+              {calculations.length === 0 ? t('tracker.calculateNow') : t('tracker.newCalculation')}
+            </Button>
           </div>
         ) : (
           <div className="space-y-4">

@@ -124,11 +124,9 @@ const Dashboard = () => {
       <PageWrapper className="py-12">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <BarChart3 className="w-16 h-16 text-slate-300 dark:text-slate-600 mx-auto mb-4" aria-hidden="true" />
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('dashboard.noDataTitle')}</h2>
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('dashboard.noDataTitle')}</h1>
           <p className="text-slate-500 dark:text-slate-400 mb-6">{t('dashboard.noDataDesc')}</p>
-          <Link to={ROUTES.CALCULATOR}>
-            <Button>{t('dashboard.goToCalculator')}</Button>
-          </Link>
+          <Button to={ROUTES.CALCULATOR}>{t('dashboard.goToCalculator')}</Button>
         </div>
       </PageWrapper>
     );

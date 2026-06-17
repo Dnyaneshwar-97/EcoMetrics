@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Calculator, Target, ArrowRight, Leaf } from 'lucide-react';
@@ -45,19 +44,15 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to={ROUTES.CALCULATOR}>
-                <Button size="lg">
-                  <Calculator className="w-5 h-5" aria-hidden="true" />
-                  {t('hero.ctaCalculate')}
-                  <ArrowRight className="w-5 h-5" aria-hidden="true" />
-                </Button>
-              </Link>
-              <Link to={ROUTES.PLANNER}>
-                <Button variant="secondary" size="lg">
-                  <Target className="w-5 h-5" aria-hidden="true" />
-                  {t('hero.ctaReduce')}
-                </Button>
-              </Link>
+              <Button to={ROUTES.CALCULATOR} size="lg">
+                <Calculator className="w-5 h-5" aria-hidden="true" />
+                {t('hero.ctaCalculate')}
+                <ArrowRight className="w-5 h-5" aria-hidden="true" />
+              </Button>
+              <Button to={ROUTES.PLANNER} variant="secondary" size="lg">
+                <Target className="w-5 h-5" aria-hidden="true" />
+                {t('hero.ctaReduce')}
+              </Button>
             </div>
           </motion.div>
         </div>

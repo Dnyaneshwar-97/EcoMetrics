@@ -42,9 +42,9 @@ export const generateRecommendations = (calculationResult) => {
     recommendations.push({
       id: 'general-maintain',
       category: 'general',
-      ruleTitle: 'Keep Up the Good Work',
-      title: 'Maintain Your Sustainable Habits',
-      description: 'Your footprint is relatively low. Continue your eco-friendly practices!',
+      ruleTitleKey: 'recommendations.fallbackRuleTitle',
+      titleKey: 'recommendations.fallbackTitle',
+      descriptionKey: 'recommendations.fallbackDescription',
       co2ReductionKg: 0,
       moneySaved: 0,
       treesEquivalent: 0,

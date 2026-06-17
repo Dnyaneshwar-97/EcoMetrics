@@ -38,4 +38,36 @@ describe('storageService', () => {
     expect(storageService.getCalculations()).toEqual([]);
     expect(storageService.getTheme()).toBe('light');
   });
+
+  it('persists and retrieves planner data', () => {
+    const plan = { id: 'plan-1', targetPercent: 20, tasks: [] };
+    storageService.savePlanner(plan);
+
+    expect(storageService.getPlanner()).toEqual(plan);
+  });
+
+  it('removes planner when saving null', () => {
+    storageService.savePlanner({ id: 'plan-1', targetPercent: 20, tasks: [] });
+    storageService.savePlanner(null);
+
+    expect(storageService.getPlanner()).toBeNull();
+  });
+
+  it('persists and retrieves theme preference', () => {
+    storageService.saveTheme('dark');
+    expect(storageService.getTheme()).toBe('dark');
+  });
+
+  it('returns null when stored JSON is corrupt', () => {
+    localStorage.setItem(STORAGE_KEYS.PLANNER, '{invalid-json');
+
+    expect(storageService.getPlanner()).toBeNull();
+  });
+
+  it('returns false when writing invalid data fails', () => {
+    const circular = {};
+    circular.self = circular;
+
+    expect(storageService.set(STORAGE_KEYS.THEME, circular)).toBe(false);
+  });
 });

@@ -8,15 +8,24 @@ describe('validateNumber', () => {
   });
 
   it('returns error for non-numeric input', () => {
-    expect(validateNumber('abc', 0, 10)).toEqual({ valid: false, error: 'Please enter a valid number' });
+    expect(validateNumber('abc', 0, 10)).toEqual({
+      valid: false,
+      error: { key: 'validation.invalidNumber' },
+    });
   });
 
   it('returns error for number below min', () => {
-    expect(validateNumber(-1, 0, 10)).toEqual({ valid: false, error: 'Value must be at least 0' });
+    expect(validateNumber(-1, 0, 10)).toEqual({
+      valid: false,
+      error: { key: 'validation.minValue', params: { min: 0 } },
+    });
   });
 
   it('returns error for number above max', () => {
-    expect(validateNumber(11, 0, 10)).toEqual({ valid: false, error: 'Value must not exceed 10' });
+    expect(validateNumber(11, 0, 10)).toEqual({
+      valid: false,
+      error: { key: 'validation.maxValue', params: { max: 10 } },
+    });
   });
 
   it('handles string numbers correctly', () => {
@@ -44,21 +53,24 @@ describe('validateCalculatorInputs', () => {
     const inputs = { ...validInputs, electricityKwh: INPUT_LIMITS.MAX_ELECTRICITY_KWH + 1 };
     const result = validateCalculatorInputs(inputs);
     expect(result.isValid).toBe(false);
-    expect(result.errors.electricityKwh).toBe(`Value must not exceed ${INPUT_LIMITS.MAX_ELECTRICITY_KWH}`);
+    expect(result.errors.electricityKwh).toEqual({
+      key: 'validation.maxValue',
+      params: { max: INPUT_LIMITS.MAX_ELECTRICITY_KWH },
+    });
   });
 
   it('returns errors for invalid vehicle type', () => {
     const inputs = { ...validInputs, vehicleType: 'invalid_type' };
     const result = validateCalculatorInputs(inputs);
     expect(result.isValid).toBe(false);
-    expect(result.errors.vehicleType).toBe('Please select a valid vehicle type');
+    expect(result.errors.vehicleType).toEqual({ key: 'validation.invalidVehicleType' });
   });
 
   it('returns errors for invalid food type', () => {
     const inputs = { ...validInputs, foodType: 'invalid_food' };
     const result = validateCalculatorInputs(inputs);
     expect(result.isValid).toBe(false);
-    expect(result.errors.foodType).toBe('Please select a valid food type');
+    expect(result.errors.foodType).toEqual({ key: 'validation.invalidFoodType' });
   });
 
   it('returns multiple errors for multiple invalid inputs', () => {
@@ -72,10 +84,16 @@ describe('validateCalculatorInputs', () => {
     const result = validateCalculatorInputs(inputs);
     expect(result.isValid).toBe(false);
     expect(Object.keys(result.errors).length).toBe(4);
-    expect(result.errors.electricityKwh).toBe('Value must be at least 0');
-    expect(result.errors.monthlyDistanceKm).toBe(`Value must not exceed ${INPUT_LIMITS.MAX_DISTANCE_KM}`);
-    expect(result.errors.householdSize).toBe(`Value must be at least ${INPUT_LIMITS.MIN_HOUSEHOLD_SIZE}`);
-    expect(result.errors.vehicleType).toBe('Please select a valid vehicle type');
+    expect(result.errors.electricityKwh).toEqual({ key: 'validation.minValue', params: { min: 0 } });
+    expect(result.errors.monthlyDistanceKm).toEqual({
+      key: 'validation.maxValue',
+      params: { max: INPUT_LIMITS.MAX_DISTANCE_KM },
+    });
+    expect(result.errors.householdSize).toEqual({
+      key: 'validation.minValue',
+      params: { min: INPUT_LIMITS.MIN_HOUSEHOLD_SIZE },
+    });
+    expect(result.errors.vehicleType).toEqual({ key: 'validation.invalidVehicleType' });
   });
 });
 
@@ -85,14 +103,23 @@ describe('validatePlannerTarget', () => {
   });
 
   it('returns error for non-numeric input', () => {
-    expect(validatePlannerTarget('abc')).toEqual({ valid: false, error: 'Please enter a valid percentage' });
+    expect(validatePlannerTarget('abc')).toEqual({
+      valid: false,
+      error: { key: 'validation.invalidPercentage' },
+    });
   });
 
   it('returns error for target below 1', () => {
-    expect(validatePlannerTarget(0)).toEqual({ valid: false, error: 'Target must be between 1% and 100%' });
+    expect(validatePlannerTarget(0)).toEqual({
+      valid: false,
+      error: { key: 'validation.targetRange' },
+    });
   });
 
   it('returns error for target above 100', () => {
-    expect(validatePlannerTarget(101)).toEqual({ valid: false, error: 'Target must be between 1% and 100%' });
+    expect(validatePlannerTarget(101)).toEqual({
+      valid: false,
+      error: { key: 'validation.targetRange' },
+    });
   });
 });

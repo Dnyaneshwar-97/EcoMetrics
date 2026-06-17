@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Award, Calculator } from 'lucide-react';
@@ -45,12 +44,10 @@ const Badges = () => {
               {t('badgesPage.emptyTitle')}
             </h2>
             <p className="text-slate-500 dark:text-slate-400 mb-6">{t('badgesPage.emptyDesc')}</p>
-            <Link to={ROUTES.CALCULATOR}>
-              <Button>
-                <Calculator className="w-5 h-5" aria-hidden="true" />
-                {t('tracker.calculateNow')}
-              </Button>
-            </Link>
+            <Button to={ROUTES.CALCULATOR}>
+              <Calculator className="w-5 h-5" aria-hidden="true" />
+              {t('tracker.calculateNow')}
+            </Button>
           </div>
         ) : (
           <BadgeCarousel badges={badges} />

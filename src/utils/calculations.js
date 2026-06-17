@@ -66,24 +66,11 @@ export const calculateImprovement = (currentFootprint, previousFootprint) => {
 export const generateId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 
 /**
- * Convert kg to tonnes
- */
-export const kgToTonnes = (kg) => Math.round((kg / 1000) * 100) / 100;
-
-/**
  * Scale planner tasks based on target reduction percentage
  */
 export const scaleReductionPercent = (basePercent, targetPercent) => {
   const scaleFactor = targetPercent / 20;
   return Math.round(basePercent * scaleFactor * 10) / 10;
-};
-
-/** Display labels for tracker time periods */
-export const PERIOD_LABELS = {
-  [TIME_PERIODS.DAILY]: 'Daily',
-  [TIME_PERIODS.WEEKLY]: 'Weekly',
-  [TIME_PERIODS.MONTHLY]: 'Monthly',
-  [TIME_PERIODS.YEARLY]: 'Annual',
 };
 
 /**

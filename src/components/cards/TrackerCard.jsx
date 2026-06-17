@@ -45,7 +45,7 @@ const TrackerCard = ({ calculation, improvement, onDelete, period, index = 0 }) 
         <div className="flex items-center gap-4">
           {improvement !== null && improvement !== 0 && (
             <div className={`flex items-center gap-1 text-sm font-medium ${isImproved ? 'text-emerald-600' : 'text-red-500'}`}>
-              {isImproved ? <TrendingDown className="w-4 h-4" /> : <TrendingUp className="w-4 h-4" />}
+              {isImproved ? <TrendingDown className="w-4 h-4" aria-hidden="true" /> : <TrendingUp className="w-4 h-4" aria-hidden="true" />}
               {Math.abs(improvement)}%
             </div>
           )}

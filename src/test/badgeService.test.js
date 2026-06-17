@@ -1,5 +1,5 @@
 import { describe, expect, it, vi, beforeEach } from 'vitest';
-import { evaluateBadges } from '../services/badgeService';
+import { evaluateBadges, getEarnedBadgeCount } from '../services/badgeService';
 import { BADGE_DEFINITIONS, BADGE_STATUS } from '../constants/badges';
 import * as plannerService from '../services/plannerService';
 import * as calculations from '../utils/calculations';
@@ -143,6 +143,22 @@ describe('badgeService', () => {
       });
       badges = evaluateBadges([createMockCalculation(80, 0)], { tasks: [] });
       expect(badges.find((b) => b.id === 'earth-guardian')?.status).toBe(BADGE_STATUS.LOCKED);
+    });
+  });
+
+  describe('getEarnedBadgeCount', () => {
+    it('counts only earned badges', () => {
+      const badges = [
+        { id: 'a', status: BADGE_STATUS.EARNED },
+        { id: 'b', status: BADGE_STATUS.LOCKED },
+        { id: 'c', status: BADGE_STATUS.EARNED },
+      ];
+
+      expect(getEarnedBadgeCount(badges)).toBe(2);
+    });
+
+    it('returns 0 for empty badge list', () => {
+      expect(getEarnedBadgeCount([])).toBe(0);
     });
   });
 });

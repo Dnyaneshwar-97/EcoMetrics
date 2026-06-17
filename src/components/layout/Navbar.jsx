@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
@@ -8,12 +8,24 @@ import ThemeToggle from '../ui/ThemeToggle';
 import LanguageSelector from '../ui/LanguageSelector';
 import AppLogo from '../ui/AppLogo';
 
+const navLinkClass = ({ isActive }) =>
+  `px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+    isActive
+      ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
+      : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+  }`;
+
+const mobileNavLinkClass = ({ isActive }) =>
+  `block px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+    isActive
+      ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
+      : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+  }`;
+
 const Navbar = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
-  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="sticky top-0 z-40 bg-slate-100/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-300/60 dark:border-slate-800">
@@ -30,17 +42,14 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-1">
             {NAV_ITEMS.map((item) => (
-              <Link
+              <NavLink
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                  isActive(item.path)
-                    ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
-                }`}
+                className={navLinkClass}
+                aria-current={location.pathname === item.path ? 'page' : undefined}
               >
                 {t(`nav.${item.key}`)}
-              </Link>
+              </NavLink>
             ))}
             <LanguageSelector />
             <ThemeToggle />
@@ -50,12 +59,13 @@ const Navbar = () => {
             <LanguageSelector />
             <ThemeToggle />
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500"
               aria-label={isOpen ? t('nav.closeMenu') : t('nav.openMenu')}
               aria-expanded={isOpen}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -71,18 +81,15 @@ const Navbar = () => {
           >
             <div className="px-4 py-4 space-y-2">
               {NAV_ITEMS.map((item) => (
-                <Link
+                <NavLink
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                    isActive(item.path)
-                      ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400'
-                      : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
-                  }`}
+                  className={mobileNavLinkClass}
+                  aria-current={location.pathname === item.path ? 'page' : undefined}
                 >
                   {t(`nav.${item.key}`)}
-                </Link>
+                </NavLink>
               ))}
             </div>
           </motion.div>

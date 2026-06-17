@@ -37,9 +37,9 @@ const ImpactSection = () => {
                   <div className="p-3 bg-red-100 dark:bg-red-900/20 rounded-xl w-fit mb-4 group-hover:scale-110 transition-transform">
                     <IconComponent className="w-6 h-6 text-red-600 dark:text-red-400" aria-hidden="true" />
                   </div>
-                  <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
                     {t(`environmentalImpacts.${key}.title`)}
-                  </h4>
+                  </h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">
                     {t(`environmentalImpacts.${key}.description`)}
                   </p>
@@ -77,9 +77,9 @@ const ImpactSection = () => {
                   <div className="inline-flex p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-full mb-3">
                     <IconComponent className="w-5 h-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
                   </div>
-                  <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-1">
+                  <h3 className="font-semibold text-slate-900 dark:text-white text-sm mb-1">
                     {t(`calcCategories.${cat.id}.title`)}
-                  </h4>
+                  </h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400">
                     {t(`calcCategories.${cat.id}.unit`)}
                   </p>
@@ -120,9 +120,9 @@ const ImpactSection = () => {
                       <IconComponent className="w-5 h-5 text-lime-600 dark:text-lime-400" aria-hidden="true" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-slate-900 dark:text-white mb-1">
+                      <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
                         {t(`reductionTips.${key}.title`)}
-                      </h4>
+                      </h3>
                       <p className="text-sm text-slate-600 dark:text-slate-400">
                         {t(`reductionTips.${key}.description`)}
                       </p>

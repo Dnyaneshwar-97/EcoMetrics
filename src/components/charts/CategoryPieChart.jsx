@@ -23,7 +23,28 @@ const CategoryPieChart = ({ data, title, exportId }) => {
   return (
     <div id={exportId} className="glass-card p-6">
       {title && <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">{title}</h3>}
-      <ResponsiveContainer width="100%" height={300}>
+      {chartData.length > 0 && (
+        <div className="sr-only">
+          <table>
+            <caption>{title}</caption>
+            <thead>
+              <tr>
+                <th scope="col">{t('calculator.yourDetails')}</th>
+                <th scope="col">{t('common.co2')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {chartData.map((row) => (
+                <tr key={row.name}>
+                  <td>{row.name}</td>
+                  <td>{row.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <ResponsiveContainer width="100%" height={300} aria-hidden={chartData.length > 0}>
         <PieChart>
           <Pie
             data={chartData}

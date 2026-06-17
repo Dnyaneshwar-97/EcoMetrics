@@ -50,11 +50,14 @@ export const evaluateBadges = (calculations, plan) => {
 
   const data = { calculations, latestScore, plan };
 
-  return BADGE_DEFINITIONS.map((badge) => ({
-    ...badge,
-    status: evaluateCriteria(badge, data) ? BADGE_STATUS.EARNED : BADGE_STATUS.LOCKED,
-    earnedAt: evaluateCriteria(badge, data) ? new Date().toISOString() : null,
-  }));
+  return BADGE_DEFINITIONS.map((badge) => {
+    const earned = evaluateCriteria(badge, data);
+    return {
+      ...badge,
+      status: earned ? BADGE_STATUS.EARNED : BADGE_STATUS.LOCKED,
+      earnedAt: earned ? new Date().toISOString() : null,
+    };
+  });
 };
 
 /**

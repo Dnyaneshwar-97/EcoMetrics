@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const PageWrapper = ({ children, className = '' }) => (
-  <motion.main
+  <motion.section
     initial={{ opacity: 0, y: 10 }}
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -10 }}
@@ -9,7 +9,7 @@ const PageWrapper = ({ children, className = '' }) => (
     className={`flex-1 page-bg ${className}`}
   >
     {children}
-  </motion.main>
+  </motion.section>
 );
 
 export default PageWrapper;

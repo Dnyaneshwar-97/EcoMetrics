@@ -8,9 +8,15 @@ const VALID_FOOD_TYPES = Object.values(FOOD_TYPES);
  */
 export const validateNumber = (value, min = 0, max = Infinity) => {
   const num = Number(value);
-  if (Number.isNaN(num)) return { valid: false, error: 'Please enter a valid number' };
-  if (num < min) return { valid: false, error: `Value must be at least ${min}` };
-  if (num > max) return { valid: false, error: `Value must not exceed ${max}` };
+  if (Number.isNaN(num)) {
+    return { valid: false, error: { key: 'validation.invalidNumber' } };
+  }
+  if (num < min) {
+    return { valid: false, error: { key: 'validation.minValue', params: { min } } };
+  }
+  if (num > max) {
+    return { valid: false, error: { key: 'validation.maxValue', params: { max } } };
+  }
   return { valid: true, value: num };
 };
 
@@ -43,11 +49,11 @@ export const validateCalculatorInputs = (inputs) => {
   if (!household.valid) errors.householdSize = household.error;
 
   if (!VALID_VEHICLE_TYPES.includes(inputs.vehicleType)) {
-    errors.vehicleType = 'Please select a valid vehicle type';
+    errors.vehicleType = { key: 'validation.invalidVehicleType' };
   }
 
   if (!VALID_FOOD_TYPES.includes(inputs.foodType)) {
-    errors.foodType = 'Please select a valid food type';
+    errors.foodType = { key: 'validation.invalidFoodType' };
   }
 
   return {
@@ -61,7 +67,11 @@ export const validateCalculatorInputs = (inputs) => {
  */
 export const validatePlannerTarget = (target) => {
   const num = Number(target);
-  if (Number.isNaN(num)) return { valid: false, error: 'Please enter a valid percentage' };
-  if (num < 1 || num > 100) return { valid: false, error: 'Target must be between 1% and 100%' };
+  if (Number.isNaN(num)) {
+    return { valid: false, error: { key: 'validation.invalidPercentage' } };
+  }
+  if (num < 1 || num > 100) {
+    return { valid: false, error: { key: 'validation.targetRange' } };
+  }
   return { valid: true, value: num };
 };

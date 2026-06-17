@@ -69,15 +69,6 @@ const storageService = {
     return plan;
   },
 
-  getBadges() {
-    return this.get(STORAGE_KEYS.BADGES) ?? [];
-  },
-
-  saveBadges(badges) {
-    this.set(STORAGE_KEYS.BADGES, badges);
-    return badges;
-  },
-
   getTheme() {
     return this.get(STORAGE_KEYS.THEME) ?? 'light';
   },

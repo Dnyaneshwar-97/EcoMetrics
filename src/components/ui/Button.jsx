@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Button = ({
@@ -8,6 +9,7 @@ const Button = ({
   disabled = false,
   type = 'button',
   onClick,
+  to,
   ...props
 }) => {
   const baseClasses = 'inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed';
@@ -25,12 +27,22 @@ const Button = ({
     lg: 'px-8 py-4 text-lg',
   };
 
+  const combinedClasses = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
+
+  if (to) {
+    return (
+      <Link to={to} className={combinedClasses} {...props}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
     <motion.button
       whileHover={{ scale: disabled ? 1 : 1.02 }}
       whileTap={{ scale: disabled ? 1 : 0.98 }}
       type={type}
-      className={`${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={combinedClasses}
       disabled={disabled}
       onClick={onClick}
       {...props}

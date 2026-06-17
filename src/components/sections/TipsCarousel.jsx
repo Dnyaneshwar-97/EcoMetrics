@@ -38,7 +38,7 @@ const TipsCarousel = () => {
         <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{t('tipsCarousel.title')}</h3>
       </div>
 
-      <div className="relative min-h-[60px] flex items-center">
+      <div className="relative min-h-[60px] flex items-center" aria-live="polite" aria-atomic="true">
         <AnimatePresence mode="wait">
           <motion.p
             key={currentIndex}
@@ -55,30 +55,34 @@ const TipsCarousel = () => {
 
       <div className="flex items-center justify-center gap-4 mt-4">
         <button
+          type="button"
           onClick={goToPrevious}
           className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500"
           aria-label={t('tipsCarousel.previous')}
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-5 h-5" aria-hidden="true" />
         </button>
         <div className="flex gap-1">
           {tipList.map((_, index) => (
             <button
               key={index}
+              type="button"
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all ${
                 index === currentIndex ? 'bg-emerald-500 w-4' : 'bg-slate-300 dark:bg-slate-600'
               }`}
               aria-label={`${t('tipsCarousel.title')} ${index + 1}`}
+              aria-current={index === currentIndex ? 'true' : undefined}
             />
           ))}
         </div>
         <button
+          type="button"
           onClick={goToNext}
           className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500"
           aria-label={t('tipsCarousel.next')}
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-5 h-5" aria-hidden="true" />
         </button>
       </div>
     </div>

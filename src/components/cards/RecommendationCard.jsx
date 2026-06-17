@@ -1,9 +1,25 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Leaf, IndianRupee, TreePine } from 'lucide-react';
 import { formatCurrency, formatCo2 } from '../../utils/formatters';
 
 const RecommendationCard = ({ recommendation, index = 0 }) => {
-  const { title, description, co2ReductionKg, moneySaved, treesEquivalent, ruleTitle } = recommendation;
+  const { t } = useTranslation();
+  const {
+    title,
+    description,
+    titleKey,
+    descriptionKey,
+    ruleTitle,
+    ruleTitleKey,
+    co2ReductionKg,
+    moneySaved,
+    treesEquivalent,
+  } = recommendation;
+
+  const displayRuleTitle = ruleTitleKey ? t(ruleTitleKey) : ruleTitle;
+  const displayTitle = titleKey ? t(titleKey) : title;
+  const displayDescription = descriptionKey ? t(descriptionKey) : description;
 
   return (
     <motion.div
@@ -13,10 +29,10 @@ const RecommendationCard = ({ recommendation, index = 0 }) => {
       className="glass-card p-5 hover:shadow-xl transition-all duration-300"
     >
       <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
-        {ruleTitle}
+        {displayRuleTitle}
       </span>
-      <h3 className="text-lg font-semibold text-slate-900 dark:text-white mt-1 mb-2">{title}</h3>
-      <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">{description}</p>
+      <h3 className="text-lg font-semibold text-slate-900 dark:text-white mt-1 mb-2">{displayTitle}</h3>
+      <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">{displayDescription}</p>
       <div className="flex flex-wrap gap-3">
         {co2ReductionKg > 0 && (
           <span className="inline-flex items-center gap-1 px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-xs font-medium">

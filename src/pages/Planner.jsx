@@ -1,5 +1,4 @@
 import { useState, useCallback, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Target, TreePine } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -44,7 +43,7 @@ const Planner = () => {
   const handleCustomSubmit = () => {
     const validation = validatePlannerTarget(customTarget);
     if (!validation.valid) {
-      setCustomError(validation.error);
+      setCustomError(t(validation.error.key, validation.error.params));
       return;
     }
     handleGeneratePlan(validation.value);
@@ -84,11 +83,9 @@ const Planner = () => {
       <PageWrapper className="py-12">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <Target className="w-16 h-16 text-slate-300 dark:text-slate-600 mx-auto mb-4" aria-hidden="true" />
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('planner.calculateFirstTitle')}</h2>
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('planner.calculateFirstTitle')}</h1>
           <p className="text-slate-500 dark:text-slate-400 mb-6">{t('planner.calculateFirstDesc')}</p>
-          <Link to={ROUTES.CALCULATOR}>
-            <Button>{t('dashboard.goToCalculator')}</Button>
-          </Link>
+          <Button to={ROUTES.CALCULATOR}>{t('dashboard.goToCalculator')}</Button>
         </div>
       </PageWrapper>
     );
@@ -155,7 +152,14 @@ const Planner = () => {
                   {progress.progressPercent}% ({progress.completedCount}/{progress.totalCount} {t('planner.tasks')})
                 </span>
               </div>
-              <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3">
+              <div
+                className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"
+                role="progressbar"
+                aria-valuenow={progress.progressPercent}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-label={t('planner.progress')}
+              >
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${progress.progressPercent}%` }}

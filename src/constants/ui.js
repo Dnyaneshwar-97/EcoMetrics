@@ -32,14 +32,6 @@ export const CHART_COLORS = {
   waste: '#ef4444',
 };
 
-export const CATEGORY_LABELS = {
-  electricity: 'Electricity',
-  transportation: 'Transportation',
-  flights: 'Flights',
-  food: 'Food',
-  waste: 'Waste',
-};
-
 export const SCORE_COLORS = {
   Excellent: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-400', border: 'border-emerald-500' },
   Good: { bg: 'bg-lime-100 dark:bg-lime-900/30', text: 'text-lime-700 dark:text-lime-400', border: 'border-lime-500' },

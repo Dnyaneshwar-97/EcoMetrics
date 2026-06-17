@@ -356,5 +356,19 @@
     "previousBadge": "Previous badge",
     "nextBadge": "Next badge",
     "exportLockedHint": "Earn this badge to download it as an image."
+  },
+  "validation": {
+    "invalidNumber": "Please enter a valid number",
+    "minValue": "Value must be at least {{min}}",
+    "maxValue": "Value must not exceed {{max}}",
+    "invalidVehicleType": "Please select a valid vehicle type",
+    "invalidFoodType": "Please select a valid food type",
+    "invalidPercentage": "Please enter a valid percentage",
+    "targetRange": "Target must be between 1% and 100%"
+  },
+  "recommendations": {
+    "fallbackRuleTitle": "Keep Up the Good Work",
+    "fallbackTitle": "Maintain Your Sustainable Habits",
+    "fallbackDescription": "Your footprint is relatively low. Continue your eco-friendly practices!"
   }
 }

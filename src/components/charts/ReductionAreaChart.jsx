@@ -7,9 +7,11 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../hooks/useTheme';
 
 const ReductionAreaChart = ({ data, dataKey = 'reduction', color = '#059669', title, exportId }) => {
+  const { t } = useTranslation();
   const { isDark } = useTheme();
   const gridColor = isDark ? '#334155' : '#e2e8f0';
   const textColor = isDark ? '#94a3b8' : '#64748b';
@@ -17,7 +19,28 @@ const ReductionAreaChart = ({ data, dataKey = 'reduction', color = '#059669', ti
   return (
     <div id={exportId} className="glass-card p-6">
       {title && <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">{title}</h3>}
-      <ResponsiveContainer width="100%" height={300}>
+      {data?.length > 0 && (
+        <div className="sr-only">
+          <table>
+            <caption>{title}</caption>
+            <thead>
+              <tr>
+                <th scope="col">{t('tracker.recorded')}</th>
+                <th scope="col">{title}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((row) => (
+                <tr key={row.label}>
+                  <td>{row.label}</td>
+                  <td>{row[dataKey]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <ResponsiveContainer width="100%" height={300} aria-hidden={data?.length > 0}>
         <AreaChart data={data} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <defs>
             <linearGradient id="reductionGradient" x1="0" y1="0" x2="0" y2="1">

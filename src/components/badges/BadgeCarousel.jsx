@@ -174,7 +174,7 @@ const BadgeCarousel = ({ badges }) => {
           className="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-white/90 dark:bg-slate-800/90 shadow-lg border border-slate-200 dark:border-slate-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition-colors"
           aria-label={t('badgesPage.previousBadge')}
         >
-          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
         </button>
 
         <button
@@ -184,7 +184,7 @@ const BadgeCarousel = ({ badges }) => {
           className="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-white/90 dark:bg-slate-800/90 shadow-lg border border-slate-200 dark:border-slate-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition-colors"
           aria-label={t('badgesPage.nextBadge')}
         >
-          <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
         </button>
 
         <div
@@ -247,6 +247,10 @@ const BadgeCarousel = ({ badges }) => {
             aria-label={t(`badges.${kebabToCamel(badge.id)}.name`)}
           />
         ))}
+      </div>
+
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        {t(`badges.${kebabToCamel(activeBadge.id)}.name`)}
       </div>
 
       <AnimatePresence mode="wait">

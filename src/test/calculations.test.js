@@ -4,8 +4,13 @@ import {
   calculateScore,
   getScoreCategory,
   calculateEnvironmentalImpact,
+  calculateImprovement,
+  getFootprintForPeriod,
+  scaleReductionPercent,
+  shouldUseTonnesUnit,
 } from '../utils/calculations';
 import { SCORE_CATEGORIES } from '../constants/emissionFactors';
+import { TIME_PERIODS } from '../constants/ui';
 
 describe('clamp', () => {
   it('clamps a value within the range', () => {
@@ -91,5 +96,71 @@ describe('calculateEnvironmentalImpact', () => {
     expect(impact.coalBurned).toBe(0);
     expect(impact.smartphoneCharges).toBe(0);
     expect(impact.electricityKwh).toBe(0);
+  });
+});
+
+describe('calculateImprovement', () => {
+  it('returns 0 when previous footprint is 0 or missing', () => {
+    expect(calculateImprovement(100, 0)).toBe(0);
+    expect(calculateImprovement(100, null)).toBe(0);
+  });
+
+  it('calculates positive improvement when footprint decreases', () => {
+    expect(calculateImprovement(900, 1000)).toBe(10);
+  });
+
+  it('calculates negative improvement when footprint increases', () => {
+    expect(calculateImprovement(1100, 1000)).toBe(-10);
+  });
+
+  it('rounds to one decimal place', () => {
+    expect(calculateImprovement(333, 1000)).toBe(66.7);
+  });
+});
+
+describe('getFootprintForPeriod', () => {
+  const calculation = {
+    annualFootprintKg: 3650,
+    monthlyFootprintKg: 304.17,
+  };
+
+  it('returns 0 for null calculation', () => {
+    expect(getFootprintForPeriod(null, TIME_PERIODS.YEARLY)).toBe(0);
+  });
+
+  it('returns annual footprint for yearly period', () => {
+    expect(getFootprintForPeriod(calculation, TIME_PERIODS.YEARLY)).toBe(3650);
+  });
+
+  it('returns monthly footprint for monthly period', () => {
+    expect(getFootprintForPeriod(calculation, TIME_PERIODS.MONTHLY)).toBe(304.17);
+  });
+
+  it('derives daily footprint from annual total', () => {
+    expect(getFootprintForPeriod(calculation, TIME_PERIODS.DAILY)).toBe(10);
+  });
+
+  it('derives weekly footprint from annual total', () => {
+    expect(getFootprintForPeriod(calculation, TIME_PERIODS.WEEKLY)).toBe(70.2);
+  });
+});
+
+describe('scaleReductionPercent', () => {
+  it('scales base percent relative to 20% target', () => {
+    expect(scaleReductionPercent(10, 20)).toBe(10);
+    expect(scaleReductionPercent(10, 40)).toBe(20);
+  });
+
+  it('rounds to one decimal place', () => {
+    expect(scaleReductionPercent(3, 15)).toBe(2.3);
+  });
+});
+
+describe('shouldUseTonnesUnit', () => {
+  it('returns true only for yearly period', () => {
+    expect(shouldUseTonnesUnit(TIME_PERIODS.YEARLY)).toBe(true);
+    expect(shouldUseTonnesUnit(TIME_PERIODS.MONTHLY)).toBe(false);
+    expect(shouldUseTonnesUnit(TIME_PERIODS.WEEKLY)).toBe(false);
+    expect(shouldUseTonnesUnit(TIME_PERIODS.DAILY)).toBe(false);
   });
 });

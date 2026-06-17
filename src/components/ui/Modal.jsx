@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useId } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
@@ -10,9 +10,17 @@ const Modal = ({ isOpen, onClose, title, children }) => {
   const { t } = useTranslation();
   const panelRef = useRef(null);
   const closeButtonRef = useRef(null);
+  const previousFocusRef = useRef(null);
+  const titleId = useId();
 
   useEffect(() => {
     if (!isOpen) return undefined;
+
+    previousFocusRef.current = document.activeElement;
+    const mainContent = document.getElementById('main-content');
+    if (mainContent) {
+      mainContent.setAttribute('inert', '');
+    }
 
     closeButtonRef.current?.focus();
 
@@ -41,7 +49,15 @@ const Modal = ({ isOpen, onClose, title, children }) => {
     };
 
     document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      if (mainContent) {
+        mainContent.removeAttribute('inert');
+      }
+      if (previousFocusRef.current instanceof HTMLElement) {
+        previousFocusRef.current.focus();
+      }
+    };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -64,10 +80,10 @@ const Modal = ({ isOpen, onClose, title, children }) => {
         className="relative glass-card p-6 max-w-md w-full max-h-[90vh] overflow-y-auto"
         role="dialog"
         aria-modal="true"
-        aria-labelledby="modal-title"
+        aria-labelledby={titleId}
       >
         <div className="flex items-center justify-between mb-4">
-          <h2 id="modal-title" className="text-xl font-bold text-slate-900 dark:text-white">
+          <h2 id={titleId} className="text-xl font-bold text-slate-900 dark:text-white">
             {title}
           </h2>
           <button
